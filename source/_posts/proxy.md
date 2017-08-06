@@ -2,6 +2,7 @@
 title: atom proxy
 date: 2017-08-05 22:06:17
 tags: atom
+categories: code
 ---
 
 今天尝试了一下使用atom 感觉和sublime很像 主要是看上了她的markdown实时的编辑
