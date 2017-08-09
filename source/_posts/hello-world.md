@@ -1,5 +1,7 @@
 ---
 title: Hello World
+categories: hexo
+tags: hexo
 ---
 关于hexo的官方简介和使用方法
 <!-- more -->
