@@ -82,3 +82,5 @@ input[type="checkbox"]:checked + label::before {
 ``` javascript
 var text = $(this).text().slice(1);// by imo: remove markdown-it's anchor character in TOC
 ```
+## 参考文档
+Hexo 的 markdown-it 渲染引擎和其相关插件 http://baishusama.github.io/2016/12/24/hexo-render-markdown-it-and-its-plugins/
