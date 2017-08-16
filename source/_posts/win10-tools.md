@@ -27,3 +27,6 @@ powercfg -h off
 ## [ConEmu](http://conemu.github.io/)
 可高度定制化的 cmd或者powershell的外壳 一张图说明效果
 ![](http://ou7k0sem6.bkt.clouddn.com/ConEmu.png)
+## [Sao Utils](http://www.gpbeta.com/post/develop/sao-utils/)
+灵感来自于刀剑神域 非常酷的插件 如果你没有用过一定要试试
+!()[http://www.gpbeta.com/wp-content/gallery/sao-utils/sao-utils-beta1-vr-3-2.jpg]
