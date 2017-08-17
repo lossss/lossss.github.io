@@ -24,3 +24,5 @@ tags: plugins
 这个配合上面一个用的
 ## relative-numbers
 显示相对行数 在vim下很有用
+## tree-view-git-status
+会在右侧显示当前分支 有文件变动之后右侧会变色很实用
