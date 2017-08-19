@@ -17,6 +17,9 @@ tags: tools
 ![](https://www.cockos.com/licecap/licecap_rules.gif)
 ## [Listary](http://www.listary.com/)
 一个快速启动软件和搜索文件的工具
+## [everything](http://www.voidtools.com/)
+![](http://www.voidtools.com/support/everything/Everything.Search.Window.png)
+可以方便的搜索到系统中的任意文件
 ## [卡硬工具箱](http://www.kbtool.cn/down.php)
 系统工具集合总有一个适合你
 ## 关闭系统休眠cmd指令

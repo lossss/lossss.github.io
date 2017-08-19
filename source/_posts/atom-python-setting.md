@@ -20,5 +20,5 @@ atom中关于使用python的设置
 不过也会有下面这个错误我还不是很能理解
 ![](http://ou7k0sem6.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170809001325.png)
 
-## python-autopep8
+## ~~python-autopep8~~ 使用  atom beautify 代替
 在保存时自动格式化python代码去除多余的空格

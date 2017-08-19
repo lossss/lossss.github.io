@@ -7,7 +7,7 @@ tags: plugins
 简介: atom中常用插件
 <!--more-->
 ## atom beautify
-下载之后不要忘记设置保存时格式化 这个很方便
+下载之后不要忘记设置保存时格式化(在对应package的 setting里面 找到对应的语言) 这个很方便
 ## auto-fold
 折叠代码
 ## emmet
