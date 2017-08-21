@@ -6,6 +6,36 @@ tags: [html,js,game]
 ---
 使用js写一些小游戏 游戏1打砖块
 <!--more-->
+本系列参考教材是 https://space.bilibili.com/39066904#!/
+
+喜欢的可以顺道关注下他的知乎还是很有收获的
+
+这应该会是一个漫长的修行之路
+
+开始吧
+
+html代码很简单
+``` html
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>game1</title>
+        <style type="text/css">
+            canvas {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <canvas id="canvas" width="400" height="300"></canvas>
+    </body>
+    <script type="text/javascript" src="game.js"></script>
+
+</html>
+```
 先实现让一个小方块在按下后会左后移动
 ``` javascript
     log = console.log.bind(console)
@@ -269,3 +299,89 @@ var __main = function() {
 __main()
 ```
 有个很严重的问题一开始按键就会停不下来
+这个会在之后再回来改 先照着gua的方法来写 把整个过程封装在了一个function Game中
+``` javascript
+log = console.log.bind(console)
+imgFromPath = function(src) {
+    var img = new Image()
+    img.src = src
+    return img
+}
+var Game = function() {
+    var g = {
+        actions: {},
+        keydowns: {}
+    }
+    var canvas = document.getElementById('canvas')
+    var context = canvas.getContext('2d')
+    g.canvas = canvas
+    g.context = context
+    g.drawImage = function(img) {
+        g.context.drawImage(img.img, img.x, img.y)
+    }
+    g.clear = function() {
+        g.context.clearRect(0, 0, g.canvas.width, g.canvas.height)
+    }
+    g.registerAction = function(key, callback) {
+        g.actions[key] = callback
+    }
+    window.addEventListener('keydown', function(event) {
+        g.keydowns[event.key] = true
+    })
+    window.addEventListener('keyup', function() {
+        g.keydowns[event.key] = false
+    })
+
+    setInterval(function() {
+        var actions = Object.keys(g.actions)
+        for (var i = 0; i < actions.length; i++) {
+            var key = actions[i]
+            if (g.keydowns[key]) {
+                g.actions[key]()
+            }
+        }
+        g.clear()
+        g.draw()
+    }, 1000 / 30)
+    return g
+}
+//滑块类
+class Paddle {
+    constructor(img, x, y, speed) {
+        this.img = imgFromPath(img)
+        this.x = x
+        this.y = y
+        this.speed = speed
+    }
+    moveRight() {
+        this.x -= this.speed
+    }
+    moveLeft() {
+        this.x += this.speed
+    }
+    getX() {
+        return this.x
+    }
+    getY() {
+        return this.y
+    }
+}
+var __main = function() {
+    var g = Game()
+    var paddle = new Paddle('paddle.png', 150, 200, 5)
+
+    g.registerAction('a', function() {
+        paddle.moveLeft()
+    })
+    g.registerAction('d', function() {
+        paddle.moveRight()
+    })
+    // g.registerAction(paddle)
+
+    g.draw = function() {
+        g.drawImage(paddle)
+    }
+}
+__main()
+
+```
