@@ -511,7 +511,7 @@ var __main = function() {
 }
 __main()
 ```
-加入了与板子的碰撞基本实现功能 还有一些小bug下次再改
+加入了与板子的碰撞基本实现功能 还有一些小bug和功能下次再改
 ``` javascript
 log = console.log.bind(console)
 imgFromPath = function(src) {
@@ -648,3 +648,5 @@ var __main = function() {
 }
 __main()
 ```
+延时效果(截图只有8帧实际会流畅很多)
+![](http://ou7k0sem6.bkt.clouddn.com/demo1.gif)
