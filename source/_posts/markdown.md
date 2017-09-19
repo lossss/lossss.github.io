@@ -43,7 +43,10 @@ draft: 关于markdown的一些常用语法
 1986\. What a great season.
 
 # 分割线
------
+````markdown
+----
+````
+----
 
 # 超链接
 [baidu.com](http://www.baidu.com)
