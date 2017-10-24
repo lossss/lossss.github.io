@@ -9,9 +9,7 @@ html 笔记
 
 <!-- more -->
 
- # html笔记
-
-## 问题搜索
+ ## 问题搜索
 
 前端有问题 搜索时前面加MDN
 
@@ -19,7 +17,7 @@ html 笔记
 
 ### table
 
-```html
+````html
 ```
 
 ## emmet
@@ -38,7 +36,7 @@ html 笔记
 div ⟹ <div></div>
 
 foo ⟹ <foo></foo>
-```
+````
 
 同时Emmet 还采用了css 的元素选择器
 

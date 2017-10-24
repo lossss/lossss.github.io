@@ -22,6 +22,9 @@ tags: tools
 可以方便的搜索到系统中的任意文件
 ## [卡硬工具箱](http://www.kbtool.cn/down.php)
 系统工具集合总有一个适合你
+## [ditto](http://ditto-cp.sourceforge.net/)
+粘贴板软件
+
 ## 关闭系统休眠cmd指令
 关闭系统休眠听说会减少磁盘占用
 ``` cmd
