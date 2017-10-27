@@ -36,3 +36,8 @@ powercfg -h off
 ## [Sao Utils](http://www.gpbeta.com/post/develop/sao-utils/)
 灵感来自于刀剑神域 非常酷的插件 如果你没有用过一定要试试
 !()[http://www.gpbeta.com/wp-content/gallery/sao-utils/sao-utils-beta1-vr-3-2.jpg]
+
+## coding 相关
+
+###  [MPic](http://mpic.lzhaofu.cn/)
+用于向七牛上传图片的图床工具

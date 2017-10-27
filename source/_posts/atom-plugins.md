@@ -50,4 +50,8 @@ tags: plugins
 ##  hyperclick / js-hyperclick
 这个两个插件配合使用，可以实现类似于IDE的Ctrl+click，跳转到变量函数声明或者定义的地方
 ## atom-ternjs
-支持多种语言代码补全，例如：ES5, ES6 (JavaScript 2015), Node.js, jQuery, Angular 
+支持多种语言代码补全，例如：ES5, ES6 (JavaScript 2015), Node.js, jQuery, Angular
+
+--2017-10-26--
+## Sublime Style Column Selection
+像sublime一样按滚轮竖列选择
