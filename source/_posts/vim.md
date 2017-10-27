@@ -59,6 +59,11 @@ w W e E 的区别
 
 按 \<C-v\>，进入 Visual Block mode，按 G 到末行，按 $ 到所有行的行尾，按 A 在行尾添加，输入添加的内容（只有第一行会显示），按 \<ESC\> 退出编辑。
 
+2. 全选复制
+esc后 ggyG
+
+3. 全选删除
+esc后 dG
 
 ## vim in terminal
 

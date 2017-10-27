@@ -18,7 +18,30 @@ html 笔记
 ### table
 
 ````html
+    <table width="500" height="300" align="center" cellspacing="5" cellpadding="10" border="1px">
+    <caption>人员表</caption>
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>性别</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>小明</td>
+        <td>男</td>
+      </tr>
+      <tr>
+        <td>小王</td>
+        <td>女</td>
+      </tr>
+    </tbody>
+  </table>
 ```
+行合并: rowspan
+
+列合并: colspan
+
 
 ## emmet
 

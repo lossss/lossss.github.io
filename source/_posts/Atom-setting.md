@@ -55,6 +55,7 @@ atom-text-editor::shadow .wrap-guide {
 | ctrl+b       | 在已经打开的文件中切换 |                  |
 | ctrl+alt+[   | 收缩代码块             |                  |
 | ctrl+alt+]   | 展开代码块             |                  |
+| ctrl+tab   | 在已经打开的标签中切换 |                  |
 
 ## 常用插件
 请看我的另外一篇博客  {% post_link atom-plugins %}
