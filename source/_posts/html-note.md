@@ -17,7 +17,7 @@ html 笔记
 
 ### table
 
-````html
+```html
     <table width="500" height="300" align="center" cellspacing="5" cellpadding="10" border="1px">
     <caption>人员表</caption>
     <thead>
@@ -42,6 +42,30 @@ html 笔记
 
 列合并: colspan
 
+### html5新加
+
+datalist
+
+```html
+  <input type="text" list="star">
+  <datalist id="star" class="">
+    <option>jay</option>
+    <option>liu</option>
+    <option>xiaoming</option>
+    <option>xiaoqiang</option>
+  </datalist>
+```
+
+fieldset
+
+```html
+  <fieldset>
+    <legend>登陆</legend>
+    用户名 <input type="text"><br> 密码 <input type="password">
+  </fieldset>
+```
+
+
 
 ## emmet
 
@@ -59,7 +83,7 @@ html 笔记
 div ⟹ <div></div>
 
 foo ⟹ <foo></foo>
-````
+```
 
 同时Emmet 还采用了css 的元素选择器
 

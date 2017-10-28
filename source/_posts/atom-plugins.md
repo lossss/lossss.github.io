@@ -55,3 +55,6 @@ tags: plugins
 --2017-10-26--
 ## Sublime Style Column Selection
 像sublime一样按滚轮竖列选择
+
+## open-in-browser
+在浏览器中打开
