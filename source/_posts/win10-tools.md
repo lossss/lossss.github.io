@@ -41,3 +41,6 @@ powercfg -h off
 
 ###  [MPic](http://mpic.lzhaofu.cn/)
 用于向七牛上传图片的图床工具
+
+### [Velocity](https://velocity.silverlakesoftware.com/)
+API文档管理 没付费可有时会有提示但无大碍  当然也可以使用 http://devdocs.io/

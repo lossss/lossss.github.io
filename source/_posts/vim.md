@@ -65,6 +65,9 @@ esc后 ggyG
 3. 全选删除
 esc后 dG
 
+4. 选中当前的单词
+ viw    //inner word
+
 ## vim in terminal
 
 ### .vimrc
@@ -77,6 +80,7 @@ set hlsearch
 ```
 这样启动vim时就会加载这些设置 当然一些大佬也会共享自己的配置到github上
 这里列出的几个只是冰山一角
+
 ### Search and Replace
 hlsearch
 > You can search by using the / command in Normal mode. By typing /This, you will see all of the This words
