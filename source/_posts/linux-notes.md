@@ -92,6 +92,14 @@ vim ~/.zshrc
 ## [cheatssheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)
 
 ### git
-| shortcuts | operation |
-| --------- | --------- |
-|           |           |
+| shortcuts | operation                         |
+| --------- | --------------------------------- |
+| gaa       | git add -all                      |
+| gst       | git status                        |
+| gb        | git branch                        |
+| gcmsg     | git commit -m                     |
+| gd        | git diff                          |
+| gcb       | git checkout -b                   |
+| grhh      | git reset HEAD --hard             |
+| ggp       | git push origin $(current_branch) |
+| gl        | git pull                                  |
