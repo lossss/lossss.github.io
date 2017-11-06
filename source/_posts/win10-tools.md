@@ -44,3 +44,10 @@ powercfg -h off
 
 ### [Velocity](https://velocity.silverlakesoftware.com/)
 API文档管理 没付费可有时会有提示但无大碍  当然也可以使用 http://devdocs.io/
+
+### [autohotkey](https://autohotkey.com/)
+安装好后 新建一个.ahk文件 然后就可以输入autohotkey的代码然后右键run就可以了
+
+把脚本放在`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`里面就可以开机自动启动了
+
+当然还有很多功能就不一一赘述了

@@ -68,9 +68,9 @@ esc后 dG
 4. 选中当前的单词
  viw    //inner word
 
-5. 在mac或者linux中
+5. 在vim中
  esc = ctrl+[
- 
+
 ## vim in terminal
 
 ### .vimrc

@@ -57,7 +57,7 @@ linux 备忘
 
 ## use oh my vsh on ubuntu
 
-1.安装vsh
+1.安装zsh
 ```bash
 sudo apt-get install zsh
 ```
@@ -82,4 +82,16 @@ vim ~/.zshrc
 6.安装powerline https://github.com/powerline/fonts
 
 如果还是显示异常
-`terminal>Preference>Profiles>myprofile(默认unmanned)>General>custom font`选择 ubuntu mono derivative Powerline Regular 当然你也可以在powerline的github页面上 Powerline Font Family 列下选择自己喜欢的字体
+`terminal>Preference>Profiles>myprofile(默认unamed)>General>custom font`
+
+选择 ubuntu mono derivative Powerline Regular 当然你也可以在powerline的github页面上 Powerline Font Family 列下选择自己喜欢的字体
+
+## zsh
+在` ~/.oh-my-zsh/plugins/ `下已有很多预设文件
+
+## [cheatssheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)
+
+### git
+| shortcuts | operation |
+| --------- | --------- |
+|           |           |
