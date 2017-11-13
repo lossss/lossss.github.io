@@ -43,10 +43,13 @@ view：toggle menu bar
 3. guides
 > 代码对齐辅助线
 
-3. ~~没有找到 文件显示git status状态的插件(类似atom的tree-view-git-status)~~ 最新版本已经自带此功能
+4. ~~没有找到 文件显示git status状态的插件(类似atom的tree-view-git-status)~~ 最新版本已经自带此功能
 
-4.Settings Sync
+5. Settings Sync
 > 同步设置
+
+6. Search Docsets
+> 查看文档  需要提前安装 velocity 快捷键 shift+F1 mac中对应的插件为dash
 
 ### vim
 
@@ -63,7 +66,8 @@ view：toggle menu bar
 
 ### markdown
 
-1. vscode-auto-open-markdown-preview
+1.  vscode markdown preview enhanced
+安装好后 ctrl+shift+m 预览 或者也可以用vs自带的ctrl+k v 打开预览
 
 ## debug
 
