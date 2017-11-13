@@ -100,6 +100,7 @@ vim ~/.zshrc
 | gcmsg     | git commit -m                     |
 | gd        | git diff                          |
 | gcb       | git checkout -b                   |
+| gco|git checkout|
 | grhh      | git reset HEAD --hard             |
 | ggp       | git push origin $(current_branch) |
 | gl        | git pull                          |
