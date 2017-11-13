@@ -93,16 +93,16 @@ vim ~/.zshrc
 
 ### git
 | shortcuts | operation                         |
-| --------- | --------------------------------- |
+|-----------|-----------------------------------|
 | gaa       | git add -all                      |
 | gst       | git status                        |
 | gb        | git branch                        |
 | gcmsg     | git commit -m                     |
 | gd        | git diff                          |
 | gcb       | git checkout -b                   |
-| gco|git checkout|
+| gco       | git checkout                      |
 | grhh      | git reset HEAD --hard             |
 | ggp       | git push origin $(current_branch) |
-| gl        | git pull                          |
+| ggl       | git pull $(current_branch)        |
 | gco       | git checkout                      |
 | gm        | git merge                         |
