@@ -17,3 +17,9 @@ aboboo 备忘
 | F1       | 校对           |
 | F2       | 显示译文       |
 | F3       | 显示原文       |
+
+## 组合软件
+
+[SrtEdit](http://pan.baidu.com/s/1b1l1aI) m: jchy
+
+字幕编辑软件

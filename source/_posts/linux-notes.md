@@ -102,4 +102,6 @@ vim ~/.zshrc
 | gcb       | git checkout -b                   |
 | grhh      | git reset HEAD --hard             |
 | ggp       | git push origin $(current_branch) |
-| gl        | git pull                                  |
+| gl        | git pull                          |
+| gco       | git checkout                      |
+| gm        | git merge                         |
