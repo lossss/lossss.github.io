@@ -15,16 +15,20 @@ ctrl+shift+p
 
 view：toggle menu bar
 
+想使用的时候按alt
+
 2. 修改字体
 
 在文件 首选项 设置 用户设置中加入`"editor.fontSize":17`即可
 
 ## 常用快捷键
+| 快捷键       | 功能                                                   |
+| ------------ | ------------------------------------------------------ |
+| ctrl+shift+p |                                                        |
+| ctrl+shift+n | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
+| shift+alt+f  | 格式化文件                                             |
+| ctrl+p       | 打开文件                                                       |
 
-ctrl+shift+p
-
-ctrl+shift+n
-> 因为不能同时打开多个项目所以只能新建窗口来打开新的项目
 
 ## 常用插件
 
@@ -39,7 +43,10 @@ ctrl+shift+n
 3. guides
 > 代码对齐辅助线
 
-4. 没有找到 文件显示git status状态的插件(类似atom的tree-view-git-status)
+3. ~~没有找到 文件显示git status状态的插件(类似atom的tree-view-git-status)~~ 最新版本已经自带此功能
+
+4.Settings Sync
+> 同步设置
 
 ### vim
 
@@ -52,17 +59,15 @@ ctrl+shift+n
 1. python
 
 2. magicpython
-
 > python文件着色器
 
 ### markdown
 
-1. markdown-preview-github-styles
-
-> 实时预览markdown 安装后在对应markdown页面f1 后输入markdown 选择open preview to the side 或者ctrl+k v
+1. vscode-auto-open-markdown-preview
 
 ## debug
 
 ### python
+
 安装python插件之后 按f5 就可以进行调试
 当需要使用input 或者需要输出图片的时候 在左上选择integrated terminal/console 在运行即可

@@ -54,8 +54,12 @@ BoldWhite=#F8F8F2
 https://www.sorendam.com/take-control-of-your-console-in-windows-with-babun-oh-my-zsh-and-powerline-fonts/
 
 ## configure Babun/ZSH for the integrated terminal in vscode
-
+1.
 ```
-"terminal.integrated.shell.windows": "C:\\Users\\Administrator\\.babun\\cygwin\\bin\\zsh.exe",
-"terminal.integrated.shellArgs.windows": ["-lic", "cd $OLDPWD; exec bash"]
+"terminal.integrated.shell.windows": "C:\\Users\\Administrator\\.babun\\cygwin\\bin\\zsh.exe"
 ```
+2. Add on command in ~/.babunrc :
+```
+cd $OLDPWD
+```
+![end](http://ou7k0sem6.bkt.clouddn.com/blog/171113/iFh26fe545.png?imageslim)
