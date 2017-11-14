@@ -41,7 +41,7 @@ linux 备忘
 ## 命令行tips
 参看这个[视频](https://www.bilibili.com/video/av4337389/)
 
-| 按键   | 操作             |
+|  按键  |       操作       |
 | ------ | ---------------- |
 | ctrl+b | 命令行向前       |
 | ctrl+f | 向后             |
@@ -52,12 +52,45 @@ linux 备忘
 | ctrl+u | 删除当前命令     |
 | ctrl+h | 从后向前删除     |
 | ctrl+d | 从前向后删除     |
-|alt+d| 删除一个单词|
+| alt+d  | 删除一个单词     |
 | ctrl+k | 删除到行尾       |
 | ctrl+p | 上一条命令       |
 | ctrl+n | 下一条命令       |
 
-## zsh小tips
+## zsh
+
+### use oh my vsh on ubuntu
+1. 安装zsh
+```bash
+sudo apt-get install zsh
+```
+2. 设置zsh为默认shell
+```bash
+sudo chsh -s $(which zsh)
+```
+3. 重启
+
+4. 安装oh-my-zsh https://github.com/robbyrussell/oh-my-zsh
+
+5. 安装主题
+```bash
+vim ~/.zshrc
+```
+![主题设置](http://ou7k0sem6.bkt.clouddn.com/blog/171106/72gl35GKm9.png)
+[主题样式查看](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
+
+如果出现中间图片的显示异常
+![显示异常](http://ou7k0sem6.bkt.clouddn.com/blog/171106/FhBfGbgkAH.png)
+
+6. 安装powerline https://github.com/powerline/fonts
+
+如果还是显示异常
+`terminal>Preference>Profiles>myprofile(默认unamed)>General>custom font`
+
+选择 ubuntu mono derivative Powerline Regular 当然你也可以在powerline的github页面上 Powerline Font Family 列下选择自己喜欢的字体
+
+### zsh小tips
+
 1. zsh 下 popd 就可以跳转到上次的目录 如果是bash的话上次需要 pushd 当然也可以用 cd - 回到上次的目录 我比较喜欢的是以下的操作方式
 ```bash
 cd - //按tab
@@ -101,46 +134,14 @@ node_modules/htmlparser2/test/Documents/RSS_Example.xml   node_modules/stylus/no
 ```bash
 ack xxx
 ```
-## use oh my vsh on ubuntu
-1.安装zsh
-```bash
-sudo apt-get install zsh
-```
-2.设置zsh为默认shell
-```bash
-sudo chsh -s $(which zsh)
-```
-3.重启
+6. [zsh lovers](https://grml.org/zsh/zsh-lovers.html)
 
-4.安装oh-my-zsh https://github.com/robbyrussell/oh-my-zsh
-
-5.安装主题
-```bash
-vim ~/.zshrc
-```
-![主题设置](http://ou7k0sem6.bkt.clouddn.com/blog/171106/72gl35GKm9.png)
-[主题样式查看](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
-
-如果出现中间图片的显示异常
-![显示异常](http://ou7k0sem6.bkt.clouddn.com/blog/171106/FhBfGbgkAH.png)
-
-6.安装powerline https://github.com/powerline/fonts
-
-如果还是显示异常
-`terminal>Preference>Profiles>myprofile(默认unamed)>General>custom font`
-
-选择 ubuntu mono derivative Powerline Regular 当然你也可以在powerline的github页面上 Powerline Font Family 列下选择自己喜欢的字体
-
-## zsh
+### oh my zsh
 在` ~/.oh-my-zsh/plugins/ `下已有很多预设文件
 
-## [cheatssheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)
+#### [cheatssheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)
 
-## plugins
-
-### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-高亮命令
-### git
+#### git
 | shortcuts | operation                         |
 |-----------|-----------------------------------|
 | gaa       | git add -all                      |
@@ -155,3 +156,8 @@ vim ~/.zshrc
 | ggl       | git pull $(current_branch)        |
 | gco       | git checkout                      |
 | gm        | git merge                         |
+
+#### plugins
+
+##### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+高亮命令
