@@ -46,14 +46,22 @@ BoldWhite=#F8F8F2
 ```
  ZSH_THEME="agnoster"
 ```
+4. settings about mouse
+
+![mouse settings](http://ou7k0sem6.bkt.clouddn.com/blog/171114/lGbhB0dgBm.png?imageslim)
+
+use shift and left mouse to choose
+
+use right mouse to open menu
+
 4. reload the babun
 
 ![cool](http://ou7k0sem6.bkt.clouddn.com/blog/171106/93BI8JB8dH.png?imageslim)
 
-
 https://www.sorendam.com/take-control-of-your-console-in-windows-with-babun-oh-my-zsh-and-powerline-fonts/
 
 ## configure Babun/ZSH for the integrated terminal in vscode
+please use ZSH_THEME="babun" or other themes because the theme "agnoster" has some problems
 1.
 ```
 "terminal.integrated.shell.windows": "C:\\Users\\Administrator\\.babun\\cygwin\\bin\\zsh.exe"
@@ -63,3 +71,5 @@ https://www.sorendam.com/take-control-of-your-console-in-windows-with-babun-oh-m
 cd $OLDPWD
 ```
 ![end](http://ou7k0sem6.bkt.clouddn.com/blog/171113/iFh26fe545.png?imageslim)
+
+use left mouse button to choose and copy then click the right mouse button to paste

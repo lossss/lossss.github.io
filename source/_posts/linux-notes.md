@@ -51,12 +51,57 @@ linux 备忘
 | ctrl+e | 行尾             |
 | ctrl+u | 删除当前命令     |
 | ctrl+h | 从后向前删除     |
+| ctrl+d | 从前向后删除     |
+|alt+d| 删除一个单词|
 | ctrl+k | 删除到行尾       |
 | ctrl+p | 上一条命令       |
 | ctrl+n | 下一条命令       |
 
-## use oh my vsh on ubuntu
+## zsh小tips
+1. zsh 下 popd 就可以跳转到上次的目录 如果是bash的话上次需要 pushd 当然也可以用 cd - 回到上次的目录 我比较喜欢的是以下的操作方式
+```bash
+cd - //按tab
+---------------------
+☁  blog [dev]  cd -
+1 -- /cygdrive/d/vscode-workspace/blog
+2 -- /cygdrive/d/vscode-workspace
 
+// 用ctrl+p 和ctrl+n 就可以上下选择
+```
+
+2. 多层目录时按 d 就可以显示出当前的tree 然后按数字就可以跳转到想去的目录
+
+```bash
+☁  blog [dev] ⚡ d
+0       /cygdrive/d/vscode-workspace/blog/blog
+1       /cygdrive/d/vscode-workspace/blog
+2       /cygdrive/d/vscode-workspace
+%
+☁  blog [dev] ⚡ 1
+/cygdrive/d/vscode-workspace/blog
+```
+3. 替换上次指令中的错误
+```bash
+☁  Blog  cd bllog
+cd: no such file or directory: bllog
+%
+☁  Blog  r bllog=blog
+cd blog
+```
+
+4. 任意级目
+```bash
+☁  blog [dev] ⚡ ls **/*.xml
+node_modules/hexo-generator-sitemap/sitemap.xml           node_modules/json-schema/draft-zyp-json-schema-03.xml             node_modules/stylus/node_modules/sax/examples/shopping.xml  public/sitemap.xml
+node_modules/htmlparser2/test/Documents/Atom_Example.xml  node_modules/json-schema/draft-zyp-json-schema-04.xml             node_modules/stylus/node_modules/sax/examples/test.xml
+node_modules/htmlparser2/test/Documents/RDF_Example.xml   node_modules/stylus/node_modules/sax/examples/big-not-pretty.xml  public/baidusitemap.xml
+node_modules/htmlparser2/test/Documents/RSS_Example.xml   node_modules/stylus/node_modules/sax/examples/not-pretty.xml      public/search.xml
+```
+5. 快速搜索
+```bash
+ack xxx
+```
+## use oh my vsh on ubuntu
 1.安装zsh
 ```bash
 sudo apt-get install zsh
@@ -91,6 +136,10 @@ vim ~/.zshrc
 
 ## [cheatssheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)
 
+## plugins
+
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+高亮命令
 ### git
 | shortcuts | operation                         |
 |-----------|-----------------------------------|

@@ -6,6 +6,10 @@ tags: vscode
 ---
 vscode 设置
 <!--more-->
+## 我的设置
+我的vscode 设置已经上传到[Github Gist](https://gist.github.com/lossss/a1c4db18a2482d9bfb10c43e3a6831b7)
+
+Gist ID : a1c4db18a2482d9bfb10c43e3a6831b7
 
 ## 常用设置
 
@@ -22,13 +26,38 @@ view：toggle menu bar
 在文件 首选项 设置 用户设置中加入`"editor.fontSize":17`即可
 
 ## 常用快捷键
-| 快捷键       | 功能                                                   |
-| ------------ | ------------------------------------------------------ |
-| ctrl+shift+p |                                                        |
-| ctrl+shift+n | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
-| shift+alt+f  | 格式化文件                                             |
-| ctrl+p       | 打开文件                                                       |
+|         快捷键          |                          功能                          |
+| ----------------------- | ------------------------------------------------------ |
+| ctrl+shift+p            |                                                        |
+| ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
+| shift+alt+f             | 格式化文件                                             |
+| ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
+| ctrl+tab                | 历史打开文件之间切换                                   |
+| Ctrl+k然后按Left或Right | 编辑器换位置                                           |
+| alt+上/下               | 上移或下移代码                                         |
+| ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
+| ctrl+/                  | 切换到另一个编辑窗口                                   |
 
+### 小tips
+1.如果在编辑markdown时需要格式化表格当使用vim时可以如下操作
+  * ctrl+[ 切换到normal mode
+  * shift-v
+  * 5k //k就是移动的下 反之向上选择就是j
+  * =
+
+## 修改的快捷键
+对应修改keybindings.json
+```json
+// 将键绑定放入此文件中以覆盖默认值
+[{
+    "key": "ctrl+c",
+    "command": "editor.action.clipboardCopyAction"
+}, {
+    "key": "ctrl+f",
+    "command": "-workbench.action.terminal.focusFindWidget",
+    "when": "terminalFocus"
+}]
+```
 
 ## 常用插件
 
@@ -37,6 +66,7 @@ view：toggle menu bar
 ### 通用
 
 1. vscode-icons
+> 给sidebar换上一套图标 ctrl+shift+p ->icon theme
 
 2. output colorizer
 
@@ -68,6 +98,23 @@ view：toggle menu bar
 
 1.  vscode markdown preview enhanced
 安装好后 ctrl+shift+m 预览 或者也可以用vs自带的ctrl+k v 打开预览
+
+2. table formatter
+格式化table 其实我更喜欢 atom里面的 markdown table formatter
+
+安装后 ctrl+shift+p -> table:format all
+
+3. snippet for json
+
+| Snippets | Content                                                                                                    |
+| -------- | ---------------------------------------------------------------------------------------------------------- |
+| obj      | Create a JSON object                                                                                       |
+| objc     | Create a JSON object ending with comma                                                                     |
+| arr      | Create a JSON array                                                                                        |
+| arrc     | Create a JSON array ending with comma                                                                      |
+| pair     | Create JSON key/value pair                                                                                 |
+| pairc    | Create JSON key/value pair ending with comma                                                               |
+| paircln  | Create JSON key/value pair ending with comma and jumping to next line. Not recommended for complex "value" |
 
 ## debug
 
