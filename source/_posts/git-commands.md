@@ -15,6 +15,19 @@ tags: git
 git commit --help
 git help commit
 ```
+## 第一次装git连接github时需要的命令
+```bash
+git config --global user.name "losss"
+
+git config --global user.email "stdiolosss@gmail.com"  
+
+# /home/losss/.ssh/id_rsa.pub
+ssh-keygen -t rsa -C "stdiolosss@gmail.com"
+# 测试连接
+ssh -T git@github.com
+
+git clone ...
+```
 
 commit 信息写错了 需要修改
 ```

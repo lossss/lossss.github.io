@@ -1,7 +1,7 @@
 ---
 title: install-ubuntu-with-win10
 date: 2017-11-15 08:40:20
-categories:
+categories: ubuntu
 tags:
 ---
 使用ubuntu和win10双系统
@@ -12,7 +12,7 @@ tags:
 
 ## let's go
 
-1. [ubuntu](https://www.ubuntu.com/download/desktop) 
+1. [ubuntu](https://www.ubuntu.com/download/desktop)
 
 2. [unetbootin](https://unetbootin.github.io/)
 
@@ -48,3 +48,28 @@ sudo apt-get remove fcitx-ui-qimpanel
 ### 美化/主题：Unity Tweak Tool
 
 ### 网易云音乐
+
+## 换源
+
+```bash
+# 备份一下
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+# 修改
+sudo vi /etc/apt/sources.list
+
+```
+替换为以下
+```bash
+deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+```
+gist a1c4db18a2482d9bfb10c43e3a6831b7
+307131304b098be29ce3fd8787e0a6445c466949
