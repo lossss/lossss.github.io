@@ -41,6 +41,12 @@ sudo apt-get remove fcitx-ui-qimpanel
 ### 安装上网
 [参考](https://github.com/shadowsocks/shadowsocks-libev)
 
+没有一个能用的 自己写了
+
+```bash
+
+wget https://github.com/jedisct1/libsodium/releases/download/1.0.15/libsodium-1.0.15.tar.gz
+```
 ### 视频播放软件
 
 ### 启动栏：Docky
