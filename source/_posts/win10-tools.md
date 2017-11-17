@@ -16,7 +16,7 @@ tags: tools
 一个可以录制动态图片的软件
 ![](https://www.cockos.com/licecap/licecap_rules.gif)
 ## [Listary](http://www.listary.com/)
-一个快速启动软件和搜索文件的工具
+一个快速启动软件和搜索文件的工具 类似mac中的spotlight
 ## [everything](http://www.voidtools.com/)
 ![](http://www.voidtools.com/support/everything/Everything.Search.Window.png)
 可以方便的搜索到系统中的任意文件

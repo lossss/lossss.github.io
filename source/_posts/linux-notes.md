@@ -60,13 +60,14 @@ linux 备忘
 ## zsh
 
 ### use oh my vsh on ubuntu
+[参考](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a)
 1. 安装zsh
 ```bash
 sudo apt-get install zsh
 ```
 2. 设置zsh为默认shell
 ```bash
-sudo chsh -s $(which zsh)
+chsh -s /bin/zsh
 ```
 3. 重启
 

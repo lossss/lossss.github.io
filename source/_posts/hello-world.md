@@ -40,3 +40,5 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+## 使用[qshell](https://developer.qiniu.com/kodo/tools/1302/qshell)上传图片
