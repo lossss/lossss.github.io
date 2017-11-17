@@ -90,6 +90,24 @@ vim ~/.zshrc
 
 选择 ubuntu mono derivative Powerline Regular 当然你也可以在powerline的github页面上 Powerline Font Family 列下选择自己喜欢的字体
 
+当然即使这样设置 也只是字体改变了 主题还没有改变
+[参考这个](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a)
+装一个主题
+```bash
+git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
+```
+
+建议新建一个自己的profile因为palette改为solarized之后就改不了其他的了(不管是terminal还是terminator 有可能是个bug 当然你可以用命令恢复)
+terminal恢复
+```bash
+dconf reset -f /org/gnome/terminal/legacy/profiles:/
+```
+terminator 就不用改了 自己加一个profile吧
+
+![我使用的配置](http://ou7k0sem6.bkt.clouddn.com/linux-notes01.png)
+
+然后修改 ~/.config/terminator/config 中的[layout]参数为你自己设置的profile
+
 ### zsh小tips
 
 1. zsh 下 popd 就可以跳转到上次的目录 如果是bash的话上次需要 pushd 当然也可以用 cd - 回到上次的目录 我比较喜欢的是以下的操作方式
@@ -162,3 +180,15 @@ ack xxx
 
 ##### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 高亮命令
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+修改 `~/.zshrc`
+
+```
+plugins=( [plugins...] zsh-syntax-highlighting) 
+```
+最后
+```bash
+source ~/.zshrc
+```

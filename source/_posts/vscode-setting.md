@@ -9,7 +9,7 @@ vscode 设置
 ## 我的设置
 我的vscode 设置已经上传到[Github Gist](https://gist.github.com/lossss/a1c4db18a2482d9bfb10c43e3a6831b7)
 
-Gist ID : a1c4db18a2482d9bfb10c43e3a6831b7
+windows下配置 Gist ID : a1c4db18a2482d9bfb10c43e3a6831b7
 
 ## 常用设置
 
