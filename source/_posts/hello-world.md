@@ -42,3 +42,17 @@ $ hexo deploy
 More info: [Deployment](https://hexo.io/docs/deployment.html)
 
 ## 使用[qshell](https://developer.qiniu.com/kodo/tools/1302/qshell)上传图片
+
+
+## 博客编译报错
+
+## hexo /usr/bin/env: ‘node’: No such file or directory
+```bash
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+## Cannot find module 'markdown-it-checkbox'
+
+## hexo-wordcount 版本过高报错
+```bash
+npm install hexo-wordcount@2 --save
+```
