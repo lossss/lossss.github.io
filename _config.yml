@@ -79,7 +79,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-- type: git
+  type: git
   repo: git@git.coding.net:losss/blog.git
   branch: coding-pages
 #微搜索
