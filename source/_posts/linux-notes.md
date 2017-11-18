@@ -77,11 +77,11 @@ chsh -s /bin/zsh
 ```bash
 vim ~/.zshrc
 ```
-![主题设置](http://ou7k0sem6.bkt.clouddn.com/blog/171106/72gl35GKm9.png)
+![主题设置](http://ou7k0sem6.bkt.clouddn.com/linux-notes/1.png)
 [主题样式查看](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
 
 如果出现中间图片的显示异常
-![显示异常](http://ou7k0sem6.bkt.clouddn.com/blog/171106/FhBfGbgkAH.png)
+![显示异常](http://ou7k0sem6.bkt.clouddn.com/linux-notes/2.png)
 
 6. 安装powerline https://github.com/powerline/fonts
 
@@ -104,7 +104,7 @@ dconf reset -f /org/gnome/terminal/legacy/profiles:/
 ```
 terminator 就不用改了 自己加一个profile吧
 
-![我使用的配置](http://ou7k0sem6.bkt.clouddn.com/linux-notes01.png)
+![我使用的配置](http://ou7k0sem6.bkt.clouddn.com/linux-notes/3.png)
 
 然后修改 ~/.config/terminator/config 中的[layout]参数为你自己设置的profile
 

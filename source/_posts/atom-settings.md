@@ -1,5 +1,5 @@
 ---
-title: Atom-setting
+title: atom-settings
 date: 2017-08-17 16:00:20
 categories: atom
 tags: atom
@@ -12,7 +12,7 @@ Atom 的基础设置
 ### 在编辑中像sublime一样会用点显示空格
 <font color= "red">`File->Settings`</font>
 
-![](http://ou7k0sem6.bkt.clouddn.com/showinvisible.png)
+![](http://ou7k0sem6.bkt.clouddn.com/atom-settings/1.png)
 
 勾选show Invisible 即可
 
@@ -20,7 +20,7 @@ Atom 的基础设置
 
 `File->Settings`
 
-![](http://ou7k0sem6.bkt.clouddn.com/tab.png)
+![](http://ou7k0sem6.bkt.clouddn.com/atom-settings/1.png)
 
 修改tab length 为4
 

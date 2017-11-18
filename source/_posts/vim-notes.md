@@ -1,5 +1,5 @@
 ---
-title: vim
+title: vim-notes
 date: 2017-08-13 23:38:03
 categories: vim
 tags: vim
@@ -37,7 +37,7 @@ tags: vim
 
 
 w W e E 的区别
-![](http://ou7k0sem6.bkt.clouddn.com/vim01.jpg)
+![](http://ou7k0sem6.bkt.clouddn.com/vim-notes/1.jpg)
 
 ## 常用补充
 |              快捷键               |                                功能                                |

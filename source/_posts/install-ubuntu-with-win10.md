@@ -17,7 +17,7 @@ tags:
 2. [unetbootin](https://unetbootin.github.io/)
 
 3. 插入u盘 按如下设置
-![setting](http://ou7k0sem6.bkt.clouddn.com/blog/171115/l0hh4KHd3A.png?imageslim)
+![setting](http://ou7k0sem6.bkt.clouddn.com/install-ubuntu-with-win10/1.png)
 
 4. 重启电脑然后选择从u盘启动
 我选择的是 install ubuntu alongside windows

@@ -28,7 +28,7 @@ intellij 设置备忘
 
 图1
 
-![图1](http://ou7k0sem6.bkt.clouddn.com/intellij-setting02.png)
+![图1](http://ou7k0sem6.bkt.clouddn.com/intellij-setting/2.png)
 
 
 
@@ -54,7 +54,7 @@ intellij 设置备忘
 
 与eclipse不同 project 就相当于 workspace 在project中新建 module 就相当于eclipse中的 project
 
-![](http://ou7k0sem6.bkt.clouddn.com/intellij-setting01.png)
+![](http://ou7k0sem6.bkt.clouddn.com/intellij-setting/1.png)
 
 ### 导入jar
 

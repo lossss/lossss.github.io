@@ -7,4 +7,4 @@ tags: tools
 [小鹤双拼](http://www.flypy.com/)
 <!--more-->
 记忆表格
-![mark](http://ou7k0sem6.bkt.clouddn.com/blog/171107/fhAelig5mG.gif)
+![mark](http://ou7k0sem6.bkt.clouddn.com/shuangpin/1.gif)
