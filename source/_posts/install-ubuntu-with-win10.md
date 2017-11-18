@@ -55,6 +55,12 @@ sudo apt-get autoremove
 ```bash
 sudo apt-get remove --purge name
 ```
+
+使用dpkg卸载
+```bash
+sudo dpkg -r packagename # 如果不知道packagename 可以用 sudo dpkg -i xxx.deb 查询
+```
+
 解压tar.gz文件
 ```bash
 tar -xzvf file.tar.gz
@@ -75,9 +81,13 @@ tar -xzvf file.tar.gz
 [开机启动参考](https://blog.huihut.com/2017/08/25/LinuxInstallConfigShadowsocksClient/)
 开机设置路径备份 /etc/systemd/system/shadowsocks.service
 
-### 视频播放软件
+### 视频播放软件 [vlc](http://www.videolan.org/vlc/download-ubuntu.html)
 
-### 启动栏：Docky
+### 截图 shutter
+```bash
+sudo apt install shutter
+```
+
 ### albert
 ```bash
 sudo add-apt-repository ppa:nilarimogard/webupd8
@@ -118,6 +128,29 @@ terminator --geometry 891x528+395+319
 ```
 4. 点击disable 设置快捷键 ctrl+alt+t
 
+### [zeal](https://zealdocs.org/) 
+
+### [vscode](https://code.visualstudio.com/)
+
+### [Jetbrains](https://www.jetbrains.com/)
+```bash
+tar xxx.tar.gz
+cd xxx
+sudo chmod a=+rx bin/idea.sh
+sudo bin/idea.sh
+```
+### [vscode](https://code.visualstudio.com/)
+```安装更新
+sudo apt install ~/path/to/code_1.XXX.deb
+```
+
+### [java](http://tipsonubuntu.com/2016/07/31/install-oracle-java-8-9-ubuntu-16-04-linux-mint-18/)
+```bash
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update; sudo apt install oracle-java8-installer  # You may replace oracle-java8-installer with oracle-java9-installer to install Java 9. 
+java -version #check version
+sudo apt install oracle-java8-set-default # For Java 9, install the package oracle-java9-set-default instead
+```
 ## 换源
 
 ```bash
@@ -197,7 +230,7 @@ fc-cache
 		<family>monospace</family>
 		<prefer>
 			<family>Noto Sans Mono CJK JP</family>
-			<family>Noto Sans Mono CJK SC</family>
+				<family>Noto Sans Mono CJK SC</family>
 			<family>Noto Sans Mono CJK TC</family>
 		</prefer>
 	</alias>
