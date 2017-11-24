@@ -9,6 +9,6 @@ comments: false
 ## IDE
 | 常用编辑器  | 语言      |
 | ----------- | --------- |
-| atom        | js python |
-| atom/typora | markdown  |
+| ~~atom~~ vscode        | js python |
+| ~~atom~~ vscode/typora | markdown  |
 | intellij    | java      |

@@ -22,6 +22,8 @@ tags:
 4. 重启电脑然后选择从u盘启动
 我选择的是 install ubuntu alongside windows
 
+## 一些设置
+[开机默认启动windows](https://jingyan.baidu.com/article/63acb44ae4062c61fcc17e27.html)
 
 ## 常用软件
 
@@ -67,6 +69,12 @@ tar -xzvf file.tar.gz
 ```
 参考 https://zhuanlan.zhihu.com/p/27187622
 
+解压zip
+```bash
+sudo apt install unar
+unar your-zip
+```
+更多命令行的内容可以参考我的另一篇博客{% post_link linux-notes %}
 
 ### 安装搜狗输入法
 

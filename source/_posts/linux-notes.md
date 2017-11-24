@@ -37,6 +37,7 @@ linux 备忘
 | grep -v "ntfs" xxx.txt         | 不包含ntfs的内容      |
 | grep "^ntfs" xxx.txt           | 以ntfs开头            |
 | grep "ntfs$" xxx.txt           | 以ntfs结尾            |
+| find / -name "*name*"|按名字查找
 
 ## 命令行tips
 参看这个[视频](https://www.bilibili.com/video/av4337389/)
