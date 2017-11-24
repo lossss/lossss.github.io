@@ -12,7 +12,11 @@ anki 备忘
 * Image Occlusion 2.0
 * AwesomeTTS
 
+## 设置
+![设置回答](http://ou7k0sem6.bkt.clouddn.com/anki-notes/1.png)
+
 ## 配合软件
+
 ### [subs2srs](http://subs2srs.sourceforge.net/)
 可以用影片制作anki的卡片
 可以参考[教程](http://www.jianshu.com/p/2cfc15963722)
