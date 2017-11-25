@@ -36,7 +36,7 @@ view：toggle menu bar
 | Ctrl+k然后按Left或Right | 编辑器换位置                                           |
 | alt+上/下               | 上移或下移代码                                         |
 | ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
-| ctrl+/                  | 切换到另一个编辑窗口                                   |
+| ctrl+\                  | 复制分屏                                               |
 
 ### 小tips
 1.如果在编辑markdown时需要格式化表格当使用vim时可以如下操作
@@ -46,7 +46,7 @@ view：toggle menu bar
   * =
 
 ## 修改的快捷键
-对应修改keybindings.json
+对应修改keybindings.json 因为修改频繁 最新的修改可以参考本文置顶的github gist 在文中搜索 keybindings 就可以看到了
 ```json
 // 将键绑定放入此文件中以覆盖默认值
 [{
@@ -118,7 +118,7 @@ view：toggle menu bar
 > 同步设置
 
 6. Search Docsets
-> 查看文档  需要提前安装 velocity 快捷键 shift+F1 mac中对应的插件为dash
+> 查看文档  需要提前安装 velocity 或者 zeal 快捷键 shift+F1 mac中对应的插件为dash
 
 ### vim
 
