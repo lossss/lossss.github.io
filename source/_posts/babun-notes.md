@@ -48,7 +48,7 @@ BoldWhite=#F8F8F2
 ```
 4. settings about mouse
 
-![mouse settings](http://ou7k0sem6.bkt.clouddn.com/blog/171114/lGbhB0dgBm.png?imageslim)
+![mouse settings](http://ou7k0sem6.bkt.clouddn.com/babun-notes/1.png)
 
 use shift and left mouse to choose
 
@@ -56,7 +56,7 @@ use right mouse to open menu
 
 4. reload the babun
 
-![cool](http://ou7k0sem6.bkt.clouddn.com/blog/171106/93BI8JB8dH.png?imageslim)
+![cool](http://ou7k0sem6.bkt.clouddn.com/babun-notes/2.png)
 
 https://www.sorendam.com/take-control-of-your-console-in-windows-with-babun-oh-my-zsh-and-powerline-fonts/
 
@@ -70,6 +70,6 @@ please use ZSH_THEME="babun" or other themes because the theme "agnoster" has so
 ```
 cd $OLDPWD
 ```
-![end](http://ou7k0sem6.bkt.clouddn.com/blog/171113/iFh26fe545.png?imageslim)
+![end](http://ou7k0sem6.bkt.clouddn.com/babun-notes/3.png)
 
 use left mouse button to choose and copy then click the right mouse button to paste

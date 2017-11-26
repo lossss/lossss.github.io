@@ -9,7 +9,7 @@ vscode 设置
 ## 我的设置
 我的vscode 设置已经上传到[Github Gist](https://gist.github.com/lossss/a1c4db18a2482d9bfb10c43e3a6831b7)
 
-Gist ID : a1c4db18a2482d9bfb10c43e3a6831b7
+windows下配置 Gist ID : a1c4db18a2482d9bfb10c43e3a6831b7
 
 ## 常用设置
 
@@ -50,13 +50,52 @@ view：toggle menu bar
 ```json
 // 将键绑定放入此文件中以覆盖默认值
 [{
-    "key": "ctrl+c",
-    "command": "editor.action.clipboardCopyAction"
-}, {
-    "key": "ctrl+f",
-    "command": "-workbench.action.terminal.focusFindWidget",
-    "when": "terminalFocus"
-}]
+        "key": "ctrl+c",
+        "command": "editor.action.clipboardCopyAction"
+    }, {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction"
+    }, {
+        "key": "ctrl+v",
+        "command": "editor.action.clipboardPasteAction"
+    }, {
+        "key": "ctrl+f",
+        "command": "-workbench.action.terminal.focusFindWidget",
+        "when": "terminalFocus"
+    }, {
+        "key": "ctrl+n",
+        "command": "workbench.action.files.newFile",
+        "when": "sidebarFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "toggleSuggestionDetails",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-toggleSuggestionDetails",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    }
+]
 ```
 
 ## 常用插件
@@ -77,7 +116,12 @@ view：toggle menu bar
 
 5. Settings Sync
 > 同步设置
-
+这个插件如果同步报错的话
+```
+ctrl+shift+p
+sync:reset extension settings
+在user settings 里面修改下gistid
+```
 6. Search Docsets
 > 查看文档  需要提前安装 velocity 快捷键 shift+F1 mac中对应的插件为dash
 
@@ -122,3 +166,11 @@ view：toggle menu bar
 
 安装python插件之后 按f5 就可以进行调试
 当需要使用input 或者需要输出图片的时候 在左上选择integrated terminal/console 在运行即可
+
+## ubuntu 下更新vscode
+1. 到下载页面下载最新版本.deb
+2. 执行以下命令 
+```bash
+sudo dpkg -r code
+sudo dpkg -i code_downloaded_package.deb #用下载的最新的deb的名字
+```

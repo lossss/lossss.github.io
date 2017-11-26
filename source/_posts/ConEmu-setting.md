@@ -13,12 +13,12 @@ ConEmu 其实只是个外壳 我这里使用的是git-bash的作为内核 当然
 将git-bash的bin目录加入到系统的环境变量中
 ## ConEmu 配置
 ### 将gitbash 中的右下配置更改为自己gitbash安装的bin目录 `"D:\CodeSoft\Git\bin\sh.exe" --login -i`
-![](http://ou7k0sem6.bkt.clouddn.com/conemu2.png)
+![](http://ou7k0sem6.bkt.clouddn.com/ConEmu/1.png)
 ### 载startup中选择gitbash
-![](http://ou7k0sem6.bkt.clouddn.com/conemu2.png)
+![](http://ou7k0sem6.bkt.clouddn.com/ConEmu/2.png)
 ### 勾选之后可以方便多窗口切换
-![](http://ou7k0sem6.bkt.clouddn.com/conemu3.png)
+![](http://ou7k0sem6.bkt.clouddn.com/ConEmu/3.png)
 ### 切换背景图片
-![](http://ou7k0sem6.bkt.clouddn.com/conemu4.png)
+![](http://ou7k0sem6.bkt.clouddn.com/ConEmu/4.png)
 最终效果如下
-![](http://ou7k0sem6.bkt.clouddn.com/ConEmu.png)
+![](http://ou7k0sem6.bkt.clouddn.com/ConEmu/5.png)

@@ -37,6 +37,7 @@ linux 备忘
 | grep -v "ntfs" xxx.txt         | 不包含ntfs的内容      |
 | grep "^ntfs" xxx.txt           | 以ntfs开头            |
 | grep "ntfs$" xxx.txt           | 以ntfs结尾            |
+| find / -name "*name*"|按名字查找
 
 ## 命令行tips
 参看这个[视频](https://www.bilibili.com/video/av4337389/)
@@ -60,13 +61,14 @@ linux 备忘
 ## zsh
 
 ### use oh my vsh on ubuntu
+[参考](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a)
 1. 安装zsh
 ```bash
 sudo apt-get install zsh
 ```
 2. 设置zsh为默认shell
 ```bash
-sudo chsh -s $(which zsh)
+chsh -s /bin/zsh
 ```
 3. 重启
 
@@ -76,11 +78,11 @@ sudo chsh -s $(which zsh)
 ```bash
 vim ~/.zshrc
 ```
-![主题设置](http://ou7k0sem6.bkt.clouddn.com/blog/171106/72gl35GKm9.png)
+![主题设置](http://ou7k0sem6.bkt.clouddn.com/linux-notes/1.png)
 [主题样式查看](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
 
 如果出现中间图片的显示异常
-![显示异常](http://ou7k0sem6.bkt.clouddn.com/blog/171106/FhBfGbgkAH.png)
+![显示异常](http://ou7k0sem6.bkt.clouddn.com/linux-notes/2.png)
 
 6. 安装powerline https://github.com/powerline/fonts
 
@@ -88,6 +90,24 @@ vim ~/.zshrc
 `terminal>Preference>Profiles>myprofile(默认unamed)>General>custom font`
 
 选择 ubuntu mono derivative Powerline Regular 当然你也可以在powerline的github页面上 Powerline Font Family 列下选择自己喜欢的字体
+
+当然即使这样设置 也只是字体改变了 主题还没有改变
+[参考这个](https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a)
+装一个主题
+```bash
+git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
+```
+
+建议新建一个自己的profile因为palette改为solarized之后就改不了其他的了(不管是terminal还是terminator 有可能是个bug 当然你可以用命令恢复)
+terminal恢复
+```bash
+dconf reset -f /org/gnome/terminal/legacy/profiles:/
+```
+terminator 就不用改了 自己加一个profile吧
+
+![我使用的配置](http://ou7k0sem6.bkt.clouddn.com/linux-notes/3.png)
+
+然后修改 ~/.config/terminator/config 中的[layout]参数为你自己设置的profile
 
 ### zsh小tips
 
@@ -161,3 +181,15 @@ ack xxx
 
 ##### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 高亮命令
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+修改 `~/.zshrc`
+
+```
+plugins=( [plugins...] zsh-syntax-highlighting) 
+```
+最后
+```bash
+source ~/.zshrc
+```
