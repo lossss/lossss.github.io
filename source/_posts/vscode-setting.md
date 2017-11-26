@@ -116,7 +116,12 @@ view：toggle menu bar
 
 5. Settings Sync
 > 同步设置
-
+这个插件如果同步报错的话
+```
+ctrl+shift+p
+sync:reset extension settings
+在user settings 里面修改下gistid
+```
 6. Search Docsets
 > 查看文档  需要提前安装 velocity 快捷键 shift+F1 mac中对应的插件为dash
 
