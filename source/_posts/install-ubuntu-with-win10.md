@@ -89,22 +89,14 @@ unar your-zip
 [开机启动参考](https://blog.huihut.com/2017/08/25/LinuxInstallConfigShadowsocksClient/)
 开机设置路径备份 /etc/systemd/system/shadowsocks.service
 
-<<<<<<< HEAD
-没有一个能用的 自己写了
-
-```bash
-
-wget https://github.com/jedisct1/libsodium/releases/download/1.0.15/libsodium-1.0.15.tar.gz
-```
-### 视频播放软件
-=======
 ### 视频播放软件 [vlc](http://www.videolan.org/vlc/download-ubuntu.html)
->>>>>>> dev
 
 ### 截图 shutter
 ```bash
 sudo apt install shutter
 ```
+### [gimp](https://www.gimp.org/)
+> linux 下的ps
 
 ### albert
 ```bash

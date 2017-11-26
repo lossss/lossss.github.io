@@ -14,3 +14,6 @@ mac 备忘
 1. [marginnote](https://marginnote.com/?lang=zh-hans)
 
 2. [voodoopad](https://plausible.coop/store)
+
+### web
+1. [sketch](https://www.sketchapp.com/)
