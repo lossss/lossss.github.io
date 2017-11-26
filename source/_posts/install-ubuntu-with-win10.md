@@ -136,6 +136,11 @@ terminator --geometry 891x528+395+319
 ```
 4. 点击disable 设置快捷键 ctrl+alt+t
 
+### [有道词典](http://cidian.youdao.com/index-linux.html)
+
+### [iSearch](https://github.com/louisun/iSearch)
+单词查询 例: s sun
+
 ### [zeal](https://zealdocs.org/) 
 
 ### [vscode](https://code.visualstudio.com/)
