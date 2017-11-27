@@ -8,7 +8,6 @@ tags: cs
 <!--more-->
 [参照萧大给的路线](https://zhuanlan.zhihu.com/p/19959253)
 
---2017-10-31--
 ##　前言
 1. 多看书少看视频
 2. 书可以下电子版的 用marginnote看
@@ -38,9 +37,14 @@ tags: cs
 6. 新概念2
 
 7. html
+[html 菜鸟教程](http://www.runoob.com/html/html-elements.html)
+[pug guide](https://pugjs.org/api/getting-started.html)
+[vue](https://cn.vuejs.org/v2/guide/index.html)
 
 8. js
 [js教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000)
+
+[DOM探索之基础详解篇](https://www.imooc.com/learn/488)
 
 > 参考书籍
 >>《javascript语言精粹》
@@ -50,8 +54,10 @@ tags: cs
 >>《你不知道的JavaScript》
 
 9. css
+> 参考书籍
+>> css权威指南
+>> [sass guide](http://sass-lang.com/guide)
 
-10. [vue](https://cn.vuejs.org/v2/guide/index.html)
 
 ### 第二阶段
 

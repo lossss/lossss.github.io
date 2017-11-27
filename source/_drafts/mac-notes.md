@@ -17,3 +17,4 @@ mac 备忘
 
 ### web
 1. [sketch](https://www.sketchapp.com/)
+> sketch+zeplin
