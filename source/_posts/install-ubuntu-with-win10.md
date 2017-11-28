@@ -95,6 +95,8 @@ unar your-zip
 ```bash
 sudo apt install shutter
 ```
+### [gimp](https://www.gimp.org/)
+> linux 下的ps
 
 ### albert
 ```bash
