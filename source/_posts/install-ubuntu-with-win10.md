@@ -25,6 +25,8 @@ tags:
 ## 一些设置
 [开机默认启动windows](https://jingyan.baidu.com/article/63acb44ae4062c61fcc17e27.html)
 
+[双系统时间同步](https://www.cnblogs.com/shareidea/p/5465306.html)
+
 ## 常用软件
 
 ## ubuntu 中安装软件的方法
