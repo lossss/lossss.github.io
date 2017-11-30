@@ -42,9 +42,11 @@ powercfg -h off
 ###  [MPic](http://mpic.lzhaofu.cn/)
 用于向七牛上传图片的图床工具
 
-### [Velocity](https://velocity.silverlakesoftware.com/)
+### ~~[Velocity](https://velocity.silverlakesoftware.com/)~~
 API文档管理 没付费可有时会有提示但无大碍  当然也可以使用 http://devdocs.io/
 
+### [zeal](https://zealdocs.org/)
+> velocity 的替代品 当然也可以使用 http://devdocs.io/
 ### [autohotkey](https://autohotkey.com/)
 安装好后 新建一个.ahk文件 然后就可以输入autohotkey的代码然后右键run就可以了
 
