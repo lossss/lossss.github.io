@@ -12,17 +12,15 @@ tags: cs
 1. 多看书少看视频
 2. 书可以下电子版的 用marginnote看
 
-## 入门
-### 第一阶段
-1. ~~ [ MIT 6.00.1x （麻省理工：计算机科学和 Python 编程导论）]~~(http://www.xuetangx.com/courses/course-v1:MITx+6_00_1x+sp/about)
-> 因为是2.7所以暂时不看了
+## 内功 
+### English
 
-2. [python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+参考{% post_link  language-learning%}
 
-3. ~~ [cs50]~~(https://www.bilibili.com/video/av12314616/?from=search&seid=2063949878638470122)
-> 很好的入门教程 因为我已经不是入门所以跳过了
+1. 新概念2
 
-4. 高等数学
+### 数学
+2. 高等数学
 > 视频教程
 >> [参考](http://pan.baidu.com/s/1o8IEUE2) m:9dpz
 
@@ -30,18 +28,24 @@ tags: cs
 >> 《高等数学上下》
 >> 《普林斯顿微积分读本》
 
-5. [离散数学](https://www.bilibili.com/video/av8020753/?from=search&seid=1484544829326888432)
+3. [离散数学](https://www.bilibili.com/video/av8020753/?from=search&seid=1484544829326888432)
 > 参考书籍
 >> 《离散数学及其应用》
 
-6. 新概念2
+4. 线性代数
 
-7. html
+5. 概率论
+
+## web 部分
+
+### front
+
+1. html
 [html 菜鸟教程](http://www.runoob.com/html/html-elements.html)
 [pug guide](https://pugjs.org/api/getting-started.html)
 [vue](https://cn.vuejs.org/v2/guide/index.html)
 
-8. js
+2. js
 [js教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000)
 
 [DOM探索之基础详解篇](https://www.imooc.com/learn/488)
@@ -53,14 +57,17 @@ tags: cs
 >>《锋利的jquery》
 >>《你不知道的JavaScript》
 
-9. css
+3. css
 > 参考书籍
 >> css权威指南
 >> [sass guide](http://sass-lang.com/guide)
+## back
+1. ~~ [ MIT 6.00.1x （麻省理工：计算机科学和 Python 编程导论）]~~(http://www.xuetangx.com/courses/course-v1:MITx+6_00_1x+sp/about)
+> 因为是2.7所以暂时不看了
+
+2. [python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+
+3. ~~ [cs50]~~(https://www.bilibili.com/video/av12314616/?from=search&seid=2063949878638470122)
+> 很好的入门教程 因为我已经不是入门所以跳过了
 
 
-### 第二阶段
-
-1. 线性代数
-
-1. 概率论
