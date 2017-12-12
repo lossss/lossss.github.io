@@ -9,6 +9,14 @@ mac 备忘
 
 ## 常用软件
 
+### 系统相关
+[Dr.Cleaner](https://itunes.apple.com/cn/app/id921458519?mt=12)
+> 免费
+
+[mounty](http://enjoygineering.com/mounty/)
+> ntfs 硬盘读写
+
+
 ### 学习相关
 
 1. [marginnote](https://marginnote.com/?lang=zh-hans)

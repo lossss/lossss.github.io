@@ -14,7 +14,7 @@ tags:
 
 1. [ubuntu](https://www.ubuntu.com/download/desktop)
 
-2. [unetbootin](https://unetbootin.github.io/)
+2. [u盘启动制作](https://rufus.akeo.ie/)
 
 3. 插入u盘 按如下设置
 ![setting](http://ou7k0sem6.bkt.clouddn.com/install-ubuntu-with-win10/1.png)
