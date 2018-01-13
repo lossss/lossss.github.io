@@ -1,0 +1,31 @@
+---
+title: pc-notes
+date: 2017-12-07 01:30:47
+categories: pc
+tags: pc
+---
+一些pc知识笔记
+<!--more-->
+路漫漫其修远兮,吾将上下而求索
+
+## system 
+
+### UEFI
+
+### GPT
+
+### install win10
+#### [download win10](https://msdn.itellyou.cn/)
+## hardware
+
+### 4k 对齐
+
+### ACHI
+
+
+## 固态
+> NAND闪存：不同的颗粒，不同的寿命 市面上的SSD的NAND闪存颗粒分为SLC,MLC,TLC三种。简单来说，SLC是速度最大，寿命最长，所以当然也就是最贵的；MLC则是SLC速度的折中，寿命的十分之一，三分之一的价格（大约），是目前最流行的一种，适中的各种属性十分合适普通消费者。TLC在刚刚推出的时候被人诟病为短寿、廉价、低端，不过随着科技的进步，尤其是近几年，在三星力推TLC技术之后，TLC的速度问题和寿命问题已经得到了很大改善，正因为如此，越来越多的厂商加入了TLC颗粒SSD的生产行列中。因此选择TLC也是没有问题的哦~
+
+## 硬盘操作
+一般用 DiskGenius
+如果硬盘变为raw了 可以用管理员打开cmd 运行 chkdsk D:/f  D就是需要恢复的盘
