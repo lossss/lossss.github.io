@@ -9,6 +9,21 @@ hexo博客搭建笔记
 
 ## [博客源码](https://github.com/lossss/lossss.github.io) branch:dev
 
+## 安装过程
+```bash
+brew install node
+//换源
+npm config set registry https://registry.npm.taobao.org
+//install hexo
+npm install -g hexo
+//init
+cd blog
+npm install
+hexo clean
+hexo g
+hexo s
+```
+
 ## 本博客编译问题
 确保更新到最新的node和hexo
 
