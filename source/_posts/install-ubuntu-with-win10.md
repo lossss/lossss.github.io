@@ -14,7 +14,7 @@ tags:
 
 1. [ubuntu](https://www.ubuntu.com/download/desktop)
 
-2. [unetbootin](https://unetbootin.github.io/)
+2. [u盘启动制作](https://rufus.akeo.ie/)
 
 3. 插入u盘 按如下设置
 ![setting](http://ou7k0sem6.bkt.clouddn.com/install-ubuntu-with-win10/1.png)
@@ -24,6 +24,8 @@ tags:
 
 ## 一些设置
 [开机默认启动windows](https://jingyan.baidu.com/article/63acb44ae4062c61fcc17e27.html)
+
+[双系统时间同步](https://www.cnblogs.com/shareidea/p/5465306.html)
 
 ## 常用软件
 

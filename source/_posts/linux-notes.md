@@ -154,7 +154,9 @@ node_modules/htmlparser2/test/Documents/RSS_Example.xml   node_modules/stylus/no
 ```bash
 ack xxx
 ```
-6. [zsh lovers](https://grml.org/zsh/zsh-lovers.html)
+
+6. alias 
+6. [zsh lovers](https://grmlorg/zsh/zsh-lovers.html)
 
 ### oh my zsh
 在` ~/.oh-my-zsh/plugins/ `下已有很多预设文件

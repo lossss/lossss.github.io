@@ -17,7 +17,7 @@ nvm ls
 nvm ls-remote
 # 安装node
 # nvm install node
-nvm install v8.9.1
+nvm install v8.9.4
 # 切换node版本
 # nvm use node
 nvm use v8.9.1

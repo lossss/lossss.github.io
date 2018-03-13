@@ -6,7 +6,7 @@ tags: git
 ---
 常用的git 命令备忘
 <!--more-->
-![](http://ou7k0sem6.bkt.clouddn.com/gitcheatsheet.png)
+![](http://ou7k0sem6.bkt.clouddn.com/git-commands/1.png)
 
 ## 终极杀招
 任何命令有问题就直接在后面 --help 直接到官方文档那里不会点哪里
@@ -25,6 +25,22 @@ git config --global user.email "stdiolosss@gmail.com"
 ssh-keygen -t rsa -C "stdiolosss@gmail.com"
 # 测试连接
 ssh -T git@github.com
+
+如果提示
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0670 for '/home/losss/.ssh/id_rsa' are too open.
+It is recommended that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/losss/.ssh/id_rsa": bad permissions
+Permission denied (publickey).
+```
+运行如下命令
+```bash
+ chmod 600 /home/losss/.ssh/id_rsa
+```
 
 git clone ...
 ```
