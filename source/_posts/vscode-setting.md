@@ -11,6 +11,8 @@ vscode 设置
 
 windows下配置 Gist ID : a1c4db18a2482d9bfb10c43e3a6831b7
 
+插件是 setting sync 具体使用方法可以参考[这里](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+
 ## 常用设置
 
 1. 隐藏菜单栏
@@ -26,17 +28,22 @@ view：toggle menu bar
 在文件 首选项 设置 用户设置中加入`"editor.fontSize":17`即可
 
 ## 常用快捷键
-|         快捷键          |                          功能                          |
-| ----------------------- | ------------------------------------------------------ |
-| ctrl+shift+p            |                                                        |
-| ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
-| shift+alt+f             | 格式化文件                                             |
-| ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
-| ctrl+tab                | 历史打开文件之间切换                                   |
-| Ctrl+k然后按Left或Right | 编辑器换位置                                           |
-| alt+上/下               | 上移或下移代码                                         |
-| ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
-| ctrl+\                  | 复制分屏                                               |
+| 快捷键(mac) |       快捷键(win)       |                          功能                          |
+| ----------- | ----------------------- | ------------------------------------------------------ |
+|             | ctrl+shift+p            |                                                        |
+|             | ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
+|             | shift+alt+f             | 格式化文件                                             |
+|             | ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
+|             | ctrl+tab                | 历史打开文件之间切换                                   |
+|             | ctrl+k然后按left或right | 编辑器换位置                                           |
+|             | alt+上/下               | 上移或下移代码                                         |
+|             | ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
+|             | ctrl+\                  | 复制分屏                                               |
+| shift+cmd+m |                         | problems                                               |
+| shift+cmd+u |                         | output                                                 |
+| shift+cmd+y |                         | debug console                                          |
+| ctrl+`      |                         | terminal                                               |
+| ctrl+123    |                         | 在已经打开的tab里面切换                                |
 
 ### 小tips
 1.如果在编辑markdown时需要格式化表格当使用vim时可以如下操作
@@ -131,10 +138,13 @@ sync:reset extension settings
 
 2. relative-line-numbers
 
+#### tips
+zc 折叠代码后jk移动时会自动打开 要避免的话 setting 里面加`"vim.foldfix": true`
+
 ### python
 
 1. python
-
+如果需要提示时输出括号 在setting中加上`"python.autoComplete.addBrackets": true`
 2. magicpython
 > python文件着色器
 

@@ -6,7 +6,7 @@ tags: git
 ---
 常用的git 命令备忘
 <!--more-->
-![](http://ou7k0sem6.bkt.clouddn.com/gitcheatsheet.png)
+![](http://ou7k0sem6.bkt.clouddn.com/git-commands/1.png)
 
 ## 终极杀招
 任何命令有问题就直接在后面 --help 直接到官方文档那里不会点哪里

@@ -17,7 +17,8 @@ tags: pc
 ### install win10
 #### [download win10](https://msdn.itellyou.cn/)
 ## hardware
-
+想要使用 GPT分区 UEFI启动的话如下操作 [可以参考这个](https://jingyan.baidu.com/article/425e69e6e1b0a1be15fc16aa.html)
+就是先在pe或其他系统里面 用diskGenius转成GUID格式 然后再从u盘启动 安装的时候不要再格式化那个硬盘直接选盘符安装即可
 ### 4k 对齐
 
 ### ACHI

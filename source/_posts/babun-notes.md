@@ -64,7 +64,7 @@ https://www.sorendam.com/take-control-of-your-console-in-windows-with-babun-oh-m
 please use ZSH_THEME="babun" or other themes because the theme "agnoster" has some problems
 1.
 ```
-"terminal.integrated.shell.windows": "C:\\Users\\Administrator\\.babun\\cygwin\\bin\\zsh.exe"
+"terminal.integrated.shell.windows": "C:\\Users\\losss\\.babun\\cygwin\\bin\\zsh.exe"
 ```
 2. Add on command in ~/.babunrc :
 ```
@@ -73,3 +73,6 @@ cd $OLDPWD
 ![end](http://ou7k0sem6.bkt.clouddn.com/babun-notes/3.png)
 
 use left mouse button to choose and copy then click the right mouse button to paste
+
+## Package manager
+Babun provides a package manager called `pact`. It is similar to 'apt-get' or 'yum'. Pact enables installing/searching/upgrading and deinstalling cygwin packages with no hassle at all. Just invoke pact --help to check how to use it.
