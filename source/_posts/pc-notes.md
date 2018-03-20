@@ -30,3 +30,21 @@ tags: pc
 ## 硬盘操作
 一般用 DiskGenius
 如果硬盘变为raw了 可以用管理员打开cmd 运行 chkdsk D:/f  D就是需要恢复的盘
+
+### 装机软件
+1. 常用软件
+    1.[QQ](https://im.qq.com/pcqq/)
+    1.[阿里旺旺](http://wangwang.taobao.com/)
+1. 系统软件
+    1.[卡巴斯基](https://www.kaspersky.com.cn/downloads/thank-you/total-security-free-trial)
+    1.[卡巴工具箱](http://www.kbtool.cn/)
+1. 输入法
+    1.[搜狗](https://pinyin.sogou.com/)
+    1.[百度日语输入法](http://ime.baidu.jp/type/)
+1. 学习工具
+    1.[anki](http://www.ankichina.net/)
+    1.[aboboo](http://www.aboboo.com/download/)
+    1.[有道云笔记](http://note.youdao.com/download.html)
+1. Apple
+    1.[itunes](https://www.apple.com/cn/itunes/)
+    1.[itools](https://www.itools.cn/)

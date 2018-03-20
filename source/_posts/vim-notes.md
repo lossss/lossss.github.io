@@ -159,8 +159,8 @@ hlsearch
 
 > The format is /\<search pattern\>/\<replace pattern\>/gi where the \<search pattern> and the \<replace pattern\> are standard regular expressions.The i after the g makes the search case insensitive. An I would make the search case sensitive. The g makes the substitution global in the line. Without the g, it performs the substitution once per line
 
-## vscode vim plugin
-### vim-surround
+## [vscode vim plugin](https://github.com/VSCodeVim/Vim)
+### [vim-surround](https://github.com/VSCodeVim/Vim#vim-surround)
 | Surround Command                       | Description                                                            |
 |:---------------------------------------|:-----------------------------------------------------------------------|
 | d s \<existing char\>                  | Delete existing surround                                               |

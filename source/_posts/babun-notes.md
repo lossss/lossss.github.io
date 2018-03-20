@@ -76,3 +76,10 @@ use left mouse button to choose and copy then click the right mouse button to pa
 
 ## Package manager
 Babun provides a package manager called `pact`. It is similar to 'apt-get' or 'yum'. Pact enables installing/searching/upgrading and deinstalling cygwin packages with no hassle at all. Just invoke pact --help to check how to use it.
+
+## tips
+### alias
+```bash
+vim ~/.zshrc
+alias gm="git merge --no-ff "
+```
