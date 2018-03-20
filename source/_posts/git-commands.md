@@ -26,6 +26,8 @@ ssh-keygen -t rsa -C "stdiolosss@gmail.com"
 # 测试连接
 ssh -T git@github.com
 
+ssh -T git@git.coding.net
+
 如果提示
 ```bash
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
