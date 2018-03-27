@@ -38,6 +38,8 @@ tags: pc
 1. 系统软件
     1.[卡巴斯基](https://www.kaspersky.com.cn/downloads/thank-you/total-security-free-trial)
     1.[卡巴工具箱](http://www.kbtool.cn/)
+    1.[软碟通](https://cn.ultraiso.net/xiazai.html)
+    激活 王涛 7C81-1689-4046-626F
 1. 输入法
     1.[搜狗](https://pinyin.sogou.com/)
     1.[百度日语输入法](http://ime.baidu.jp/type/)
