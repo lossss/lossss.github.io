@@ -22,6 +22,7 @@ npm install
 hexo clean
 hexo g
 hexo s
+hexo d -g
 ```
 
 ## 本博客编译问题
