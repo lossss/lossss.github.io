@@ -53,6 +53,7 @@ atom-text-editor::shadow .wrap-guide {
 | ------------ | ---------------------- | ---------------- |
 | ctrl+t       | 打开文件               |                  |
 | ctrl+shift+f | 在工程中搜索           |                  |
+|ctrl+h|在当前文件中搜索替换          |                  |
 | ctrl+b       | 在已经打开的文件中切换 |                  |
 | ctrl+alt+[   | 收缩代码块             |                  |
 | ctrl+alt+]   | 展开代码块             |                  |

@@ -17,7 +17,8 @@ tags: pc
 ### install win10
 #### [download win10](https://msdn.itellyou.cn/)
 ## hardware
-
+想要使用 GPT分区 UEFI启动的话如下操作 [可以参考这个](https://jingyan.baidu.com/article/425e69e6e1b0a1be15fc16aa.html)
+就是先在pe或其他系统里面 用diskGenius转成GUID格式 然后再从u盘启动 安装的时候不要再格式化那个硬盘直接选盘符安装即可
 ### 4k 对齐
 
 ### ACHI
@@ -29,3 +30,23 @@ tags: pc
 ## 硬盘操作
 一般用 DiskGenius
 如果硬盘变为raw了 可以用管理员打开cmd 运行 chkdsk D:/f  D就是需要恢复的盘
+
+### 装机软件
+1. 常用软件
+    1.[QQ](https://im.qq.com/pcqq/)
+    1.[阿里旺旺](http://wangwang.taobao.com/)
+1. 系统软件
+    1.[卡巴斯基](https://www.kaspersky.com.cn/downloads/thank-you/total-security-free-trial)
+    1.[卡巴工具箱](http://www.kbtool.cn/)
+    1.[软碟通](https://cn.ultraiso.net/xiazai.html)
+    激活 王涛 7C81-1689-4046-626F
+1. 输入法
+    1.[搜狗](https://pinyin.sogou.com/)
+    1.[百度日语输入法](http://ime.baidu.jp/type/)
+1. 学习工具
+    1.[anki](http://www.ankichina.net/)
+    1.[aboboo](http://www.aboboo.com/download/)
+    1.[有道云笔记](http://note.youdao.com/download.html)
+1. Apple
+    1.[itunes](https://www.apple.com/cn/itunes/)
+    1.[itools](https://www.itools.cn/)

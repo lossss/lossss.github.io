@@ -13,6 +13,7 @@ categories: [日本語,English]
 ### 日语
 
 #### 我使用的资料
+
 [标日初级](https://www.bilibili.com/video/av3060477/?from=search&seid=15325896545265664426)
 > 叶子老师的初级课
 
@@ -22,6 +23,7 @@ categories: [日本語,English]
 [初级上册复习课](https://pan.baidu.com/s/1kVtGvB5)  密码: ui4f
 
 [初级下册复习课](https://pan.baidu.com/s/1jH9Hegm)  密码: prns
+
 > 明王道的复习课
 
 ### 英语
@@ -70,7 +72,7 @@ categories: [日本語,English]
 
 #### 日语
 
-#####  语法酷
+##### 语法酷
 
 可以查日语语法的软件
 

@@ -24,6 +24,21 @@ diskutil list
 
 diskutil mount disk1s1
 ```
+
+## win 挂载硬盘
+```bash
+diskpart
+
+list disk
+
+sel disk 3
+
+list part
+
+sel part 1
+
+assign
+```
 > 需要一个虚拟环境 便于操作
 [安装参考](https://jingyan.baidu.com/article/54b6b9c0ec0a1b2d593b4745.html)
 
