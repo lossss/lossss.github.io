@@ -26,8 +26,25 @@ ssh-keygen -t rsa -C "stdiolosss@gmail.com"
 # 测试连接
 ssh -T git@github.com
 
-git clone ...
+ssh -T git@git.coding.net
+
+如果提示
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0670 for '/home/losss/.ssh/id_rsa' are too open.
+It is recommended that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/losss/.ssh/id_rsa": bad permissions
+Permission denied (publickey).
 ```
+运行如下命令
+```bash
+ chmod 600 /home/losss/.ssh/id_rsa
+```
+
+git clone ...
 
 commit 信息写错了 需要修改
 ```

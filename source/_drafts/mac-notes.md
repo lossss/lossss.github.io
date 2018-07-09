@@ -53,8 +53,8 @@ alias disproxy='unset http_proxy https_proxy'
 curl ifconfig.me
 ```
 ### 按键区别
-|       mac       |  windows  |
-| --------------- | --------- |
+| mac             | windows   |
+|:----------------|:----------|
 | ⌘——Command ()  | win       |
 | ⌃ ——Control     | ctrl      |
 | ⌥——Option (alt) | alt       |

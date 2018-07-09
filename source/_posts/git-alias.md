@@ -26,6 +26,6 @@ git config --global alias.st status
 | last    | git log -1                                                                                                                              |
 | lg      | git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit |
 | unstage | git reset HEAD                                                                                                                          |
-| me      | git merge -no-ff                                                                                                                        |
+| me      | git merge --no-ff                                                                                                                        |
 ## 参考文档
 https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375234012342f90be1fc4d81446c967bbdc19e7c03d3000

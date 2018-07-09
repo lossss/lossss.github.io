@@ -11,61 +11,61 @@ tags: vim
 ## 移动
 
 超常用的hjkl就不必多说了
-| 快捷键    | 功能                                          |
-|-----------|-----------------------------------------------|
+| 快捷键    | 功能                                            |
+|:----------|:------------------------------------------------|
 | 0         | （数字 0）移动光标至本行开头                    |
-| ^         | 移动光标至本行第一个非空字符处                |
-| $         | 移动到行尾                                    |
-| gg        | 最上面一行                                    |
-| NG        | 跳到第N行(绝对行数)                           |
-| :15       | 跳转到15行                                    |
-| G         | 移动至文件末尾                                |
+| ^         | 移动光标至本行第一个非空字符处                  |
+| $         | 移动到行尾                                      |
+| gg        | 最上面一行                                      |
+| NG        | 跳到第N行(绝对行数)                             |
+| :15       | 跳转到15行                                      |
+| G         | 移动至文件末尾                                  |
 | w         | 向前移动一个词 （上一个字母和数字组成的词之后） |
 | W         | 向前移动一个词 （以空格分隔的词）               |
-| e         | 跳到这个单词的末尾                            |
-| E         | 跳到这个单词的末尾.                           |
+| e         | 跳到这个单词的末尾                              |
+| E         | 跳到这个单词的末尾.                             |
 | b         | 向后移动一个词 （下一个字母和数字组成的词之前） |
-| f         | 搜索例如fw就会移动到这一行中出现的第一个w     |
-| %         | 跳到对应的(, (, [ 处                          |
-| *         | 跳到当前光标的下一个(上一个) 相同单词的地方   |
-| ctrl+f    | Full Page Forward                             |
-| ctrl+b    | Full Page Back                                |
-| ctrl+d    | Half Page Back                                |
-| ctrl+u    | Half Page Forward                             |
-| ctrl+v    | Visual Block Mode                             |
-| shift + ] | 移动到下一个空行                              |
-| shift + [ | 移动到上一个空行                              |
-| vii       | 全选                                          |
+| f         | 搜索例如fw就会移动到这一行中出现的第一个w       |
+| %         | 跳到对应的(, (, [ 处                            |
+| *         | 跳到当前光标的下一个(上一个) 相同单词的地方     |
+| ctrl+f    | Full Page Forward                               |
+| ctrl+b    | Full Page Back                                  |
+| ctrl+u    | Half Page Forward                               |
+| ctrl+d    | Half Page Back                                  |
+| ctrl+v    | Visual Block Mode                               |
+| shift + ] | 移动到下一个空行                                |
+| shift + [ | 移动到上一个空行                                |
+| vii       | 全选                                            |
 
 w W e E 的区别
 ![](http://ou7k0sem6.bkt.clouddn.com/vim-notes/1.jpg)
 
 ## 常用补充
-|         快捷键          |                                功能                                |
-| ----------------------- | ------------------------------------------------------------------ |
-| i                       | 词前插入                                                           |
-| shift+i                 | 行首插入                                                           |
-| a                       | 词后插入                                                           |
-| shift+a                 | 行尾插入                                                           |
+| 快捷键                  | 功能                                                         |
+|:------------------------|:-------------------------------------------------------------|
+| i                       | 词前插入                                                     |
+| shift+i                 | 行首插入                                                     |
+| a                       | 词后插入                                                     |
+| shift+a                 | 行尾插入                                                     |
 | .                       | .可以重复执行上个指令 比如fw之后.就会继续移动到下一个w的位置 |
-| D                       | 删除至行尾 d$的缩写                                                |
-| x                       | 删除当前的字符                                                     |
-| X                       | 向前删除                                                           |
-| s                       | 替换 按下之后会删除当前的字符并进入insert模式                      |
-| 3dd                     | 剪切3行                                                            |
-| p                       | 黏贴                                                               |
-| ctrl+shift+v / 鼠标中键 | 从clipboard粘贴                                                    |
-| u                       | 撤销相当于ctrl+z                                                   |
-| ctrl+r                  | 相当于ctrl+y                                                       |
-| ZZ                      | 保存并退出                                                         |
-| dt"                     | 删除直到"                                                          |
-| J                       | 删除换行符，合并两行                                               |
-| \< \>                   | 调整代码缩进                                                       |
-| =                       | 自动格式化代码缩进                                                 |
-| zc                      | 折叠代码                                                           |
-| zo                      | 展开带代码                                                         |
-| shift+v                 | 选择当前行                                                         |
-| shift+d                 | 删除至行尾                                                         |
+| D                       | 删除至行尾 d$的缩写                                          |
+| x                       | 删除当前的字符                                               |
+| X                       | 向前删除                                                     |
+| s                       | 替换 按下之后会删除当前的字符并进入insert模式                |
+| 3dd                     | 剪切3行                                                      |
+| p                       | 黏贴                                                         |
+| ctrl+shift+v / 鼠标中键 | 从clipboard粘贴                                              |
+| u                       | 撤销相当于ctrl+z                                             |
+| ctrl+r                  | 相当于ctrl+y                                                 |
+| ZZ                      | 保存并退出                                                   |
+| dt"                     | 删除直到"                                                    |
+| J                       | 删除换行符，合并两行                                         |
+| \< \>                   | 调整代码缩进                                                 |
+| =                       | 自动格式化代码缩进                                           |
+| zc                      | 折叠代码                                                     |
+| zo                      | 展开带代码                                                   |
+| shift+v                 | 选择当前行                                                   |
+| shift+d                 | 删除至行尾                                                   |
 
 ## text-object
 
@@ -76,33 +76,33 @@ inner object：只是内容本身，不包含尾部单词间隔空格
 
 ### word / sentence / paragraph 
 | textobject | 说明      |
-|------------|-----------|
+|:-----------|:----------|
 | w          | word      |
 | s          | sentence  |
 | p          | paragraph |
 
 ### block / Block
-| textobject | 说明             |
-|------------|------------------|
-| ]/[        | [] block         |
-| )/(、b      | block            |
-| >/<、>/<    | <> block         |
-| }/{、B      | Block            |
+| textobject | 说明              |
+|:-----------|:------------------|
+| ]/[        | [] block          |
+| )/(、b     | block             |
+| >/<、>/<   | <> block          |
+| }/{、B     | Block             |
 | t          | tag block：<> </> |
 
 ### visual mode
 在可视选择模式下，可以以 v 做前缀，a 或 i 限定边界，后续指定操作对象，来实现针对文本对象的选择：
 
 | 指令 | 说明                                                |
-|------|-----------------------------------------------------|
+|:-----|:----------------------------------------------------|
 | viw  | 选中单词                                            |
 | vis  | 选中句子                                            |
 | vip  | 选中段落                                            |
 | vi(  | 选中圆括号中的内容                                  |
 | vi[  | 选中中括号之间的内容                                |
 | v2i{ | 选中两层大括号之间的所有内容 数字限定选择的嵌套层数 |
-| v3aw | 选择三个单词（包含中间的2个间隔空格）                 |
-| v3iw | 选择三个单词（2个单词+间隔空格）                      |
+| v3aw | 选择三个单词（包含中间的2个间隔空格）               |
+| v3iw | 选择三个单词（2个单词+间隔空格）                    |
 另外，可将 v 选择操作指令替换为 x、d、y 等操作符(operator)，来针对文本对象操作。
 ## 小tips
 1. 多行同时编辑:
@@ -159,14 +159,14 @@ hlsearch
 
 > The format is /\<search pattern\>/\<replace pattern\>/gi where the \<search pattern> and the \<replace pattern\> are standard regular expressions.The i after the g makes the search case insensitive. An I would make the search case sensitive. The g makes the substitution global in the line. Without the g, it performs the substitution once per line
 
-## vscode vim plugin
-### vim-surround
-|Surround Command | Description|
-|------- | -------|
-|d s \<existing char\> | Delete existing surround|
-|c s \<existing char\> \<desired char\> | Change surround |existing to desired
-|y s \<motion\> \<desired char\> | Surround something with |something using motion (as in "you surround")
-|S \<desired char\> | Surround when in visual modes |(surrounds full selection)
+## [vscode vim plugin](https://github.com/VSCodeVim/Vim)
+### [vim-surround](https://github.com/VSCodeVim/Vim#vim-surround)
+| Surround Command                       | Description                                                            |
+|:---------------------------------------|:-----------------------------------------------------------------------|
+| d s \<existing char\>                  | Delete existing surround                                               |
+| c s \<existing char\> \<desired char\> | Change surround |existing to desired                                   |
+| y s \<motion\> \<desired char\>        | Surround something with |something using motion (as in "you surround") |
+| S \<desired char\>                     | Surround when in visual modes |(surrounds full selection)              |
 
 hint: ysaw)
 
