@@ -21,6 +21,7 @@ tags: cs
 
 ### 数学
 2. 高等数学
+推荐 汤家凤老师的视频
 > 视频教程
 >> [参考](http://pan.baidu.com/s/1o8IEUE2) m:9dpz
 
