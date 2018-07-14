@@ -90,6 +90,8 @@ unar your-zip
 [参考](https://github.com/shadowsocks/shadowsocks-libev)
 [开机启动参考](https://blog.huihut.com/2017/08/25/LinuxInstallConfigShadowsocksClient/)
 开机设置路径备份 /etc/systemd/system/shadowsocks.service
+proxy设置
+`电源->system settings->network`
 
 ### 视频播放软件 [vlc](http://www.videolan.org/vlc/download-ubuntu.html)
 
