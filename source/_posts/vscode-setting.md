@@ -121,7 +121,7 @@ view：toggle menu bar
 
 4. ~~没有找到 文件显示git status状态的插件(类似atom的tree-view-git-status)~~ 最新版本已经自带此功能
 
-5. Settings Sync
+5.~~Settings Sync~~(这个有点问题已经换用Syncing)
 > 同步设置
 这个插件如果同步报错的话
 ```
