@@ -20,3 +20,5 @@ anki 备忘
 ### [subs2srs](http://subs2srs.sourceforge.net/)
 可以用影片制作anki的卡片
 可以参考[教程](http://www.jianshu.com/p/2cfc15963722)
+
+## 日语单词卡片制作
