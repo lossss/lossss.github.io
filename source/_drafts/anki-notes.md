@@ -22,3 +22,6 @@ anki 备忘
 可以参考[教程](http://www.jianshu.com/p/2cfc15963722)
 
 ## 日语单词卡片制作
+主要使用 [WordQuery](https://github.com/finalion/WordQuery/blob/master/README-CN.md)
+字典使用 中日日中字典.mdx
+
