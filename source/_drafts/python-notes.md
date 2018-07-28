@@ -28,8 +28,8 @@ sudo -H pip install foo
 
 ## vscode 调试
 安装插件python 按f5就可以调试
-注: 1.关于windows下integrated terminal 调试时的路径问题
->如果你在windows下(mac linux 请无视)用的是 integrated terminal 也就是 bash 之类的 terminal 那么你在 debug的launch.json里面设置的时候要加一行 `"console": "externalTerminal"`让debug 去掉用外部的 cmd不然在bash下的路径应该是用的"/" 但是debug调用的时候输入的路径是"\"是不能调用的
-
 ctrl+m 然后按tab focus到debug console 上按回车 即可全键盘操作了
 或者也可以直接按 ctrl+shift+y 直接切换到debug console
+
+注: 1.关于windows下integrated terminal 调试时的路径问题
+>如果你在windows下(mac linux 请无视)用的是 integrated terminal 也就是 bash 之类的 terminal 那么你在 debug的launch.json里面设置的时候要加一行 `"console": "externalTerminal"` 或者`"console": "none"`不然在bash下的路径用的是"/" 但是debug调用的时候输入的路径是"\"是不能调用的
