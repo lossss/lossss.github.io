@@ -11,7 +11,7 @@ vscode 设置
 
 windows下配置 Gist ID : a1c4db18a2482d9bfb10c43e3a6831b7
 
-插件是 setting sync 具体使用方法可以参考[这里](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+插件是 ~~setting sync~~ 改用 Syncing
 
 ## 常用设置
 
