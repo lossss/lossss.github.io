@@ -135,20 +135,30 @@ sync:reset extension settings
 ### vim
 
 1. vim
-这个插件可以实现vim中的大多数操作介绍几个比较有用的
+这个插件可以实现vim中的大多数操作介绍几个比较有用的(安装vim插件后自带的,无需其他插件)
 
-
-    1. multi-cursor-mode
+    1. [multi-cursor-mode](https://github.com/VSCodeVim/Vim#%EF%B8%8F-multi-cursor-mode)
         先用v选择需要修改的单词在用 cmd+d 向下选中同样单词 然后修改
-    1. vim surround (https://github.com/VSCodeVim/Vim#vim-surround)
+    1. [vim-surround](https://github.com/VSCodeVim/Vim#vim-surround)
         | Surround Command                       | Description                                                            |
         |:---------------------------------------|:-----------------------------------------------------------------------|
         | d s \<existing char\>                  | Delete existing surround                                               |
         | c s \<existing char\> \<desired char\> | Change surround |existing to desired                                   |
         | y s \<motion\> \<desired char\>        | Surround something with |something using motion (as in "you surround") |
         | S \<desired char\>                     | Surround when in visual modes |(surrounds full selection)              |
-            
+           
         hint: ysaw)
+    1.[vim-easymotion](https://github.com/VSCodeVim/Vim#vim-easymotion)
+        这是一个快速移动插件,默认的\<leader>是 \\
+
+        | command               | description             |
+        |:----------------------|:------------------------|
+        | \<leader>\<leader> s  | Search character        |
+        | \<leader>\<leader> 2s | Search 2 characters     |
+        | \<leader>\<leader> w  | Start of word forwards  |
+        | \<leader>\<leader> b  | Start of word backwards |
+        | \<leader>\<leader> j  | Start of line forwards  |
+        | \<leader>\<leader> k  | Start of line backwards |
 
 2. relative-line-numbers
 
