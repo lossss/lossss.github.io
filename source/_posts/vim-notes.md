@@ -21,23 +21,23 @@ tags: vim
 | :15       | 跳转到15行                                      |
 | G         | 移动至文件末尾                                  |
 | w         | 向前移动一个词 （上一个字母和数字组成的词之后） |
-| W         | 向前移动一个词 （以空格分隔的词）               |
+| w         | 向前移动一个词 （以空格分隔的词）               |
 | e         | 跳到这个单词的末尾                              |
-| E         | 跳到这个单词的末尾.                             |
+| e         | 跳到这个单词的末尾.                             |
 | b         | 向后移动一个词 （下一个字母和数字组成的词之前） |
 | f         | 搜索例如fw就会移动到这一行中出现的第一个w       |
 | %         | 跳到对应的(, (, [ 处                            |
 | *         | 跳到当前光标的下一个(上一个) 相同单词的地方     |
-| ctrl+f    | Full Page Forward                               |
-| ctrl+b    | Full Page Back                                  |
-| ctrl+u    | Half Page Forward                               |
-| ctrl+d    | Half Page Back                                  |
-| ctrl+v    | Visual Block Mode                               |
+| ctrl+f    | full page forward                               |
+| ctrl+b    | full page back                                  |
+| ctrl+u    | half page forward                               |
+| ctrl+d    | half page back                                  |
+| ctrl+v    | visual block mode                               |
 | shift + ] | 移动到下一个空行                                |
 | shift + [ | 移动到上一个空行                                |
 | vii       | 全选                                            |
 
-w W e E 的区别
+w w e e 的区别
 ![](http://ou7k0sem6.bkt.clouddn.com/vim-notes/1.jpg)
 
 ## 常用补充
@@ -48,9 +48,9 @@ w W e E 的区别
 | a                       | 词后插入                                                     |
 | shift+a                 | 行尾插入                                                     |
 | .                       | .可以重复执行上个指令 比如fw之后.就会继续移动到下一个w的位置 |
-| D                       | 删除至行尾 d$的缩写                                          |
+| d                       | 删除至行尾 d$的缩写                                          |
 | x                       | 删除当前的字符                                               |
-| X                       | 向前删除                                                     |
+| x                       | 向前删除                                                     |
 | s                       | 替换 按下之后会删除当前的字符并进入insert模式                |
 | 3dd                     | 剪切3行                                                      |
 | p                       | 黏贴                                                         |

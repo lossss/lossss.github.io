@@ -28,8 +28,8 @@ view：toggle menu bar
 在文件 首选项 设置 用户设置中加入`"editor.fontSize":17`即可
 
 ## 常用快捷键
-| 快捷键(mac) |       快捷键(win)       |                          功能                          |
-| ----------- | ----------------------- | ------------------------------------------------------ |
+| 快捷键(mac) | 快捷键(win)             | 功能                                                   |
+|:------------|:------------------------|:-------------------------------------------------------|
 |             | ctrl+shift+p            |                                                        |
 |             | ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
 |             | shift+alt+f             | 格式化文件                                             |
@@ -135,6 +135,20 @@ sync:reset extension settings
 ### vim
 
 1. vim
+这个插件可以实现vim中的大多数操作介绍几个比较有用的
+
+
+    1. multi-cursor-mode
+        先用v选择需要修改的单词在用 cmd+d 向下选中同样单词 然后修改
+    1. vim surround (https://github.com/VSCodeVim/Vim#vim-surround)
+        | Surround Command                       | Description                                                            |
+        |:---------------------------------------|:-----------------------------------------------------------------------|
+        | d s \<existing char\>                  | Delete existing surround                                               |
+        | c s \<existing char\> \<desired char\> | Change surround |existing to desired                                   |
+        | y s \<motion\> \<desired char\>        | Surround something with |something using motion (as in "you surround") |
+        | S \<desired char\>                     | Surround when in visual modes |(surrounds full selection)              |
+            
+        hint: ysaw)
 
 2. relative-line-numbers
 
@@ -161,7 +175,7 @@ zc 折叠代码后jk移动时会自动打开 要避免的话 setting 里面加`"
 3. snippet for json
 
 | Snippets | Content                                                                                                    |
-| -------- | ---------------------------------------------------------------------------------------------------------- |
+|:---------|:-----------------------------------------------------------------------------------------------------------|
 | obj      | Create a JSON object                                                                                       |
 | objc     | Create a JSON object ending with comma                                                                     |
 | arr      | Create a JSON array                                                                                        |

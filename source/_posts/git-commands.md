@@ -1,13 +1,13 @@
 ---
-title: git-commands
+title: git
 date: 2017-09-08 19:16:26
 categories: git
 tags: git
 ---
-常用的git 命令备忘
+常用的git 命令备忘及常见问题
 <!--more-->
 ![](http://ou7k0sem6.bkt.clouddn.com/git-commands/1.png)
-
+# git command
 ## 终极杀招
 任何命令有问题就直接在后面 --help 直接到官方文档那里不会点哪里
 比如
@@ -192,4 +192,19 @@ git pull origin <branch-name>
 重新设置远端地址
 ```
 git remote set-url origin <your-git-url>
+```
+
+# 常见问题
+## 中文乱码 
+使用git add添加要提交的文件的时候，如果文件名是中文，会显示形如 274\232\350\256\256\346\200\273\347\273\223.png 的乱码。 
+
+解决方案：在bash提示符下输入： 
+```
+  git config --global core.quotepath false
+```
+core.quotepath设为false的话，就不会对0x80以上的字符进行quote。中文显示正常。 
+## alias(zsh中的设置)
+```bash
+vim ~/.zshrc
+alias gm="git merge --no-ff "
 ```
