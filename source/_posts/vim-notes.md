@@ -6,11 +6,20 @@ tags: vim
 ---
 # vim安装及配置
 ## 安装
-这里使用 neovim
-1. 安装
-```bash
+这里使用[neovim](https://github.com/neovim/neovim)
+1. install
+  ```bash
+  brew install neovim
+  ```
 
-```
+2. use
+  ```bash
+  nvim
+  ```
+## 插件
+### vundle
+一个管理插件的插件
+
 # vim 中常用的快捷键
 
 <!--more-->
