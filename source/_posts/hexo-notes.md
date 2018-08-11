@@ -26,10 +26,14 @@ hexo d -g
 ```
 
 ## 本博客编译问题
-确保更新到最新的node和hexo
+1. 确保更新到最新的node和hexo
 
-push 上去的themes中的next文件夹是空的这个暂时没想好怎么解决
+2. push 上去的themes中的next文件夹是空的这个暂时没想好怎么解决
 
+3. 部署后css不加载
+  1. 在_config.yml 中修改url为新的url
+  2. 删除.deploy_git
+  3. hexo d -g
 
 ## 使用[qshell](https://developer.qiniu.com/kodo/tools/1302/qshell)上传图片
 

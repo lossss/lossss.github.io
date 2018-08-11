@@ -12,10 +12,22 @@ tags: vim
   brew install neovim
   ```
 
-2. use
+2. upgrade
+```bash
+brew update
+brew upgrade neovim
+```
+3. use
   ```bash
   nvim
   ```
+## 配置
+neovim 配置文件也是可以用.vimrc的
+可以先`nvim`进入neovim 再执行
+`:version`查看当前.vimrc的路径
+`:echo $VIM`可以查看$VIM在哪个具体路径
+
+### 
 ## 插件
 ### vundle
 一个管理插件的插件
