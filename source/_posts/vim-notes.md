@@ -17,21 +17,65 @@ tags: vim
 brew update
 brew upgrade neovim
 ```
+
 3. use
   ```bash
   nvim
   ```
+
 ## 配置
-neovim 配置文件也是可以用.vimrc的
-可以先`nvim`进入neovim 再执行
-`:version`查看当前.vimrc的路径
-`:echo $VIM`可以查看$VIM在哪个具体路径
+1. neovim 配置文件路径是 `~/.config/nvim/init.vim`(没有的话自己新建)这个的内容和vim的.vimrc内容是一样的
+1. 换个主题 这里我用的是[Dracula](https://draculatheme.com/)这种主题很多自己找喜欢的就行
+    1. 先把对应的主题下载下来然后把主题的.vim文件放在`~/.config/nvim/colors`下(或者`~/.vim/colors`下)
+    1. 在init.vim 里面加入
+      ```vim
+      syntax on
+      color dracula
+      ```
+     如果用zsh的同学需要注意你的zsh主题最好要和neovim主题一样不然显示可能会有点问题
+1. 可以在github上看一些高手的init.vim设置
 
-### 
+https://github.com/TimothyYe/mydotfiles/blob/master/neovim/.config/nvim/init.vim
+
+
 ## 插件
-### vundle
-一个管理插件的插件
+先装 [vim-plug](https://github.com/junegunn/vim-plug)
+装好后在`~/.config/nvim/init.vim` 里面写需要的插件下面是neovim的demo具体的查看官方文档 这里如果begin里面不写地址的话默认的是`~/.config/nvim/`这个路径
 
+```vim
+call plug#begin('~/.local/share/nvim/plugged')
+" My Bundles:
+Plug 'kien/ctrlp.vim'
+call plug#end()
+```
+
+### 推荐的插件
+1. [vim-plug](https://github.com/junegunn/vim-plug) Vim的插件管理器，支持并发安装和更新
+1. [CtrlP](https://github.com/kien/ctrlp.vim) 不可缺少的快速跳转插件，它可以快速的帮助我们找到项目中的文件。在vim normal模式下，按下ctrl+p，然后输入你要寻找的文件就行了。
+1. Ack 全文搜索插件，可以在当前打开的项目中进行源码的全文搜索，并可以在搜索结果中方便的切换和打开源码文件，十分方便。
+1. NERDTree Vim中的文件管理器，方便编辑文件，创建目录，删除和修改文件等等……
+1. NERDTreeCommenter 方便的用来注释代码的插件
+1. TagBar 查看当前代码文件中的变量和函数列表的插件，可以切换和跳转到代码中对应的变量和函数的位置
+1. AutoPairs 自动补全括号的插件，包括小括号，中括号，以及花括号，可以提升编码效率
+1. Surround 快速给词加环绕符号,例如单引号/双引号/括号/成对标签等的插件
+1. Vim-Airline Vim状态栏插件，包括显示行号，列号，文件类型，文件名，以及Git状态
+1. EasyMotion 在当前文件中快速移动光标到指定查找位置的插件，十分方便和高效
+1. deoplete 自动补全插件，写代码必备，有了这个插件，就有了IDE的感觉
+1. Vim-Startify Vim启动首屏自定义插件，让你的Vim启动后显示别具一格的首屏样式
+1. Vim-Indent-Guides 显示代码对齐的引导条
+1. Accelerated-Smooth-Scroll 顾名思义，让Ctrl+F,Ctrl+B的滚屏来得更顺滑一些……
+1. YouDao-Translater Vim中的有道翻译插件
+1. Matrix-ScreenSaver Vim中的黑客帝国屏幕保护插件，很酷很炫
+
+
+### 管理dotfiles
+使用[homeshick](https://github.com/andsens/homeshick)
+常用命令
+```bash
+homeshick generate dotfiles #创建
+homeshick track dotfiles .bashrc #添加
+homeshick clone git@github.com:lossss/dotfiles.git #新机拷贝
+```
 # vim 中常用的快捷键
 
 <!--more-->
@@ -208,3 +252,5 @@ http://www.oschina.net/translate/learn-vim-progressively
 https://computers.tutsplus.com/tutorials/vim-for-beginners--cms-21118
 
 http://col.dog/2015/12/13/vim-tutorials-006-text_objects/
+
+https://xiaozhou.net/learn-the-command-line-vim-2018-08-08.html

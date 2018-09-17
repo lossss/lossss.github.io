@@ -8,7 +8,7 @@ linux 备忘
 <!--more-->
 ## 常用命令
 | 命令                           | 功能                  |
-| ------------------------------ | --------------------- |
+|:-------------------------------|:----------------------|
 | ctrl+shift+ +                  | 放大命令行字体        |
 | ctrl+ -                        | 缩小命令行字体        |
 | history (!200 执行200行的命令) | 查看历史命令          |
@@ -18,7 +18,7 @@ linux 备忘
 | ls > xxx.txt                   | ls结果保存到xxx.txt   |
 | ls >> xxx.txt                  | ls结果追加到xxx.txt   |
 | more xxx.txt                   | 滚屏查看文件          |
-| ls -alh /bin \| more           | 管道                  |
+| ls -alh /bin \                 | more           | 管道 |
 | cd ../..                       | 上上层                |
 | cd -                           | 回到上一次目录        |
 | cd ~                           | 回到加速目录          |
@@ -37,26 +37,8 @@ linux 备忘
 | grep -v "ntfs" xxx.txt         | 不包含ntfs的内容      |
 | grep "^ntfs" xxx.txt           | 以ntfs开头            |
 | grep "ntfs$" xxx.txt           | 以ntfs结尾            |
-| find / -name "*name*"|按名字查找
+| find / -name "*name*"          | 按名字查找            |
 
-## 命令行tips
-参看这个[视频](https://www.bilibili.com/video/av4337389/)
-
-|  按键  |       操作       |
-| ------ | ---------------- |
-| ctrl+b | 命令行向前       |
-| ctrl+f | 向后             |
-| alt+b  | 以单词为单位向前 |
-| alt+f  | 以单词为单位向后 |
-| ctrl+a | 行首             |
-| ctrl+e | 行尾             |
-| ctrl+u | 删除当前命令     |
-| ctrl+h | 从后向前删除     |
-| ctrl+d | 从前向后删除     |
-| alt+d  | 删除一个单词     |
-| ctrl+k | 删除到行尾       |
-| ctrl+p | 上一条命令       |
-| ctrl+n | 下一条命令       |
 
 ## zsh
 
@@ -165,7 +147,7 @@ ack xxx
 
 #### git
 | shortcuts | operation                         |
-|-----------|-----------------------------------|
+|:----------|:----------------------------------|
 | gaa       | git add -all                      |
 | gst       | git status                        |
 | gb        | git branch                        |

@@ -28,22 +28,23 @@ view：toggle menu bar
 在文件 首选项 设置 用户设置中加入`"editor.fontSize":17`即可
 
 ## 常用快捷键
-| 快捷键(mac) | 快捷键(win)             | 功能                                                   |
-|:------------|:------------------------|:-------------------------------------------------------|
-|             | ctrl+shift+p            |                                                        |
-|             | ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
-|             | shift+alt+f             | 格式化文件                                             |
-|             | ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
-|             | ctrl+tab                | 历史打开文件之间切换                                   |
-|             | ctrl+k然后按left或right | 编辑器换位置                                           |
-|             | alt+上/下               | 上移或下移代码                                         |
-|             | ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
-|             | ctrl+\                  | 复制分屏                                               |
-| shift+cmd+m |                         | problems                                               |
-| shift+cmd+u |                         | output                                                 |
-| shift+cmd+y |                         | debug console                                          |
-| ctrl+`      |                         | terminal                                               |
-| ctrl+123    |                         | 在已经打开的tab里面切换                                |
+| 快捷键(mac)  | 快捷键(win)             | 功能                                                   |
+|:-------------|:------------------------|:-------------------------------------------------------|
+|              | ctrl+shift+p            |                                                        |
+|              | ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
+|              | shift+alt+f             | 格式化文件                                             |
+|              | ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
+|              | ctrl+tab                | 历史打开文件之间切换                                   |
+|              | ctrl+k然后按left或right | 编辑器换位置                                           |
+|              | alt+上/下               | 上移或下移代码                                         |
+|              | ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
+|              | ctrl+\                  | 复制分屏                                               |
+| shift+cmd+m  |                         | problems                                               |
+| shift+cmd+u  |                         | output                                                 |
+| shift+cmd+y  |                         | debug console                                          |
+| ctrl+`       |                         | terminal                                               |
+| ctrl+123     |                         | 在已经打开的tab里面切换                                |
+| ctrl+shift+i |                         | reveal active file in side bar                         |
 
 ### 小tips
 1.如果在编辑markdown时需要格式化表格当使用vim时可以如下操作
@@ -208,3 +209,6 @@ zc 折叠代码后jk移动时会自动打开 要避免的话 setting 里面加`"
 sudo dpkg -r code
 sudo dpkg -i code_downloaded_package.deb #用下载的最新的deb的名字
 ```
+## tips
+
+### [Launching from the Command Line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)

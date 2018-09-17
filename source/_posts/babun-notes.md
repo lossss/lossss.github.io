@@ -43,6 +43,7 @@ BoldWhite=#F8F8F2
 ```
 
 3. `vim ~/.zshrc`
+if you want to use other themes please let the theme file into `~/.oh-my-zsh/themes/`
 ```
  ZSH_THEME="agnoster"
 ```
