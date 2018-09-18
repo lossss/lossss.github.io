@@ -147,7 +147,7 @@ sync:reset extension settings
         | c s \<existing char\> \<desired char\> | Change surround |existing to desired                                   |
         | y s \<motion\> \<desired char\>        | Surround something with |something using motion (as in "you surround") |
         | S \<desired char\>                     | Surround when in visual modes |(surrounds full selection)              |
-           
+
         hint: ysaw)
     1.[vim-easymotion](https://github.com/VSCodeVim/Vim#vim-easymotion)
         这是一个快速移动插件,默认的\<leader>是 \\

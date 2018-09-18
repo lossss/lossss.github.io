@@ -39,6 +39,8 @@ https://github.com/TimothyYe/mydotfiles/blob/master/neovim/.config/nvim/init.vim
 
 
 ## 插件
+以下所讲的都是针对原生vim或者neovim的
+1. 安装
 先装 [vim-plug](https://github.com/junegunn/vim-plug)
 装好后在`~/.config/nvim/init.vim` 里面写需要的插件下面是neovim的demo具体的查看官方文档 这里如果begin里面不写地址的话默认的是`~/.config/nvim/`这个路径
 
@@ -49,23 +51,57 @@ Plug 'kien/ctrlp.vim'
 call plug#end()
 ```
 
+1. vim-plug 常用命令
+以下命令在vim中使用 例如 `:PlugUpdate`
+``` vim
+PlugUpdate #下载更新插件
+PlugClean #清除不用的目录
+PlugUpgrade #更新vim-plug自身
+```
+
 ### 推荐的插件
-1. [vim-plug](https://github.com/junegunn/vim-plug) Vim的插件管理器，支持并发安装和更新
+好的vim插件可以上 [awesome vim](https://vimawesome.com/)
+
+1. EasyMotion 在当前文件中快速移动光标到指定查找位置的插件，十分方便和高效
+
+| 快捷键               | 功能                             |
+|:---------------------|:---------------------------------|
+| \<leader>\<leader> w | Start of word forwards           |
+| \<leader>\<leader> b | Start of word backwards          |
+| \<leader>\<leader> j | Start of line forwards           |
+| \<leader>\<leader> k | Start of line backwards          |
+| \\                   | search by words next n preview N |
+
+最后一个需要配置 在 `.vimrc`里加入
+
+```vim
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
+" Without these mappings, `n` & `N` works fine. (These mappings just provide
+" different highlight method and have some other features )
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+```
+
+2. [vim-plug](https://github.com/junegunn/vim-plug) Vim的插件管理器，支持并发安装和更新
 1. [CtrlP](https://github.com/kien/ctrlp.vim) 不可缺少的快速跳转插件，它可以快速的帮助我们找到项目中的文件。在vim normal模式下，按下ctrl+p，然后输入你要寻找的文件就行了。
-1. Ack 全文搜索插件，可以在当前打开的项目中进行源码的全文搜索，并可以在搜索结果中方便的切换和打开源码文件，十分方便。
-1. NERDTree Vim中的文件管理器，方便编辑文件，创建目录，删除和修改文件等等……
-1. NERDTreeCommenter 方便的用来注释代码的插件
+1. [Ack]() 全文搜索插件，可以在当前打开的项目中进行源码的全文搜索，并可以在搜索结果中方便的切换和打开源码文件，十分方便。
+1. [NERDTree] Vim中的文件管理器，方便编辑文件，创建目录，删除和修改文件等等……
+1. [NERDTreeCommenter] 方便的用来注释代码的插件
 1. TagBar 查看当前代码文件中的变量和函数列表的插件，可以切换和跳转到代码中对应的变量和函数的位置
 1. AutoPairs 自动补全括号的插件，包括小括号，中括号，以及花括号，可以提升编码效率
 1. Surround 快速给词加环绕符号,例如单引号/双引号/括号/成对标签等的插件
 1. Vim-Airline Vim状态栏插件，包括显示行号，列号，文件类型，文件名，以及Git状态
-1. EasyMotion 在当前文件中快速移动光标到指定查找位置的插件，十分方便和高效
 1. deoplete 自动补全插件，写代码必备，有了这个插件，就有了IDE的感觉
 1. Vim-Startify Vim启动首屏自定义插件，让你的Vim启动后显示别具一格的首屏样式
 1. Vim-Indent-Guides 显示代码对齐的引导条
 1. Accelerated-Smooth-Scroll 顾名思义，让Ctrl+F,Ctrl+B的滚屏来得更顺滑一些……
 1. YouDao-Translater Vim中的有道翻译插件
 1. Matrix-ScreenSaver Vim中的黑客帝国屏幕保护插件，很酷很炫
+
+python相关插件
 
 
 ### 管理dotfiles

@@ -14,12 +14,12 @@ mac iterm2
 # 配置
 
 1. vim 配置
-
-1. 插件
+本次使用的是[neovim](https://neovim.io/)
+关于neovim 可以参考我的另一篇博客{% post_link vim-notes %}
+配置好后可以在terminal里使用原生的vim
 
 1. iterm2 配置
-
-1. 插件
+参考 {% post_link terminal %}
 
 1. 备份配置
 

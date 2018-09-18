@@ -4,7 +4,7 @@ date: 2018-08-11 21:03:22
 categories: terminal
 tags: zsh
 ---
-主要是bash和zsh的一些常用技巧总结
+主要是iterm2下的bash和zsh的一些常用技巧和插件总结
 <!--more-->
 
 # 命令行tips
