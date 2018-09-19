@@ -4,6 +4,154 @@ date: 2017-08-13 23:38:03
 categories: vim
 tags: vim
 ---
+# vim安装及配置
+## 安装
+这里使用[neovim](https://github.com/neovim/neovim)
+1. install
+  ```bash
+  brew install neovim
+  ```
+
+2. upgrade
+```bash
+brew update
+brew upgrade neovim
+```
+
+3. use
+  ```bash
+  nvim
+  ```
+
+## 配置
+1. neovim 配置文件路径是 `~/.config/nvim/init.vim`(没有的话自己新建)这个的内容和vim的.vimrc内容是一样的
+1. 换个主题 这里我用的是[janah](https://github.com/mhinz/vim-janah)这种主题很多自己找喜欢的就行
+    1. 先把对应的主题下载下来然后把主题的.vim文件放在`~/.config/nvim/colors`下(或者`~/.vim/colors`下)
+    1. 在init.vim 里面加入
+      ```vim
+      syntax on
+      autocmd ColorScheme janah highlight Normal ctermbg=235
+      colorscheme janah
+      ```
+     如果用zsh的同学需要注意你的zsh主题最好要和neovim主题一样不然显示可能会有点问题
+1. 可以在github上看一些高手的init.vim设置
+
+https://github.com/TimothyYe/mydotfiles/blob/master/neovim/.config/nvim/init.vim
+
+
+## 插件
+以下所讲的都是针对原生vim或者neovim的
+1. 安装
+先装 [vim-plug](https://github.com/junegunn/vim-plug)
+装好后在`~/.config/nvim/init.vim` 里面写需要的插件下面是neovim的demo具体的查看官方文档 这里如果begin里面不写地址的话默认的是`~/.config/nvim/`这个路径
+
+```vim
+call plug#begin('~/.local/share/nvim/plugged')
+" My Bundles:
+Plug 'kien/ctrlp.vim'
+call plug#end()
+```
+
+1. vim-plug 常用命令
+以下命令在vim中使用 例如 `:PlugUpdate`
+``` vim
+PlugUpdate #下载更新插件
+PlugClean #清除不用的目录
+PlugUpgrade #更新vim-plug自身
+```
+
+### 推荐的插件
+好的vim插件可以上 [awesome vim](https://vimawesome.com/)
+
+1. [vim-plug](https://github.com/junegunn/vim-plug) Vim的插件管理器，支持并发安装和更新
+2. EasyMotion 在当前文件中快速移动光标到指定查找位置的插件，十分方便和高效
+
+| 快捷键                  | 功能                               |
+|----------------------|----------------------------------|
+| \<leader>\<leader> w | Start of word forwards           |
+| \<leader>\<leader> b | Start of word backwards          |
+| \<leader>\<leader> j | Start of line forwards           |
+| \<leader>\<leader> k | Start of line backwards          |
+| \/                   | search by words next n preview N |
+
+最后一个需要配置 在 `.vimrc`里加入
+
+```vim
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
+" Without these mappings, `n` & `N` works fine. (These mappings just provide
+" different highlight method and have some other features )
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+```
+3. [Vim-Startify](https://github.com/mhinz/vim-startify) Vim启动首屏自定义插件，让你的Vim启动后显示别具一格的首屏样式
+注: 有些主题会使 vim-startify显示不正常
+
+4. [NERDTree](https://github.com/scrooloose/nerdtree) Vim中的文件管理器，方便编辑文件，创建目录，删除和修改文件等等……
+快捷键需要设置
+```vim
+map <F2> :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>g :NERDTreeToggle<CR>
+```
+| 快捷键 | 功能                       |
+|-----|--------------------------|
+| F2  | shownerdtree             |
+| ;g  | show nerdtree            |
+| ;f  | find file in the sidebar |
+
+5. [CtrlP](https://github.com/kien/ctrlp.vim) 不可缺少的快速跳转插件，它可以快速的帮助我们找到项目中的文件。在vim normal模式下，按下ctrl+p，然后输入你要寻找的文件就行了。
+
+| 快捷键             | 功能                                                                  |
+|-----------------|---------------------------------------------------------------------|
+| \<c-d\>         | 以文件名搜索                                                              |
+| \<c-j\> \<c-k\> | 在查询中搜索                                                              |
+| \<c-z\> \<c-o\> | Use \<c-z\> to mark/unmark multiple files and \<c-o\> to open them. |
+
+6. [NERDTreeCommenter](https://github.com/scrooloose/nerdcommenter) 方便的用来注释代码的插件
+```bash
+[count]<leader>ci |NERDComInvertComment|
+```
+
+7. [Ack] 全文搜索插件，可以在当前打开的项目中进行源码的全文搜索，并可以在搜索结果中方便的切换和打开源码文件，十分方便。
+```bash
+:Ack xxx * ,在项目里搜索xxx单词.
+:ack
+```
+8. [TagBar](https://github.com/majutsushi/tagbar) 查看当前代码文件中的变量和函数列表的插件，可以切换和跳转到代码中对应的变量和函数的位置k
+```bash
+"tagbar
+" toggle TagBar with F8
+nnoremap <silent> <F8> :TagbarToggle<CR>
+" set focus to TagBar when opening it
+let g:tagbar_autofocus = 1
+```
+9. AutoPairs 自动补全括号的插件，包括小括号，中括号，以及花括号，可以提升编码效率
+10. Surround 快速给词加环绕符号,例如单引号/双引号/括号/成对标签等的插件
+```bash
+ds  - delete a surrounding
+cs  - change a surrounding
+ys  - add a surrounding
+```
+11. Vim-Airline Vim状态栏插件，包括显示行号，列号，文件类型，文件名，以及Git状态
+12. deoplete 自动补全插件，写代码必备，有了这个插件，就有了IDE的感觉
+13. Vim-Indent-Guides 显示代码对齐的引导条
+14. Accelerated-Smooth-Scroll 顾名思义，让Ctrl+F,Ctrl+B的滚屏来得更顺滑一些……
+15. vim-autoformat
+16. ale 代码静态检查
+
+
+### 管理dotfiles
+使用[homeshick](https://github.com/andsens/homeshick)
+常用命令
+```bash
+homeshick generate dotfiles #创建
+homeshick cd dotfiles
+homeshick track dotfiles .bashrc #添加
+homeshick clone git@github.com:lossss/dotfiles.git #新机拷贝
+```
 # vim 中常用的快捷键
 
 <!--more-->
@@ -11,61 +159,59 @@ tags: vim
 ## 移动
 
 超常用的hjkl就不必多说了
-| 快捷键    | 功能                                            |
-|:----------|:------------------------------------------------|
-| 0         | （数字 0）移动光标至本行开头                    |
-| ^         | 移动光标至本行第一个非空字符处                  |
-| $         | 移动到行尾                                      |
-| gg        | 最上面一行                                      |
-| NG        | 跳到第N行(绝对行数)                             |
-| :15       | 跳转到15行                                      |
-| G         | 移动至文件末尾                                  |
+| 快捷键       | 功能                       |
+|-----------|--------------------------|
+| 0         | （数字 0）移动光标至本行开头          |
+| ^         | 移动光标至本行第一个非空字符处          |
+| $         | 移动到行尾                    |
+| gg        | 最上面一行                    |
+| G         | 最下面一行                    |
+| NG        | 跳到第N行(绝对行数)              |
+| :15       | 跳转到15行                   |
 | w         | 向前移动一个词 （上一个字母和数字组成的词之后） |
-| W         | 向前移动一个词 （以空格分隔的词）               |
-| e         | 跳到这个单词的末尾                              |
-| E         | 跳到这个单词的末尾.                             |
+| e         | 跳到这个单词的末尾                |
 | b         | 向后移动一个词 （下一个字母和数字组成的词之前） |
-| f         | 搜索例如fw就会移动到这一行中出现的第一个w       |
-| %         | 跳到对应的(, (, [ 处                            |
-| *         | 跳到当前光标的下一个(上一个) 相同单词的地方     |
-| ctrl+f    | Full Page Forward                               |
-| ctrl+b    | Full Page Back                                  |
-| ctrl+u    | Half Page Forward                               |
-| ctrl+d    | Half Page Back                                  |
-| ctrl+v    | Visual Block Mode                               |
-| shift + ] | 移动到下一个空行                                |
-| shift + [ | 移动到上一个空行                                |
-| vii       | 全选                                            |
+| f         | 搜索例如fw就会移动到这一行中出现的第一个w   |
+| %         | 跳到对应的(, (, [ 处           |
+| *         | 跳到当前光标的下一个(上一个) 相同单词的地方  |
+| ctrl+f    | full page forward        |
+| ctrl+b    | full page back           |
+| ctrl+u    | half page forward        |
+| ctrl+d    | half page back           |
+| ctrl+v    | visual block mode        |
+| shift + ] | 移动到下一个空行                 |
+| shift + [ | 移动到上一个空行                 |
+| vii       | 全选                       |
 
-w W e E 的区别
+w w e e 的区别
 ![](http://ou7k0sem6.bkt.clouddn.com/vim-notes/1.jpg)
 
 ## 常用补充
-| 快捷键                  | 功能                                                         |
-|:------------------------|:-------------------------------------------------------------|
-| i                       | 词前插入                                                     |
-| shift+i                 | 行首插入                                                     |
-| a                       | 词后插入                                                     |
-| shift+a                 | 行尾插入                                                     |
-| .                       | .可以重复执行上个指令 比如fw之后.就会继续移动到下一个w的位置 |
-| D                       | 删除至行尾 d$的缩写                                          |
-| x                       | 删除当前的字符                                               |
-| X                       | 向前删除                                                     |
-| s                       | 替换 按下之后会删除当前的字符并进入insert模式                |
-| 3dd                     | 剪切3行                                                      |
-| p                       | 黏贴                                                         |
-| ctrl+shift+v / 鼠标中键 | 从clipboard粘贴                                              |
-| u                       | 撤销相当于ctrl+z                                             |
-| ctrl+r                  | 相当于ctrl+y                                                 |
-| ZZ                      | 保存并退出                                                   |
-| dt"                     | 删除直到"                                                    |
-| J                       | 删除换行符，合并两行                                         |
-| \< \>                   | 调整代码缩进                                                 |
-| =                       | 自动格式化代码缩进                                           |
-| zc                      | 折叠代码                                                     |
-| zo                      | 展开带代码                                                   |
-| shift+v                 | 选择当前行                                                   |
-| shift+d                 | 删除至行尾                                                   |
+| 快捷键                 | 功能                                |
+|---------------------|-----------------------------------|
+| i                   | 词前插入                              |
+| shift+i             | 行首插入                              |
+| a                   | 词后插入                              |
+| shift+a             | 行尾插入                              |
+| .                   | .可以重复执行上个指令 比如fw之后.就会继续移动到下一个w的位置 |
+| d                   | 删除至行尾 d$的缩写                       |
+| x                   | 删除当前的字符                           |
+| x                   | 向前删除                              |
+| s                   | 替换 按下之后会删除当前的字符并进入insert模式        |
+| 3dd                 | 剪切3行                              |
+| p                   | 黏贴                                |
+| ctrl+shift+v / 鼠标中键 | 从clipboard粘贴                      |
+| u                   | 撤销相当于ctrl+z                       |
+| ctrl+r              | 相当于ctrl+y                         |
+| ZZ                  | 保存并退出                             |
+| dt"                 | 删除直到"                             |
+| J                   | 删除换行符，合并两行                        |
+| \< \>               | 调整代码缩进                            |
+| =                   | 自动格式化代码缩进                         |
+| zc                  | 折叠代码                              |
+| zo                  | 展开带代码                             |
+| shift+v             | 选择当前行                             |
+| shift+d             | 删除至行尾                             |
 
 ## text-object
 
@@ -75,35 +221,37 @@ an object：包含尾部间隔空格
 inner object：只是内容本身，不包含尾部单词间隔空格
 
 ### word / sentence / paragraph 
-| textobject | 说明      |
-|:-----------|:----------|
+| textobject | 说明        |
+|------------|-----------|
 | w          | word      |
 | s          | sentence  |
 | p          | paragraph |
 
 ### block / Block
-| textobject | 说明              |
-|:-----------|:------------------|
-| ]/[        | [] block          |
-| )/(、b     | block             |
-| >/<、>/<   | <> block          |
-| }/{、B     | Block             |
+| textobject | 说明               |
+|------------|------------------|
+| ]/[        | [] block         |
+| )/(、b      | block            |
+| >/<、>/<    | <> block         |
+| }/{、B      | Block            |
 | t          | tag block：<> </> |
 
 ### visual mode
 在可视选择模式下，可以以 v 做前缀，a 或 i 限定边界，后续指定操作对象，来实现针对文本对象的选择：
 
-| 指令 | 说明                                                |
-|:-----|:----------------------------------------------------|
-| viw  | 选中单词                                            |
-| vis  | 选中句子                                            |
-| vip  | 选中段落                                            |
-| vi(  | 选中圆括号中的内容                                  |
-| vi[  | 选中中括号之间的内容                                |
+| 指令   | 说明                         |
+|------|----------------------------|
+| viw  | 选中单词                       |
+| vis  | 选中句子                       |
+| vit  | 选中html标签内的内容               |
+| vip  | 选中段落                       |
+| vi(  | 选中圆括号中的内容                  |
+| vi[  | 选中中括号之间的内容                 |
 | v2i{ | 选中两层大括号之间的所有内容 数字限定选择的嵌套层数 |
-| v3aw | 选择三个单词（包含中间的2个间隔空格）               |
-| v3iw | 选择三个单词（2个单词+间隔空格）                    |
-另外，可将 v 选择操作指令替换为 x、d、y 等操作符(operator)，来针对文本对象操作。
+| v3aw | 选择三个单词（包含中间的2个间隔空格）        |
+| v3iw | 选择三个单词（2个单词+间隔空格）          |
+另外，可将 v 选择操作指令替换为 c、x、d、y 等操作符(operator)，来针对文本对象操作
+
 ## 小tips
 1. 多行同时编辑:
 
@@ -140,6 +288,24 @@ ci'
 9. 清空一行 而不删除这行
 normal mode 0D // 0 至行首 shift+d 清空
 
+10. 插入新的一行而不进入insert mode
+yy一个空行再p
+
+11. 多文件操作
+```bash
+window 常用操作
+:sp 横分屏
+:vs 竖分屏
+:sp filepath 分屏打开文件
+
+buffer 常用操作
+:buf 2 第二个 buffer
+:bn 下一个 buffer # 自定义 <c-n>
+:bp 上一个 buffer # 自定义 <c-N>
+:bd 关闭当前 buffer
+
+```
+
 ### .vimrc
 在~/.vimrc(没有可以自己新建)加入以下内容
 这个就是vim的配置文件
@@ -161,12 +327,12 @@ hlsearch
 
 ## [vscode vim plugin](https://github.com/VSCodeVim/Vim)
 ### [vim-surround](https://github.com/VSCodeVim/Vim#vim-surround)
-| Surround Command                       | Description                                                            |
-|:---------------------------------------|:-----------------------------------------------------------------------|
-| d s \<existing char\>                  | Delete existing surround                                               |
-| c s \<existing char\> \<desired char\> | Change surround |existing to desired                                   |
-| y s \<motion\> \<desired char\>        | Surround something with |something using motion (as in "you surround") |
-| S \<desired char\>                     | Surround when in visual modes |(surrounds full selection)              |
+| Surround Command                       | Description                   |                                               |
+|----------------------------------------|-------------------------------|-----------------------------------------------|
+| d s \<existing char\>                  | Delete existing surround      |                                               |
+| c s \<existing char\> \<desired char\> | Change surround               | existing to desired                           |
+| y s \<motion\> \<desired char\>        | Surround something with       | something using motion (as in "you surround") |
+| S \<desired char\>                     | Surround when in visual modes | (surrounds full selection)                    |
 
 hint: ysaw)
 
@@ -178,3 +344,5 @@ http://www.oschina.net/translate/learn-vim-progressively
 https://computers.tutsplus.com/tutorials/vim-for-beginners--cms-21118
 
 http://col.dog/2015/12/13/vim-tutorials-006-text_objects/
+
+https://xiaozhou.net/learn-the-command-line-vim-2018-08-08.html
