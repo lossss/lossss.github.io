@@ -148,6 +148,7 @@ ys  - add a surrounding
 常用命令
 ```bash
 homeshick generate dotfiles #创建
+homeshick cd dotfiles
 homeshick track dotfiles .bashrc #添加
 homeshick clone git@github.com:lossss/dotfiles.git #新机拷贝
 ```
