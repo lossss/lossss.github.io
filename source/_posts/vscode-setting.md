@@ -11,7 +11,7 @@ vscode 设置
 
 windows下配置 Gist ID : a1c4db18a2482d9bfb10c43e3a6831b7
 
-插件是 setting sync 具体使用方法可以参考[这里](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+插件是 ~~setting sync~~ 改用 Syncing
 
 ## 常用设置
 
@@ -28,22 +28,23 @@ view：toggle menu bar
 在文件 首选项 设置 用户设置中加入`"editor.fontSize":17`即可
 
 ## 常用快捷键
-| 快捷键(mac) |       快捷键(win)       |                          功能                          |
-| ----------- | ----------------------- | ------------------------------------------------------ |
-|             | ctrl+shift+p            |                                                        |
-|             | ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
-|             | shift+alt+f             | 格式化文件                                             |
-|             | ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
-|             | ctrl+tab                | 历史打开文件之间切换                                   |
-|             | ctrl+k然后按left或right | 编辑器换位置                                           |
-|             | alt+上/下               | 上移或下移代码                                         |
-|             | ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
-|             | ctrl+\                  | 复制分屏                                               |
-| shift+cmd+m |                         | problems                                               |
-| shift+cmd+u |                         | output                                                 |
-| shift+cmd+y |                         | debug console                                          |
-| ctrl+`      |                         | terminal                                               |
-| ctrl+123    |                         | 在已经打开的tab里面切换                                |
+| 快捷键(mac)  | 快捷键(win)             | 功能                                                   |
+|:-------------|:------------------------|:-------------------------------------------------------|
+|              | ctrl+shift+p            |                                                        |
+|              | ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
+|              | shift+alt+f             | 格式化文件                                             |
+|              | ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
+|              | ctrl+tab                | 历史打开文件之间切换                                   |
+|              | ctrl+k然后按left或right | 编辑器换位置                                           |
+|              | alt+上/下               | 上移或下移代码                                         |
+|              | ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
+|              | ctrl+\                  | 复制分屏                                               |
+| shift+cmd+m  |                         | problems                                               |
+| shift+cmd+u  |                         | output                                                 |
+| shift+cmd+y  |                         | debug console                                          |
+| ctrl+`       |                         | terminal                                               |
+| ctrl+123     |                         | 在已经打开的tab里面切换                                |
+| ctrl+shift+i |                         | reveal active file in side bar                         |
 
 ### 小tips
 1.如果在编辑markdown时需要格式化表格当使用vim时可以如下操作
@@ -135,6 +136,30 @@ sync:reset extension settings
 ### vim
 
 1. vim
+这个插件可以实现vim中的大多数操作介绍几个比较有用的(安装vim插件后自带的,无需其他插件)
+
+    1. [multi-cursor-mode](https://github.com/VSCodeVim/Vim#%EF%B8%8F-multi-cursor-mode)
+        先用v选择需要修改的单词在用 cmd+d 向下选中同样单词 然后修改
+    1. [vim-surround](https://github.com/VSCodeVim/Vim#vim-surround)
+        | Surround Command                       | Description                                                            |
+        |:---------------------------------------|:-----------------------------------------------------------------------|
+        | d s \<existing char\>                  | Delete existing surround                                               |
+        | c s \<existing char\> \<desired char\> | Change surround |existing to desired                                   |
+        | y s \<motion\> \<desired char\>        | Surround something with |something using motion (as in "you surround") |
+        | S \<desired char\>                     | Surround when in visual modes |(surrounds full selection)              |
+
+        hint: ysaw)
+    1.[vim-easymotion](https://github.com/VSCodeVim/Vim#vim-easymotion)
+        这是一个快速移动插件,默认的\<leader>是 \\
+
+        | command               | description             |
+        |:----------------------|:------------------------|
+        | \<leader>\<leader> s  | Search character        |
+        | \<leader>\<leader> 2s | Search 2 characters     |
+        | \<leader>\<leader> w  | Start of word forwards  |
+        | \<leader>\<leader> b  | Start of word backwards |
+        | \<leader>\<leader> j  | Start of line forwards  |
+        | \<leader>\<leader> k  | Start of line backwards |
 
 2. relative-line-numbers
 
@@ -161,7 +186,7 @@ zc 折叠代码后jk移动时会自动打开 要避免的话 setting 里面加`"
 3. snippet for json
 
 | Snippets | Content                                                                                                    |
-| -------- | ---------------------------------------------------------------------------------------------------------- |
+|:---------|:-----------------------------------------------------------------------------------------------------------|
 | obj      | Create a JSON object                                                                                       |
 | objc     | Create a JSON object ending with comma                                                                     |
 | arr      | Create a JSON array                                                                                        |
@@ -184,3 +209,6 @@ zc 折叠代码后jk移动时会自动打开 要避免的话 setting 里面加`"
 sudo dpkg -r code
 sudo dpkg -i code_downloaded_package.deb #用下载的最新的deb的名字
 ```
+## tips
+
+### [Launching from the Command Line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)

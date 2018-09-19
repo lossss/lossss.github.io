@@ -66,4 +66,3 @@ curl ifconfig.me
 
 个人习惯把大写键改为command键
 keyboard -> modifier keys -> usb keyboard -> Caps Lockey 改为command
-
