@@ -25,12 +25,13 @@ brew upgrade neovim
 
 ## 配置
 1. neovim 配置文件路径是 `~/.config/nvim/init.vim`(没有的话自己新建)这个的内容和vim的.vimrc内容是一样的
-1. 换个主题 这里我用的是[Dracula](https://draculatheme.com/)这种主题很多自己找喜欢的就行
+1. 换个主题 这里我用的是[janah](https://github.com/mhinz/vim-janah)这种主题很多自己找喜欢的就行
     1. 先把对应的主题下载下来然后把主题的.vim文件放在`~/.config/nvim/colors`下(或者`~/.vim/colors`下)
     1. 在init.vim 里面加入
       ```vim
       syntax on
-      color dracula
+      autocmd ColorScheme janah highlight Normal ctermbg=235
+      colorscheme janah
       ```
      如果用zsh的同学需要注意你的zsh主题最好要和neovim主题一样不然显示可能会有点问题
 1. 可以在github上看一些高手的init.vim设置
@@ -62,7 +63,8 @@ PlugUpgrade #更新vim-plug自身
 ### 推荐的插件
 好的vim插件可以上 [awesome vim](https://vimawesome.com/)
 
-1. EasyMotion 在当前文件中快速移动光标到指定查找位置的插件，十分方便和高效
+1. [vim-plug](https://github.com/junegunn/vim-plug) Vim的插件管理器，支持并发安装和更新
+2. EasyMotion 在当前文件中快速移动光标到指定查找位置的插件，十分方便和高效
 
 | 快捷键               | 功能                             |
 |:---------------------|:---------------------------------|
@@ -84,24 +86,61 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 ```
+3. [Vim-Startify](https://github.com/mhinz/vim-startify) Vim启动首屏自定义插件，让你的Vim启动后显示别具一格的首屏样式
+注: 有些主题会使 vim-startify显示不正常
 
-2. [vim-plug](https://github.com/junegunn/vim-plug) Vim的插件管理器，支持并发安装和更新
-1. [CtrlP](https://github.com/kien/ctrlp.vim) 不可缺少的快速跳转插件，它可以快速的帮助我们找到项目中的文件。在vim normal模式下，按下ctrl+p，然后输入你要寻找的文件就行了。
-1. [Ack]() 全文搜索插件，可以在当前打开的项目中进行源码的全文搜索，并可以在搜索结果中方便的切换和打开源码文件，十分方便。
-1. [NERDTree] Vim中的文件管理器，方便编辑文件，创建目录，删除和修改文件等等……
-1. [NERDTreeCommenter] 方便的用来注释代码的插件
-1. TagBar 查看当前代码文件中的变量和函数列表的插件，可以切换和跳转到代码中对应的变量和函数的位置
-1. AutoPairs 自动补全括号的插件，包括小括号，中括号，以及花括号，可以提升编码效率
-1. Surround 快速给词加环绕符号,例如单引号/双引号/括号/成对标签等的插件
-1. Vim-Airline Vim状态栏插件，包括显示行号，列号，文件类型，文件名，以及Git状态
-1. deoplete 自动补全插件，写代码必备，有了这个插件，就有了IDE的感觉
-1. Vim-Startify Vim启动首屏自定义插件，让你的Vim启动后显示别具一格的首屏样式
-1. Vim-Indent-Guides 显示代码对齐的引导条
-1. Accelerated-Smooth-Scroll 顾名思义，让Ctrl+F,Ctrl+B的滚屏来得更顺滑一些……
-1. YouDao-Translater Vim中的有道翻译插件
-1. Matrix-ScreenSaver Vim中的黑客帝国屏幕保护插件，很酷很炫
+4. [NERDTree](https://github.com/scrooloose/nerdtree) Vim中的文件管理器，方便编辑文件，创建目录，删除和修改文件等等……
+快捷键需要设置
+```vim
+map <F2> :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>g :NERDTreeToggle<CR>
+```
+| 快捷键 | 功能                     |
+|:-------|:-------------------------|
+| F2     | shownerdtree             |
+| ;g     | show nerdtree            |
+| ;f     | find file in the sidebar |
 
-python相关插件
+5. [CtrlP](https://github.com/kien/ctrlp.vim) 不可缺少的快速跳转插件，它可以快速的帮助我们找到项目中的文件。在vim normal模式下，按下ctrl+p，然后输入你要寻找的文件就行了。
+
+| 快捷键          | 功能                                                                |
+|:----------------|:--------------------------------------------------------------------|
+| \<c-d\>         | 以文件名搜索                                                        |
+| \<c-j\> \<c-k\> | 在查询中搜索                                                        |
+| \<c-z\> \<c-o\> | Use \<c-z\> to mark/unmark multiple files and \<c-o\> to open them. |
+
+6. [NERDTreeCommenter](https://github.com/scrooloose/nerdcommenter) 方便的用来注释代码的插件
+```bash
+[count]<leader>ci |NERDComInvertComment|
+```
+
+7. [Ack] 全文搜索插件，可以在当前打开的项目中进行源码的全文搜索，并可以在搜索结果中方便的切换和打开源码文件，十分方便。
+```bash
+:Ack xxx * ,在项目里搜索xxx单词.
+:ack
+```
+8. [TagBar](https://github.com/majutsushi/tagbar) 查看当前代码文件中的变量和函数列表的插件，可以切换和跳转到代码中对应的变量和函数的位置k
+```bash
+"tagbar
+" toggle TagBar with F8
+nnoremap <silent> <F8> :TagbarToggle<CR>
+" set focus to TagBar when opening it
+let g:tagbar_autofocus = 1
+```
+9. AutoPairs 自动补全括号的插件，包括小括号，中括号，以及花括号，可以提升编码效率
+10. Surround 快速给词加环绕符号,例如单引号/双引号/括号/成对标签等的插件
+```bash
+ds  - delete a surrounding
+cs  - change a surrounding
+ys  - add a surrounding
+```
+11. Vim-Airline Vim状态栏插件，包括显示行号，列号，文件类型，文件名，以及Git状态
+12. deoplete 自动补全插件，写代码必备，有了这个插件，就有了IDE的感觉
+13. Vim-Indent-Guides 显示代码对齐的引导条
+14. Accelerated-Smooth-Scroll 顾名思义，让Ctrl+F,Ctrl+B的滚屏来得更顺滑一些……
+15. vim-autoformat
+16. ale 代码静态检查
 
 
 ### 管理dotfiles
@@ -247,8 +286,24 @@ ci'
 
 9. 清空一行 而不删除这行
 normal mode 0D // 0 至行首 shift+d 清空
+
 10. 插入新的一行而不进入insert mode
 yy一个空行再p
+
+11. 多文件操作
+```bash
+window 常用操作
+:sp 横分屏
+:vs 竖分屏
+:sp filepath 分屏打开文件
+
+buffer 常用操作
+:buf 2 第二个 buffer
+:bn 下一个 buffer # 自定义 <c-n>
+:bp 上一个 buffer # 自定义 <c-N>
+:bd 关闭当前 buffer
+
+```
 
 ### .vimrc
 在~/.vimrc(没有可以自己新建)加入以下内容

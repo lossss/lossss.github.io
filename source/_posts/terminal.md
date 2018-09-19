@@ -28,6 +28,19 @@ tags: zsh
 | ctrl+r | 搜索历史命令     |
 | ctrl+l | 清屏             |
 
+iterm2 的常用快捷键
+```bash
+新建标签：command + t
+
+关闭标签：command + w
+
+切换标签：command + 数字 command + 左右方向键
+
+切换全屏：command + enter
+
+查找：command + f
+```
+
 # 常用插件
 1. [autojump](https://github.com/wting/autojump)
 如果你用的oh-my-zsh 只需要在`.zshrc`里面 配置plugins=(autojump) 即可
@@ -62,7 +75,7 @@ Sessions
 s  list sessions
 $  name session
 
-Windows (tabs)
+Windows
 c  create window
 w  list windows
 n  next window
@@ -71,6 +84,7 @@ f  find window
 ,  name window
 &  kill window
 ```
+
 
 >一般工作模式 是1个session里面开多个window 然后一个window开nvim 其他的可以跑命令 可以用 prefix+n prefx+p 切换window
 
