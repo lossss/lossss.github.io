@@ -12,13 +12,13 @@ git中修改别名
 git config --global alias.st status
 ```
 2. 或者找到文件
-![](http://ou7k0sem6.bkt.clouddn.com/git-alias/1.png)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/git-alias/1.png?x-oss-process=style/blogimage&Expires=1550851501&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=H34yWZP%2Bfa1uQfg9odFnZNx2V9s%3D)
 3. 修改对应的alias
-![](http://ou7k0sem6.bkt.clouddn.com/git-alias/2.png)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/git-alias/2.png?x-oss-process=style/blogimage&Expires=1550851530&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=2ZqRynp7JrzFxZdVVZiIft8fn3g%3D)
 4. 以下是我的alias名(仅作个人备忘)
 
 | alias   | full name                                                                                                                               |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | st      | git status                                                                                                                              |
 | co      | git checkout                                                                                                                            |
 | ci      | git commit -m                                                                                                                           |
@@ -26,7 +26,7 @@ git config --global alias.st status
 | last    | git log -1                                                                                                                              |
 | lg      | git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit |
 | unstage | git reset HEAD                                                                                                                          |
-| me      | git merge --no-ff                                                                                                                        |
+| me      | git merge --no-ff                                                                                                                       |
 ## git in zsh
 | shortcuts | operation                         |
 |-----------|-----------------------------------|

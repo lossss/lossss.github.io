@@ -7,37 +7,37 @@ tags: linux
 linux 备忘
 <!--more-->
 ## 常用命令
-| 命令                           | 功能                  |
-|:-------------------------------|:----------------------|
-| ctrl+shift+ +                  | 放大命令行字体        |
-| ctrl+ -                        | 缩小命令行字体        |
-| history (!200 执行200行的命令) | 查看历史命令          |
-| ls 2*                          | 以2开头的文件         |
-| ls 2?                          | 以2开头的文件(占一位) |
-| ls 1[1-5]3.txt                 | 正则匹配              |
-| ls > xxx.txt                   | ls结果保存到xxx.txt   |
-| ls >> xxx.txt                  | ls结果追加到xxx.txt   |
-| more xxx.txt                   | 滚屏查看文件          |
-| ls -alh /bin \                 | more           | 管道 |
-| cd ../..                       | 上上层                |
-| cd -                           | 回到上一次目录        |
-| cd ~                           | 回到加速目录          |
-| tree                           | 目录树                |
-| mkdir A/B/C/D -p               |                       |
-| rmdir                          | 删除文件夹            |
-| rm C -r                        | 递归删除              |
-| mv 111.txt A/222.txt           | 剪切粘贴              |
-| mv 1.txt 2.txt                 | 重命名                |
-| cp 111.txt A/222.txt           | 复制粘贴              |
-| cp A B -r                      | 复制粘贴文件夹        |
-| ln -s 1.txt 1-softlink.txt     | 软连接                |
-| ln 1.txt 1.txt 1-hardlink.txt  | 硬链接                |
-| cat 1.txt 2.txt >> xxx.txt     |                       |
-| grep -n "ntfs" xxx.txt         | 显示包含ntfs的内容    |
-| grep -v "ntfs" xxx.txt         | 不包含ntfs的内容      |
-| grep "^ntfs" xxx.txt           | 以ntfs开头            |
-| grep "ntfs$" xxx.txt           | 以ntfs结尾            |
-| find / -name "*name*"          | 按名字查找            |
+| 命令                            | 功能             |     |
+|-------------------------------|----------------|-----|
+| ctrl+shift+ +                 | 放大命令行字体        |     |
+| ctrl+ -                       | 缩小命令行字体        |     |
+| history (!200 执行200行的命令)      | 查看历史命令         |     |
+| ls 2*                         | 以2开头的文件        |     |
+| ls 2?                         | 以2开头的文件(占一位)   |     |
+| ls 1[1-5]3.txt                | 正则匹配           |     |
+| ls > xxx.txt                  | ls结果保存到xxx.txt |     |
+| ls >> xxx.txt                 | ls结果追加到xxx.txt |     |
+| more xxx.txt                  | 滚屏查看文件         |     |
+| ls -alh /bin \                | more           | 管道  |
+| cd ../..                      | 上上层            |     |
+| cd -                          | 回到上一次目录        |     |
+| cd ~                          | 回到加速目录         |     |
+| tree                          | 目录树            |     |
+| mkdir A/B/C/D -p              |                |     |
+| rmdir                         | 删除文件夹          |     |
+| rm C -r                       | 递归删除           |     |
+| mv 111.txt A/222.txt          | 剪切粘贴           |     |
+| mv 1.txt 2.txt                | 重命名            |     |
+| cp 111.txt A/222.txt          | 复制粘贴           |     |
+| cp A B -r                     | 复制粘贴文件夹        |     |
+| ln -s 1.txt 1-softlink.txt    | 软连接            |     |
+| ln 1.txt 1.txt 1-hardlink.txt | 硬链接            |     |
+| cat 1.txt 2.txt >> xxx.txt    |                |     |
+| grep -n "ntfs" xxx.txt        | 显示包含ntfs的内容    |     |
+| grep -v "ntfs" xxx.txt        | 不包含ntfs的内容     |     |
+| grep "^ntfs" xxx.txt          | 以ntfs开头        |     |
+| grep "ntfs$" xxx.txt          | 以ntfs结尾        |     |
+| find / -name "*name*"         | 按名字查找          |     |
 
 
 ## zsh
@@ -60,11 +60,11 @@ chsh -s /bin/zsh
 ```bash
 vim ~/.zshrc
 ```
-![主题设置](http://ou7k0sem6.bkt.clouddn.com/linux-notes/1.png)
+![主题设置](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/1.png?x-oss-process=style/blogimage&Expires=1550850725&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=uDLLqfXfKeCX%2Fco7avDTTiQZ9WQ%3D)
 [主题样式查看](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
 
 如果出现中间图片的显示异常
-![显示异常](http://ou7k0sem6.bkt.clouddn.com/linux-notes/2.png)
+![显示异常](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/2.png?x-oss-process=style/blogimage&Expires=1550850757&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=BO0J%2FBo4KzCLUtmE65tlLQznqF4%3D)
 
 6. 安装powerline https://github.com/powerline/fonts
 
@@ -87,7 +87,7 @@ dconf reset -f /org/gnome/terminal/legacy/profiles:/
 ```
 terminator 就不用改了 自己加一个profile吧
 
-![我使用的配置](http://ou7k0sem6.bkt.clouddn.com/linux-notes/3.png)
+![我使用的配置](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/3.png?x-oss-process=style/blogimage&Expires=1550850772&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=YF2fUExWbYlK%2BMVkm4TYHVmm4j8%3D)
 
 然后修改 ~/.config/terminator/config 中的[layout]参数为你自己设置的profile
 
@@ -147,7 +147,7 @@ ack xxx
 
 #### git
 | shortcuts | operation                         |
-|:----------|:----------------------------------|
+|-----------|-----------------------------------|
 | gaa       | git add -all                      |
 | gst       | git status                        |
 | gb        | git branch                        |

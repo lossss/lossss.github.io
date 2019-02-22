@@ -17,25 +17,25 @@ intellij 设置备忘
 
 ## 快捷键
 
-| 操作                        | 快捷键              | keymap searching|
-| --------------------------- | ------------------- | ------ |
-| 全局搜索                    | 双击 Shift          |        |
-| 注释                        | Ctrl+/ Ctrl+Shift+/ |        |
-| 根据名称查找类或文件.       | ctrl+n              |        |
-| Navigating to Action        | ctrl+shift+a        |        |
-| 跳转到navigation bar(见图1) | alt+home            |        |
-| open doc                    | ctrl+q              | doc       |
+| 操作                     | 快捷键                 | keymap searching |
+|------------------------|---------------------|------------------|
+| 全局搜索                   | 双击 Shift            |                  |
+| 注释                     | Ctrl+/ Ctrl+Shift+/ |                  |
+| 根据名称查找类或文件.            | ctrl+n              |                  |
+| Navigating to Action   | ctrl+shift+a        |                  |
+| 跳转到navigation bar(见图1) | alt+home            |                  |
+| open doc               | ctrl+q              | doc              |
 
 图1
 
-![图1](http://ou7k0sem6.bkt.clouddn.com/intellij-setting/2.png)
+![图1](https://losssblog.oss-cn-hangzhou.aliyuncs.com/intellij-setting/1.png?x-oss-process=style/blogimage&Expires=1550851317&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=ZZU3YVcFvNDEGFZNf8je9MfbfXg%3D)
 
 
 
 ## snippet
 
-| 操作 | 作用            |
-| ---- | --------------- |
+| 操作   | 作用              |
+|------|-----------------|
 | psvm | generating main |
 | sout | sysout          |
 
@@ -54,7 +54,7 @@ intellij 设置备忘
 
 与eclipse不同 project 就相当于 workspace 在project中新建 module 就相当于eclipse中的 project
 
-![](http://ou7k0sem6.bkt.clouddn.com/intellij-setting/1.png)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/intellij-setting/2.png?x-oss-process=style/blogimage&Expires=1550851444&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=qFKSNaCxwSFmt4Kbt58QsMVqyjw%3D)
 
 ### 导入jar
 

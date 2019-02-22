@@ -12,7 +12,7 @@ Atom 的基础设置
 ### 在编辑中像sublime一样会用点显示空格
 <font color= "red">`File->Settings`</font>
 
-![](http://ou7k0sem6.bkt.clouddn.com/atom-settings/1.png)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/atom-settings/1.png?x-oss-process=style/blogimage&Expires=1550851628&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=n26aZWcEAyAIjssmMbyxGMhQ%2B%2Fc%3D)
 
 勾选show Invisible 即可
 
@@ -20,7 +20,7 @@ Atom 的基础设置
 
 `File->Settings`
 
-![](http://ou7k0sem6.bkt.clouddn.com/atom-settings/1.png)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/atom-settings/2.png?x-oss-process=style/blogimage&Expires=1550851664&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=vm08q%2Fkts%2FBXRUnrhLRnhst%2BrlY%3D)
 
 修改tab length 为4
 
@@ -39,25 +39,25 @@ atom-text-editor::shadow .wrap-guide {
 
 1. tree-view
 
-| 快捷键          | 操作                 | 对应配置中的名称             |
-| --------------- | -------------------- | ---------------------------- |
-| alt+\ (esc返回) | 焦点移到目录树       | tree-view:toggle-focus       |
-| a               | 新建文件             | tree-view:add-file           |
-| ctrl+[          | 展开文件夹           | tree-view:collapse-directory |
-| ctrl+]          | 关闭文件夹           | tree-view:expand-item        |
-| ctrl+shift+c    | 复制当前文件绝对路径 |                              |
+| 快捷键           | 操作         | 对应配置中的名称                     |
+|---------------|------------|------------------------------|
+| alt+\ (esc返回) | 焦点移到目录树    | tree-view:toggle-focus       |
+| a             | 新建文件       | tree-view:add-file           |
+| ctrl+[        | 展开文件夹      | tree-view:collapse-directory |
+| ctrl+]        | 关闭文件夹      | tree-view:expand-item        |
+| ctrl+shift+c  | 复制当前文件绝对路径 |                              |
 
 2. 文件操作
 
-| 快捷键       | 操作                   | 对应配置中的名称 |
-| ------------ | ---------------------- | ---------------- |
-| ctrl+t       | 打开文件               |                  |
-| ctrl+shift+f | 在工程中搜索           |                  |
-|ctrl+h|在当前文件中搜索替换          |                  |
-| ctrl+b       | 在已经打开的文件中切换 |                  |
-| ctrl+alt+[   | 收缩代码块             |                  |
-| ctrl+alt+]   | 展开代码块             |                  |
-| ctrl+tab   | 在已经打开的标签中切换 |                  |
+| 快捷键          | 操作          | 对应配置中的名称 |
+|--------------|-------------|----------|
+| ctrl+t       | 打开文件        |          |
+| ctrl+shift+f | 在工程中搜索      |          |
+| ctrl+h       | 在当前文件中搜索替换  |          |
+| ctrl+b       | 在已经打开的文件中切换 |          |
+| ctrl+alt+[   | 收缩代码块       |          |
+| ctrl+alt+]   | 展开代码块       |          |
+| ctrl+tab     | 在已经打开的标签中切换 |          |
 
 3. 在atom中更改的快捷键
 因为vim插件会和atom的默认快捷键冲突所以修改部分快捷键在`keymap.cson`中修改
