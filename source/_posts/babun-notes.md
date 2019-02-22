@@ -49,7 +49,7 @@ if you want to use other themes please let the theme file into `~/.oh-my-zsh/the
 ```
 4. settings about mouse
 
-![mouse settings](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/1.png?x-oss-process=style/blogimage&Expires=1550851576&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=ecJJVdlWs9NlD8y1Yg7Kg2o8LI8%3D)
+![mouse settings](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/1.png?x-oss-process=style/blogimage)
 
 use shift and left mouse to choose
 
@@ -57,7 +57,7 @@ use right mouse to open menu
 
 4. reload the babun
 
-![cool](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/2.png?x-oss-process=style/blogimage&Expires=1550851589&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=TP9XnVcfJk%2FZr2483KhrNNe2iq4%3D)
+![cool](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/2.png?x-oss-process=style/blogimage)
 
 https://www.sorendam.com/take-control-of-your-console-in-windows-with-babun-oh-my-zsh-and-powerline-fonts/
 
@@ -71,7 +71,7 @@ please use ZSH_THEME="babun" or other themes because the theme "agnoster" has so
 ```
 cd $OLDPWD
 ```
-![end](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/3.png?x-oss-process=style/blogimage&Expires=1550851603&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=Flcdo1%2FAtqCsOq1Tj7zxN%2BsOY%2Fk%3D)
+![end](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/3.png?x-oss-process=style/blogimage)
 
 use left mouse button to choose and copy then click the right mouse button to paste
 

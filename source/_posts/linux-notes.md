@@ -60,11 +60,11 @@ chsh -s /bin/zsh
 ```bash
 vim ~/.zshrc
 ```
-![主题设置](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/1.png?x-oss-process=style/blogimage&Expires=1550850725&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=uDLLqfXfKeCX%2Fco7avDTTiQZ9WQ%3D)
+![主题设置](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/1.png?x-oss-process=style/blogimage)
 [主题样式查看](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes)
 
 如果出现中间图片的显示异常
-![显示异常](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/2.png?x-oss-process=style/blogimage&Expires=1550850757&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=BO0J%2FBo4KzCLUtmE65tlLQznqF4%3D)
+![显示异常](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/2.png?x-oss-process=style/blogimage)
 
 6. 安装powerline https://github.com/powerline/fonts
 
@@ -87,7 +87,7 @@ dconf reset -f /org/gnome/terminal/legacy/profiles:/
 ```
 terminator 就不用改了 自己加一个profile吧
 
-![我使用的配置](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/3.png?x-oss-process=style/blogimage&Expires=1550850772&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=YF2fUExWbYlK%2BMVkm4TYHVmm4j8%3D)
+![我使用的配置](https://losssblog.oss-cn-hangzhou.aliyuncs.com/linux-notes/3.png?x-oss-process=style/blogimage)
 
 然后修改 ~/.config/terminator/config 中的[layout]参数为你自己设置的profile
 
