@@ -17,7 +17,7 @@ comments: false
 
 ## based on
 使用了 hexo  国内托管于coding 国外托管于github 当然以后也会使用自己的服务器搭建
-图片托管: [七牛](https://www.qiniu.com/)
+图片托管: [阿里OSS](https://cn.aliyun.com/product/oss)
 
 域名购买: [godaddy](https://sg.godaddy.com/zh/)
 
