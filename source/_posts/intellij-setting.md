@@ -54,7 +54,7 @@ intellij 设置备忘
 
 与eclipse不同 project 就相当于 workspace 在project中新建 module 就相当于eclipse中的 project
 
-![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/intellij-setting/2.png?x-oss-process=style/blogimage&Expires=1550851444&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=qFKSNaCxwSFmt4Kbt58QsMVqyjw%3D)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/intellij-setting/1.png?x-oss-process=style/blogimage)
 
 ### 导入jar
 

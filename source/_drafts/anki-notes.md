@@ -13,7 +13,7 @@ anki 备忘
 * AwesomeTTS
 
 ## 设置
-![设置回答](https://losssblog.oss-cn-hangzhou.aliyuncs.com/anki-notes/1.png?x-oss-process=style/blogimage&Expires=1550849991&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=GCfctROJOomUFwLLa%2F%2Fw2Ix8X1o%3D)
+![设置回答](https://losssblog.oss-cn-hangzhou.aliyuncs.com/anki-notes/1.png?x-oss-process=style/blogimage)
 
 ## 配合软件
 

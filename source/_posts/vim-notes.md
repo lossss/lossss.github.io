@@ -184,7 +184,7 @@ homeshick clone git@github.com:lossss/dotfiles.git #新机拷贝
 | vii       | 全选                       |
 
 w w e e 的区别
-![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/vim-notes/1.jpg?x-oss-process=style/blogimage&Expires=1550850638&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=xqFplt%2FYQMG1gYagwJA68rQ9GSc%3D)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/vim-notes/1.jpg?x-oss-process=style/blogimage)
 
 ## 常用补充
 | 快捷键                 | 功能                                |

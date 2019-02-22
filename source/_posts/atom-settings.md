@@ -12,7 +12,7 @@ Atom 的基础设置
 ### 在编辑中像sublime一样会用点显示空格
 <font color= "red">`File->Settings`</font>
 
-![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/atom-settings/1.png?x-oss-process=style/blogimage&Expires=1550851628&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=n26aZWcEAyAIjssmMbyxGMhQ%2B%2Fc%3D)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/atom-settings/1.png?x-oss-process=style/blogimage)
 
 勾选show Invisible 即可
 
@@ -20,7 +20,7 @@ Atom 的基础设置
 
 `File->Settings`
 
-![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/atom-settings/2.png?x-oss-process=style/blogimage&Expires=1550851664&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=vm08q%2Fkts%2FBXRUnrhLRnhst%2BrlY%3D)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/atom-settings/2.png?x-oss-process=style/blogimage)
 
 修改tab length 为4
 

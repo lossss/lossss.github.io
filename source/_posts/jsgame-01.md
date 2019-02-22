@@ -649,7 +649,7 @@ var __main = function() {
 __main()
 ```
 延时效果(截图只有8帧实际会流畅很多)
-![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/jsgame-01/1.gif?x-oss-process=style/blogimage&Expires=1550851261&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=j2RXoFNxzQctYX8I0c%2B%2BBpiOV7Y%3D)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/jsgame-01/1.gif?x-oss-process=style/blogimage)
 
 加入方块
 ```javascript
