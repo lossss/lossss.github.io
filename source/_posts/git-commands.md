@@ -6,7 +6,7 @@ tags: git
 ---
 常用的git 命令备忘及常见问题
 <!--more-->
-![](http://ou7k0sem6.bkt.clouddn.com/git-commands/1.png)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/git-commands/1.png?x-oss-process=style/blogimage&Expires=1550851466&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=DXGbv00H6G3MVlImwXS9xm9n8Oo%3D)
 # git command
 ## 终极杀招
 任何命令有问题就直接在后面 --help 直接到官方文档那里不会点哪里
