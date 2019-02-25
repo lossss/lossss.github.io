@@ -28,24 +28,25 @@ view：toggle menu bar
 在文件 首选项 设置 用户设置中加入`"editor.fontSize":17`即可
 
 ## 常用快捷键
-| 快捷键(mac)  | 快捷键(win)             | 功能                                                   |
-|:-------------|:------------------------|:-------------------------------------------------------|
-|              | ctrl+shift+p            |                                                        |
-|              | ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
-|              | shift+alt+f             | 格式化文件                                             |
-|              | ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
-|              | ctrl+tab                | 历史打开文件之间切换                                   |
-|              | ctrl+k然后按left或right | 编辑器换位置                                           |
-|              | alt+上/下               | 上移或下移代码                                         |
-|              | ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
-|              | ctrl+\                  | 复制分屏                                               |
-| shift+cmd+m  |                         | problems                                               |
-| shift+cmd+u  |                         | output                                                 |
-| shift+cmd+y  |                         | debug console                                          |
-| ctrl+`       |                         | terminal                                               |
-| ctrl+123     |                         | 在已经打开的tab里面切换                                |
-| ctrl+shift+i |                         | reveal active file in side bar                         |
-
+| 快捷键(mac)                                                                                                                                                                                                               | 快捷键(win)             | 功能                                                   |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------|:-------------------------------------------------------|
+|                                                                                                                                                                                                                           | ctrl+shift+p            |                                                        |
+|                                                                                                                                                                                                                           | ctrl+shift+n            | 因为不能同时打开多个项目所以只能新建窗口来打开新的项目 |
+|                                                                                                                                                                                                                           | shift+alt+f             | 格式化文件                                             |
+|                                                                                                                                                                                                                           | ctrl+1 ctrl+2 ctrl+3    | 左中右3个编辑器的快捷键                                |
+|                                                                                                                                                                                                                           | ctrl+tab                | 历史打开文件之间切换                                   |
+|                                                                                                                                                                                                                           | ctrl+k然后按left或right | 编辑器换位置                                           |
+|                                                                                                                                                                                                                           | alt+上/下               | 上移或下移代码                                         |
+|                                                                                                                                                                                                                           | ctrl+0 或者ctrl+shift+e | focus on sidebar                                       |
+|                                                                                                                                                                                                                           | ctrl+\                  | 复制分屏                                               |
+| shift+cmd+m                                                                                                                                                                                                               |                         | problems                                               |
+| shift+cmd+u                                                                                                                                                                                                               |                         | output                                                 |
+| shift+cmd+y                                                                                                                                                                                                               |                         | debug console                                          |
+| ctrl+`       |                         | terminal |                         | |                         | |                         | |                         | |                         | |                         | |                         |                                                        |
+| ctrl+123                                                                                                                                                                                                                  |                         | 在已经打开的tab里面切换                                |
+| ctrl+shift+i                                                                                                                                                                                                              |                         | reveal active file in side bar                         |
+|                                                                                                                                                                                                                           | alt+b                   | navigateBack                                           |
+|                                                                                                                                                                                                                           | alt+f                   | navigateforward                                        |
 ### 小tips
 1.如果在编辑markdown时需要格式化表格当使用vim时可以如下操作
   * ctrl+[ 切换到normal mode
@@ -133,6 +134,8 @@ sync:reset extension settings
 6. Search Docsets
 > 查看文档  需要提前安装 velocity 或者 zeal 快捷键 shift+F1 mac中对应的插件为dash
 
+7. text table
+方便生成 markdown table 默认快捷键ctrl+q
 ### vim
 
 1. vim
@@ -141,25 +144,25 @@ sync:reset extension settings
     1. [multi-cursor-mode](https://github.com/VSCodeVim/Vim#%EF%B8%8F-multi-cursor-mode)
         先用v选择需要修改的单词在用 cmd+d 向下选中同样单词 然后修改
     1. [vim-surround](https://github.com/VSCodeVim/Vim#vim-surround)
-        | Surround Command                       | Description                                                            |
-        |:---------------------------------------|:-----------------------------------------------------------------------|
-        | d s \<existing char\>                  | Delete existing surround                                               |
-        | c s \<existing char\> \<desired char\> | Change surround |existing to desired                                   |
-        | y s \<motion\> \<desired char\>        | Surround something with |something using motion (as in "you surround") |
-        | S \<desired char\>                     | Surround when in visual modes |(surrounds full selection)              |
+| Surround Command                       | Description                                                           |
+|:---------------------------------------|:----------------------------------------------------------------------|
+| d s \<existing char\>                  | Delete existing surround                                              |
+| c s \<existing char\> \<desired char\> | Change surround|existing to desired                                   |
+| y s \<motion\> \<desired char\>        | Surround something with|something using motion (as in "you surround") |
+| S \<desired char\>                     | Surround when in visual modes|(surrounds full selection)              |
 
         hint: ysaw)
     1.[vim-easymotion](https://github.com/VSCodeVim/Vim#vim-easymotion)
         这是一个快速移动插件,默认的\<leader>是 \\
 
-        | command               | description             |
-        |:----------------------|:------------------------|
-        | \<leader>\<leader> s  | Search character        |
-        | \<leader>\<leader> 2s | Search 2 characters     |
-        | \<leader>\<leader> w  | Start of word forwards  |
-        | \<leader>\<leader> b  | Start of word backwards |
-        | \<leader>\<leader> j  | Start of line forwards  |
-        | \<leader>\<leader> k  | Start of line backwards |
+| command               | description             |
+|:----------------------|:------------------------|
+| \<leader>\<leader> s  | Search character        |
+| \<leader>\<leader> 2s | Search 2 characters     |
+| \<leader>\<leader> w  | Start of word forwards  |
+| \<leader>\<leader> b  | Start of word backwards |
+| \<leader>\<leader> j  | Start of line forwards  |
+| \<leader>\<leader> k  | Start of line backwards |
 
 2. relative-line-numbers
 
