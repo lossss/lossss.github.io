@@ -311,8 +311,7 @@ where  salary >
 -- any
 select employee_id, last_name, job_id, salary
 from   employees
-where  salary < any
-                    (select salary
+where  salary < any (select salary
                      from   employees
                      where  job_id = 'IT_PROG')
 and    job_id <> 'IT_PROG';
@@ -320,11 +319,208 @@ and    job_id <> 'IT_PROG';
 -- all
 select employee_id, last_name, job_id, salary
 from   employees
-where  salary < all
-                    (select salary
+where  salary < all (select salary
                      from   employees
                      where  job_id = 'IT_PROG')
 and    job_id <> 'IT_PROG';
+
+```
+### 创建管理表
+```sql
+-- 查看用户定义的表
+select table_name from user_tables
+-- 查看用户定义的各种数据库对象
+select distinct object_type from user_objects
+-- 查看用户定义的表, 视图, 同义词和序列
+select * from  user_catalog
+
+-- 创建表的第一种方式
+create table dept (deptno number(2,1),-- 1位小数位
+                   dname varchar2(14),
+                   loc varchar2(13));
+
+-- 创建表的第二种方式
+-- 会导入数据
+create table emp2
+as
+select employee_id id,last_name name,hire_date,salary
+from employees
+
+-- 不导入数据
+create table emp2
+as
+select employee_id id,last_name name,hire_date,salary
+from employees
+where 1=2
+
+alter table emp1
+add (email varchar2(20))
+
+alter table emp1
+modify (email varchar2(20))
+
+alter table emp1
+modify (salary number(20,2) default 2000)
+
+alter table emp1
+drop column email
+
+alter table emp1
+rename salary to sal
+
+drop table emp1
+
+truncate table emp1
+-- 清空表 不可回滚
+
+rename emp2 to employees2
+
+-- 将列设置为不可用
+alter table emp1
+set unused column test_column
+
+-- 移除不使用的列
+alter table emp1
+drop unused columns
+```
+
+### 数据处理
+#### insert
+```sql
+insert into emp1(last_name,employee_id)
+values('EE',1005)
+
+-- 数据从其他表导入
+insert into emp(last_name,hire_date,last_name,salary)
+select employee_id,hire_date,last_name,salary
+from employees
+
+```
+#### update
+```sql
+update emp1
+set salary=12000
+where employee_id = 179
+
+commit
+```
+#### delete
+```sql
+delete from department
+where department_id =270
+```
+### 事务
+```sql
+commit
+
+savepoint A
+
+rollback to savepoint A
+
+```
+### 约束
+五种约束 NOT NULL,UNIQUE,PRIMARY KEY,FOREIGN KEY,CHECK
+
+#### NOT NULL
+```sql
+create table emp2(
+  id number(10),
+  name varchar2(20) constraint emp3_name_nn not null,
+  email varchar2(20),
+  salary number(10,2)
+)
+```
+#### UNIQUE (都为空不违反唯一约束)
+```sql
+create table emp3(
+  id number(10) constraint emp3_id_uk unique,
+  name varchar2(20) constraint emp3_name_nn not null,
+  email varchar2(20),
+  salary number(10,2),
+  --表级约束
+  constraint emp3_email_uk unique(email)
+)
+```
+#### PRIMARY KEY
+```sql
+create table emp4(
+  id number(10) constraint emp4_id_pk primary key,
+  name varchar2(20) constraint emp4_name_nn not null,
+  email varchar2(20),
+  salary number(10,2),
+  --表级约束
+  constraint emp4_email_uk unique(email)
+)
+create table emp4(
+  id number(10), 
+  name varchar2(20) constraint emp4_name_nn not null,
+  email varchar2(20),
+  salary number(10,2),
+  --表级约束
+  constraint emp4_id_pk primary key,
+  constraint emp4_email_uk unique(email)
+)
+```
+#### FOREIGN KEY
+```sql
+create table emp4(
+  id number(10), 
+  name varchar2(20) constraint emp4_name_nn not null,
+  email varchar2(20),
+  salary number(10,2),
+  department_id number(10),
+  --表级约束
+  constraint emp4_id_pk primary key,
+  constraint emp4_email_uk unique(email)
+  constraint emp4_dept_id_fk foreign key(department_id) references departments(department_id)
+)
+create table emp4(
+  id number(10), 
+  name varchar2(20) constraint emp4_name_nn not null,
+  email varchar2(20),
+  salary number(10,2),
+  department_id number(10),
+  --表级约束
+  constraint emp4_id_pk primary key,
+  constraint emp4_email_uk unique(email)
+  constraint emp4_dept_id_fk foreign key(department_id) references departments(department_id) on delete cascade
+  -- ON DELETE CASCADE(级联删除): 当父表中的列被删除时，子表中相对应的列也被删除
+  references departments(department_id) on delete set null
+  -- ON DELETE SET NULL(级联置空): 子表中相应的列置空
+
+)
+
+```
+
+#### CHECK
+```sql
+create table emp4(
+  id number(10), 
+  name varchar2(20) constraint emp4_name_nn not null,
+  email varchar2(20),
+  salary number(10,2) check(salary > 1500 and salary < 30000)
+  department_id number(10),
+  --表级约束
+  constraint emp4_id_pk primary key,
+  constraint emp4_email_uk unique(email)
+  constraint emp4_dept_id_fk foreign key(department_id) references departments(department_id)
+)
+
+```
+### 
+```sql
+
+```
+### 
+```sql
+
+```
+### 
+```sql
+
+```
+### 
+```sql
 
 ```
 ### 
