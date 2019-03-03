@@ -24,8 +24,3 @@ anki 备忘
 ## 日语单词卡片制作
 主要使用 [WordQuery](https://github.com/finalion/WordQuery/blob/master/README-CN.md)
 字典使用 中日日中字典.mdx
-
-正面
-{{type:word}}
-背面
-{{type:word}}
