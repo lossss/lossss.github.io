@@ -417,6 +417,7 @@ savepoint A
 
 rollback to savepoint A
 
+select * from scott.employees for update
 ```
 ### 约束
 五种约束 NOT NULL,UNIQUE,PRIMARY KEY,FOREIGN KEY,CHECK
@@ -560,3 +561,14 @@ create table emp4(
 2. char 和 varchar 的区别: char 的长度是固定的，而 varchar 的长度是可以变化的，比如，存储字符串 “abc"，对于 char(10)，表示存储的字符将占 10 个字节(包括 7 个空字符)，而同样的 varchar(12) 则只占用4个字节的长度，增加一个额外字节来存储字符串本身的长度，12 只是最大值，当你存储的字符小于 12 时，按实际长度存储。
 
 enum和set的区别: enum 类型的数据的值，必须是定义时枚举的值的其中之一，即单选，而 set 类型的值则可以多选。
+
+## sql server
+### 数据类型
+#### char/nchar varchar/nvarchar
+如果是带n则表示使用unicode编码 如果该字段中会插入中文则需要带n
+
+#### decimal(1,2)
+小数
+
+#### bit
+1位相当于boolean

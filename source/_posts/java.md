@@ -33,5 +33,14 @@ float a = 3.14F;
 double b = 6.26;
 
 // 浮点型比较不精确 如果需要比较需要使用 BigDecimal类
-
+float a = 0.1F;
+double b = 1.0/10;
+System.out.println(a == b);
+// output false
+// 
+BigDecimal a1 = new BigDecimal(1.0/10);
+BigDecimal b1 = new BigDecimal(0.1);
+System.out.println(a1.equals(b1));
 ```
+##
+```java
