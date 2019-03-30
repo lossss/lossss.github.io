@@ -6,3 +6,7 @@ tags:
 ---
 
 <!--more-->
+# jdbc
+1. `java.sql.SQLException: Can not call getNString() when field's charset isn't UTF-8`
+
+使用getString() 替代 getNString()
