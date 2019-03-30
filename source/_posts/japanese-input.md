@@ -1,3 +1,11 @@
+---
+title: japanese-input
+date: 2017-08-13 23:38:03
+categories: input
+tags: 
+---
+日语输入法快捷键
+<!--more-->
 alt+shift可以在中，英，日之间切换 
 ALT+~可以在假名和英文之间切换 
 ctrl+CAPSLOCK 和 alt+CAPSLOCK可以在平假名和片假名之间切换 
