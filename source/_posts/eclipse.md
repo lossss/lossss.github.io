@@ -34,5 +34,6 @@ google 搜vrapper 或者[点此下载](https://sourceforge.net/projects/vrapper/
 | ctrl+o           | 预览类里面的所有方法和属性 |
 | ctrl+e           | 在已打开文件中切换         |
 | shift+enter      | 在当前行之下创建一个空白行 |
+| ctrl+shift+o     | 清除不需要引用的包         |
 # 参考
 [30 Useful Eclipse Keyboard Shortcuts for Java Programmers](https://dzone.com/articles/top-30-eclipse-keyboard-shortcuts-for-java-program-1)

@@ -53,3 +53,9 @@ API文档管理 没付费可有时会有提示但无大碍  当然也可以使�
 把脚本放在`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`里面就可以开机自动启动了
 
 当然还有很多功能就不一一赘述了
+
+## win10 快捷键
+| 快捷键      | 操作       |
+|-------------|------------|
+| alt+prtscr  | 截取程序   |
+| Win+Shift+S | 框选快捷键 |
