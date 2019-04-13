@@ -12,7 +12,10 @@ eclipse 插件安装 [链接](https://spring.io/tools3/sts/all)
 # maven 设置
 [官方库](https://mvnrepository.com/)
 # hello world
-下载 [spring需要的jar包](http://repo.spring.io/release/org/springframework/spring/)
+下载 [spring需要的jar包](http://repo.spring.io/release/org/springframework/spring/) 或者使用maven管理包文件
+## 导入必要的包
+```
 
+```
 # 参考
 [官方指导](https://spring.io/guides/gs/spring-boot/)
