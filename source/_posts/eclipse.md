@@ -25,15 +25,15 @@ google 搜vrapper 或者[点此下载](https://sourceforge.net/projects/vrapper/
 
 
 # 快捷键
-| 按键             | 操作                                                    |
-|------------------|---------------------------------------------------------|
-| ctrl+h           | 全局搜索                                                |
-| ctrl + 1         | quick fix                                               |
-| Ctrl + Shift + R | finding any resource (file), including config XML files |
-| Ctrl + Shift + T |                                                         |
-| Ctrl + Shift + F | formatting                                              |
-|                  |                                                         |
-|                  |                                                         |
-|                  |                                                         |
+| 按键             | 操作                       |
+|------------------|----------------------------|
+| ctrl+h           | 全局搜索                   |
+| ctrl + 1         | quick fix                  |
+| ctrl + shift + r | 打开资源                   |
+| ctrl + shift + f | formatting                 |
+| ctrl+o           | 预览类里面的所有方法和属性 |
+| ctrl+e           | 在已打开文件中切换         |
+| shift+enter      | 在当前行之下创建一个空白行 |
+| ctrl+shift+o     | 清除不需要引用的包         |
 # 参考
 [30 Useful Eclipse Keyboard Shortcuts for Java Programmers](https://dzone.com/articles/top-30-eclipse-keyboard-shortcuts-for-java-program-1)
