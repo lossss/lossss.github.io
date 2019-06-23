@@ -8,21 +8,13 @@ tags: node
 <!--more-->
 ##node 安装
 
-1.使用nvm控制版本
-nvm安装 [参考](https://github.com/creationix/nvm)
 ```bash
-#查看当前已安装的版本
-nvm ls
-# 查看远端版本
-nvm ls-remote
-# 安装node
-# nvm install node
-nvm install v8.9.4
-# 切换node版本
-# nvm use node
-nvm use v8.9.1
-```
+#先更新系统
+sudo apt install update
+sudo apt install upgrade
 
+sudo apt install node
+```
 1. npm
 ```bash
 sudo apt install npm

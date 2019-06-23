@@ -35,5 +35,12 @@ google 搜vrapper 或者[点此下载](https://sourceforge.net/projects/vrapper/
 | ctrl+e           | 在已打开文件中切换         |
 | shift+enter      | 在当前行之下创建一个空白行 |
 | ctrl+shift+o     | 清除不需要引用的包         |
+| ctrl+l           | 跳转到指定行               |
+| ctrl+t           | 查看继承结构               |
+| alt+↑            | 上移本行代码               |
+| ctrl+alt+h       | 查看方法被调用的具体位置   |
+
+# 自动补全
+コンテンツ　アシスト java自动提示处恢复默认的.
 # 参考
 [30 Useful Eclipse Keyboard Shortcuts for Java Programmers](https://dzone.com/articles/top-30-eclipse-keyboard-shortcuts-for-java-program-1)
