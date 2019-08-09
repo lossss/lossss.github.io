@@ -1,0 +1,27 @@
+// Custom styles.
+input[type="checkbox"] {
+  display: none !important; // by imo: to overwrite styles in DuoShuo-Comments-Plugin
+}
+input[type="checkbox"] + label::before {
+  content: '\a0';
+  display: inline-block;
+  margin-right: .2em;
+  border: 1px solid;
+  border-radius: .2em;
+  width: .8em;
+  height: .8em;
+  vertical-align: .1em;
+  text-indent: .1em;
+  line-height: .7;
+}
+input[type="checkbox"]:checked + label::before {
+  content: '\2713';
+}
+
+.post {
+margin-top: 60px;
+margin-bottom: 60px;
+padding: 25px;
+-webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+-moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+}
