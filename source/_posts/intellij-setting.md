@@ -1,10 +1,10 @@
 ---
-title: intellij-setting
+title: intellij-idea-setting
 date: 2017-10-07 23:46:21
 categories: tools
-tags: intellij
+tags: intellijidea
 ---
-intellij 设置备忘
+intellijidea 设置备忘
 <!--more-->
 
 ## 设置

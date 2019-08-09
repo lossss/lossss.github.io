@@ -80,4 +80,3 @@ keyboard -> modifier keys -> usb keyboard -> Caps Lockey 改为command
 ### 常用小技巧
 
 其实mac上还有很多实用的小功能 可以参看以下这个[视频](https://www.bilibili.com/video/av23430954)
-
