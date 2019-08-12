@@ -19,6 +19,18 @@ draft: 关于markdown的一些常用语法
 > blockquotes
 >> next blockquotes
 
+```markdown
+>如果引用内容需要换行，  
+>可以在行尾添加两个空格
+>
+>或者在引用内容中加一个空行
+```
+
+>如果引用内容需要换行，  
+>可以在行尾添加两个空格
+>
+>或者在引用内容中加一个空行
+
 # 列表
 ```markdown
 * Red
@@ -52,6 +64,7 @@ draft: 关于markdown的一些常用语法
   > inside a list item
 
 # 转义显示
+
 ``` markdown
 1986\. What a great season.
 ```
@@ -102,11 +115,10 @@ __double underscores__
 
 <http://www.baidu.com/>
 
-
 # Fruits
 
-|  Name  | Color  | Mass[g] |
-| ------ | ------ | ------- |
+| Name   | Color  | Mass[g] |
+|--------|--------|---------|
 | apple  | red    | 180     |
 | banana | yellow | 120     |
 | grape  | green  | 150     |

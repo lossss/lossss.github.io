@@ -7,7 +7,48 @@ tags: zsh
 主要是iterm2下的bash和zsh的一些常用技巧和插件总结
 <!--more-->
 
-# 命令行tips
+## iterm2 设置
+这里只列举一些重要设置其他的可以 [参考这里](https://blog.biezhi.me/2018/11/build-a-beautiful-mac-terminal-environment.html)
+
+1. 字体安装
+配合主题powerlevel9k 需要安装字体
+
+2. 安装主题
+
+```bash
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
+
+3. 修改zsh主题
+
+```bash
+ZSH_THEME="powerlevel9k/powerlevel9k"
+```
+
+4. 安装字体
+
+```bash
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+```
+
+5. 修改配置.zshrc 中添加
+
+```bash
+POWERLEVEL9K_MODE="nerdfont-complete"
+# Customise the Powerlevel9k prompts
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir vcs newline status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+```
+
+6. 使修改生效
+
+```bash
+source ~/.zshrc
+```
+
+## 命令行tips
 参看这个[视频](https://www.bilibili.com/video/av4337389/)
 
 | 按键   | 操作             |
@@ -29,6 +70,7 @@ tags: zsh
 | ctrl+l | 清屏             |
 
 iterm2 的常用快捷键
+
 ```bash
 新建标签：command + t
 
@@ -42,6 +84,7 @@ iterm2 的常用快捷键
 ```
 
 # 常用插件
+
 1. [autojump](https://github.com/wting/autojump)
 如果你用的oh-my-zsh 只需要在`.zshrc`里面 配置plugins=(autojump) 即可
 快捷键 `j foo`
@@ -53,14 +96,38 @@ iterm2 的常用快捷键
    1. tmux 里使用复制粘贴 配置里面加一行`set -g mouse on` 在iterm2 `Preference->General->copy to pasteboard to selection` 然后在按住option后选择区域 最后粘贴即可
    1. sessions should be nested with care, unset $TMUX to force 输入 `unset TMUX`
    1. 以下是个人备份不是默认快捷键
+1. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    1. 安装
+    ```bash
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ```
 
-    | 按键   | 操作              |
-    |:-------|:------------------|
-    | -      | 垂直分            |
-    | \      | 水平分            |
-    | x      | 关闭当前窗口      |
-    | z      | 最大化窗口        |
-    | ctrl+d | 关闭窗口          |
+    2. 设置
+
+    ```bash
+    plugins=( [plugins...] zsh-autosuggestions)
+    ```
+
+1. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+    1. 安装
+
+    ```bash
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
+
+    2. 设置
+
+    ```bash
+    plugins=( [plugins...] zsh-syntax-highlighting)
+    ```
+
+| 按键   | 操作         |
+|:-------|:-------------|
+| -      | 垂直分       |
+| \      | 水平分       |
+| x      | 关闭当前窗口 |
+| z      | 最大化窗口   |
+| ctrl+d | 关闭窗口     |
 
 常用指令
 ```bash
@@ -105,5 +172,6 @@ tmux a -d #命令
 
 # 参考
 
-1. http://louiszhai.github.io/2017/09/30/tmux/#%E5%AF%BC%E8%AF%BB
-1. https://gist.github.com/MohamedAlaa/2961058
+1. <http://louiszhai.github.io/2017/09/30/tmux/#%E5%AF%BC%E8%AF%BB>
+
+1. <https://gist.github.com/MohamedAlaa/2961058>

@@ -7,8 +7,6 @@ tags: java
 个人javase知识点杂谈
 <!--more-->
 
-# javase知识点
-
 ## DOS 知识
 
 | 操作 | 操作     |

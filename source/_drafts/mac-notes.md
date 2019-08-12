@@ -13,6 +13,11 @@ mac 备忘
 
 1. cleanmymac
 
+1. [The Unarchiver](https://theunarchiver.com)
+ 解压软件
+
+1. [paragon ntfs](https://china.paragon-software.com/home-mac/ntfs-for-mac/)
+
 ### 学习相关
 
 1. [marginnote](https://marginnote.com/?lang=zh-hans)
@@ -72,11 +77,23 @@ curl ifconfig.me
 
 ### 快捷键
 
-1. cmd+空格 cmd+b 在浏览器中搜索
+1 cmd+空格 cmd+b 在浏览器中搜索
 
 个人习惯把大写键改为command键
 keyboard -> modifier keys -> usb keyboard -> Caps Lockey 改为command
 
+2 程序切换
+
+- 2.1 程序内部切换 command+~
+
+- 2.2 程序间切换 command+tab
+
+3 显示隐藏文件
+Command + Shift + .
+
 ### 常用小技巧
 
-其实mac上还有很多实用的小功能 可以参看以下这个[视频](https://www.bilibili.com/video/av23430954)
+1 创建快捷方式
+option+command 鼠标拖动
+
+2 其实mac上还有很多实用的小功能 可以参看以下这个[视频](https://www.bilibili.com/video/av23430954)
