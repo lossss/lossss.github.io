@@ -42,8 +42,36 @@ hexo d -g
 
 ## [图片压缩](http://upng.photopea.com/)
 
-## 图床工具
+## 写blog时的图片处理
+我的blog的编辑流如下
+`写blog->截图修改名字(例:hexo-notes-1.jpg)->图片压缩网压缩->vs-picgo`
+
+### 图片压缩
+
+当然你可以使用 [tinypng](https://tinypng.com/)来压缩你的图片文件
+我用的是 命令行版本 https://www.npmjs.com/package/tinypng-cli
+1. 安装
+
+`npm install -g tinypng-cli`
+
+2. 使用
+
+- 压缩当前目录下所有图片：tinypng .
+递归压缩子目录：tinypng -r
+- 压缩当前目录下所有图片：tinypng .
+- 递归压缩子目录：tinypng -r
+- 压缩单个目录：tinypng assets/img
+- 压缩多个目录：tinypng assets/img1 assets/img2
+- 压缩单张图片：tinypng assets/img/demo.png
+- 压缩多张图片：tinypng assets/img/demo1.png assets/img/demo2.png
+- 单独指定API key：tinypng demo.png -k E99a18c4f8cb3EL5f2l08u368_922e03
+
+### 图床工具
 
 现在使用的是 [PicGo](https://picgo.github.io/PicGo-Doc/zh/)
-vscode 上有对应的插件
-![Screen Shot 2019-08-13 at 14.13.58.png](https://losssblog.oss-cn-hangzhou.aliyuncs.com/Screen Shot 2019-08-13 at 14.13.58.png)
+
+vscode 上有对应的插件 因为我这里用的是阿里OSS 如果要使用这个插件的话需要再OSS后台设置 `图片处理->访问设置->原图保护(关闭)` 当然对应的防盗链也是可以直接开启的不影响
+
+还有需要注意的是 图片的名字不能有空格 不然链接名字会不准确
+
+
