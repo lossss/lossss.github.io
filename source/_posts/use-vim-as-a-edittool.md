@@ -7,11 +7,11 @@ tags: vim
 使用大量插件和快捷键绑定使得终端下的vim达到生产需求
 <!--more-->
 
-# 平台
+## 平台
 
 mac iterm2
 
-# 配置
+## 配置
 
 1. vim 配置
 本次使用的是[neovim](https://neovim.io/)

@@ -18,6 +18,8 @@ mac 备忘
 
 1. [paragon ntfs](https://china.paragon-software.com/home-mac/ntfs-for-mac/)
 
+1. [mac fan control](https://www.crystalidea.com/macs-fan-control)
+
 ### 学习相关
 
 1. [marginnote](https://marginnote.com/?lang=zh-hans)

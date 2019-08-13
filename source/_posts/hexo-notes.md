@@ -41,3 +41,9 @@ hexo d -g
 统一命名方便管理 博客名-01.png 例: 12win-01.png
 
 ## [图片压缩](http://upng.photopea.com/)
+
+## 图床工具
+
+现在使用的是 [PicGo](https://picgo.github.io/PicGo-Doc/zh/)
+vscode 上有对应的插件
+![Screen Shot 2019-08-13 at 14.13.58.png](https://losssblog.oss-cn-hangzhou.aliyuncs.com/Screen Shot 2019-08-13 at 14.13.58.png)
