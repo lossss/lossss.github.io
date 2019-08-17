@@ -28,23 +28,14 @@ hexo d -g
 ## 本博客编译问题
 1. 确保更新到最新的node和hexo
 
-2. push 上去的themes中的next文件夹是空的这个暂时没想好怎么解决
+2. ~~push 上去的themes中的next文件夹是空的这个暂时没想好怎么解决~~直接删除next的.git文件即可 如果不行可以用`git rm --cached themes/next`清除缓存试试
 
 3. 部署后css不加载
-  1. 在_config.yml 中修改url为新的url
-  2. 删除.deploy_git
-  3. hexo d -g
-
-## 使用[qshell](https://developer.qiniu.com/kodo/tools/1302/qshell)上传图片
-
-## 图片命名规范
-统一命名方便管理 博客名-01.png 例: 12win-01.png
-
-## [图片压缩](http://upng.photopea.com/)
+  - 1. 在_config.yml 中修改url为新的url
+  - 2. 删除.deploy_git
+  - 3. hexo d -g
 
 ## 写blog时的图片处理
-我的blog的编辑流如下
-`写blog->截图修改名字(例:hexo-notes-1.jpg)->图片压缩网压缩->vs-picgo`
 
 ### 图片压缩
 
@@ -53,6 +44,8 @@ hexo d -g
 1. 安装
 
 `npm install -g tinypng-cli`
+
+你需要在官网申请一个api key 然后在自己的home路径下新建一个.tinypng文件吧自己的key放进去
 
 2. 使用
 
@@ -72,6 +65,9 @@ hexo d -g
 
 vscode 上有对应的插件 因为我这里用的是阿里OSS 如果要使用这个插件的话需要再OSS后台设置 `图片处理->访问设置->原图保护(关闭)` 当然对应的防盗链也是可以直接开启的不影响
 
+vscode 上快捷键为`cmd+opt+u` 可以直接复制文件之后直接按快捷键复制到vscode 中,免去了复杂的上传操作
+
 还有需要注意的是 图片的名字不能有空格 不然链接名字会不准确
 
-
+我的blog的编辑流如下
+`写blog->截图修改名字(例:hexo-notes-1.jpg)->图片压缩网压缩->vs-picgo->实时markdown预览`
