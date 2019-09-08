@@ -130,6 +130,7 @@ iterm2 的常用快捷键
 | ctrl+d | 关闭窗口     |
 
 常用指令
+
 ```bash
 tmux new -s demo # 新建一个名称为demo的会话
 tmux a -t demo # 进入到名称为demo的会话
@@ -151,7 +152,6 @@ f  find window
 ,  name window
 &  kill window
 ```
-
 
 >一般工作模式 是1个session里面开多个window 然后一个window开nvim 其他的可以跑命令 可以用 prefix+n prefx+p 切换window
 

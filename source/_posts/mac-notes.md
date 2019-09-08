@@ -20,6 +20,13 @@ mac 备忘
 
 1. [mac fan control](https://www.crystalidea.com/macs-fan-control)
 
+## 效率
+
+1. [moom](https://manytricks.com/moom/)
+高效的分屏软件
+
+1. [spacelaucherapp](https://spacelauncherapp.com)
+
 ### 学习相关
 
 1. [marginnote](https://marginnote.com/?lang=zh-hans)
@@ -91,7 +98,10 @@ keyboard -> modifier keys -> usb keyboard -> Caps Lockey 改为command
 - 2.2 程序间切换 command+tab
 
 3 显示隐藏文件
-Command + Shift + .
+command + Shift + .
+
+4 拷贝finder 路径
+command+option+c
 
 ### 常用小技巧
 
