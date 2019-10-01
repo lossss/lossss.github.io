@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Blog
+title:
 subtitle:
 description: 不忘初心,继续前行
 author: losss
 language:
-- zh-Hans
-- en
+  - zh-Hans
+  - en
 timezone:
 keywords: stdiolosss
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://stdiolosss.info
+url: http://stdiolosss.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -82,6 +82,7 @@ deploy:
   type: git
   repo: git@git.coding.net:losss/blog.git
   branch: coding-pages
+
 #微搜索
 search:
   path: search.xml

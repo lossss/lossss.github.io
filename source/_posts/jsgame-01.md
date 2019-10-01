@@ -649,7 +649,7 @@ var __main = function() {
 __main()
 ```
 延时效果(截图只有8帧实际会流畅很多)
-![](http://ou7k0sem6.bkt.clouddn.com/demo1.gif)
+![](https://losssblog.oss-cn-hangzhou.aliyuncs.com/jsgame-01/1.gif?x-oss-process=style/blogimage)
 
 加入方块
 ```javascript

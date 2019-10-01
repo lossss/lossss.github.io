@@ -14,14 +14,18 @@ tags:
 
 1. [ubuntu](https://www.ubuntu.com/download/desktop)
 
-2. [unetbootin](https://unetbootin.github.io/)
+2. [u盘启动制作](https://rufus.akeo.ie/)
 
 3. 插入u盘 按如下设置
-![setting](http://ou7k0sem6.bkt.clouddn.com/blog/171115/l0hh4KHd3A.png?imageslim)
+![setting](http://ou7k0sem6.bkt.clouddn.com/install-ubuntu-with-win10/1.png)
 
 4. 重启电脑然后选择从u盘启动
 我选择的是 install ubuntu alongside windows
 
+## 一些设置
+[开机默认启动windows](https://jingyan.baidu.com/article/63acb44ae4062c61fcc17e27.html)
+
+[双系统时间同步](https://www.cnblogs.com/shareidea/p/5465306.html)
 
 ## 常用软件
 
@@ -55,12 +59,24 @@ sudo apt-get autoremove
 ```bash
 sudo apt-get remove --purge name
 ```
+
+使用dpkg卸载
+```bash
+sudo dpkg -r packagename # 如果不知道packagename 可以用 sudo dpkg -i xxx.deb 查询
+```
+
 解压tar.gz文件
 ```bash
 tar -xzvf file.tar.gz
 ```
 参考 https://zhuanlan.zhihu.com/p/27187622
 
+解压zip
+```bash
+sudo apt install unar
+unar your-zip
+```
+更多命令行的内容可以参考我的另一篇博客{% post_link linux-notes %}
 
 ### 安装搜狗输入法
 
@@ -74,10 +90,18 @@ tar -xzvf file.tar.gz
 [参考](https://github.com/shadowsocks/shadowsocks-libev)
 [开机启动参考](https://blog.huihut.com/2017/08/25/LinuxInstallConfigShadowsocksClient/)
 开机设置路径备份 /etc/systemd/system/shadowsocks.service
+proxy设置
+`电源->system settings->network`
 
-### 视频播放软件
+### 视频播放软件 [vlc](http://www.videolan.org/vlc/download-ubuntu.html)
 
-### 启动栏：Docky
+### 截图 shutter
+```bash
+sudo apt install shutter
+```
+### [gimp](https://www.gimp.org/)
+> linux 下的ps
+
 ### albert
 ```bash
 sudo add-apt-repository ppa:nilarimogard/webupd8
@@ -118,6 +142,34 @@ terminator --geometry 891x528+395+319
 ```
 4. 点击disable 设置快捷键 ctrl+alt+t
 
+### [有道词典](http://cidian.youdao.com/index-linux.html)
+
+### [iSearch](https://github.com/louisun/iSearch)
+单词查询 例: s sun
+
+### [zeal](https://zealdocs.org/) 
+
+### [vscode](https://code.visualstudio.com/)
+
+### [Jetbrains](https://www.jetbrains.com/)
+```bash
+tar xxx.tar.gz
+cd xxx
+sudo chmod a=+rx bin/idea.sh
+sudo bin/idea.sh
+```
+### [vscode](https://code.visualstudio.com/)
+```安装更新
+sudo apt install ~/path/to/code_1.XXX.deb
+```
+
+### [java](http://tipsonubuntu.com/2016/07/31/install-oracle-java-8-9-ubuntu-16-04-linux-mint-18/)
+```bash
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update; sudo apt install oracle-java8-installer  # You may replace oracle-java8-installer with oracle-java9-installer to install Java 9. 
+java -version #check version
+sudo apt install oracle-java8-set-default # For Java 9, install the package oracle-java9-set-default instead
+```
 ## 换源
 
 ```bash
@@ -197,7 +249,7 @@ fc-cache
 		<family>monospace</family>
 		<prefer>
 			<family>Noto Sans Mono CJK JP</family>
-			<family>Noto Sans Mono CJK SC</family>
+				<family>Noto Sans Mono CJK SC</family>
 			<family>Noto Sans Mono CJK TC</family>
 		</prefer>
 	</alias>

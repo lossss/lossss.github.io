@@ -21,5 +21,4 @@ aboboo 备忘
 ## 组合软件
 
 [SrtEdit](http://pan.baidu.com/s/1b1l1aI) m: jchy
-
-字幕编辑软件
+>字幕编辑软件

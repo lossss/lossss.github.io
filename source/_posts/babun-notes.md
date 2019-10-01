@@ -43,12 +43,13 @@ BoldWhite=#F8F8F2
 ```
 
 3. `vim ~/.zshrc`
+if you want to use other themes please let the theme file into `~/.oh-my-zsh/themes/`
 ```
  ZSH_THEME="agnoster"
 ```
 4. settings about mouse
 
-![mouse settings](http://ou7k0sem6.bkt.clouddn.com/blog/171114/lGbhB0dgBm.png?imageslim)
+![mouse settings](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/1.png?x-oss-process=style/blogimage)
 
 use shift and left mouse to choose
 
@@ -56,7 +57,7 @@ use right mouse to open menu
 
 4. reload the babun
 
-![cool](http://ou7k0sem6.bkt.clouddn.com/blog/171106/93BI8JB8dH.png?imageslim)
+![cool](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/2.png?x-oss-process=style/blogimage)
 
 https://www.sorendam.com/take-control-of-your-console-in-windows-with-babun-oh-my-zsh-and-powerline-fonts/
 
@@ -64,12 +65,15 @@ https://www.sorendam.com/take-control-of-your-console-in-windows-with-babun-oh-m
 please use ZSH_THEME="babun" or other themes because the theme "agnoster" has some problems
 1.
 ```
-"terminal.integrated.shell.windows": "C:\\Users\\Administrator\\.babun\\cygwin\\bin\\zsh.exe"
+"terminal.integrated.shell.windows": "C:\\Users\\losss\\.babun\\cygwin\\bin\\zsh.exe"
 ```
 2. Add on command in ~/.babunrc :
 ```
 cd $OLDPWD
 ```
-![end](http://ou7k0sem6.bkt.clouddn.com/blog/171113/iFh26fe545.png?imageslim)
+![end](https://losssblog.oss-cn-hangzhou.aliyuncs.com/babun-notes/3.png?x-oss-process=style/blogimage)
 
 use left mouse button to choose and copy then click the right mouse button to paste
+
+## Package manager
+Babun provides a package manager called `pact`. It is similar to 'apt-get' or 'yum'. Pact enables installing/searching/upgrading and deinstalling cygwin packages with no hassle at all. Just invoke pact --help to check how to use it.
