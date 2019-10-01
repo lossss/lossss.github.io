@@ -44,3 +44,5 @@ BigDecimal a1 = new BigDecimal(1.0/10);
 BigDecimal b1 = new BigDecimal(0.1);
 System.out.println(a1.equals(b1));
 ```
+
+### 字符型

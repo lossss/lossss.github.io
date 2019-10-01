@@ -15,7 +15,10 @@ css 备忘
 
 ## 常用语法
 
-### 伪类选择器
+### 选择器
+
+#### 伪类选择器
+
 ```css
 a:link
 a:visited
@@ -30,7 +33,8 @@ p::selection
 
 ```
 
-### 伪元素
+#### 伪元素
+
 ```css
 p:first-letter
 p:first-line
@@ -47,7 +51,7 @@ p:after{
 
 ```
 
-### 属性选择器
+#### 属性选择器
 
 ```css
 

@@ -9,11 +9,65 @@ html 笔记
 
 <!-- more -->
 
- ## 问题搜索
+## 问题搜索
 
 前端有问题 搜索时前面加MDN
 
 ## 常用标签
+
+### a
+
+```html
+<!--基本用法-->
+<a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a>
+target
+_self
+_blank 新窗口打开
+
+<!--锚点定位-->
+<a href="#live">live</a>
+<h3 id="live">live</h3>
+```
+
+### base
+
+```html
+<base target="_blank"/>
+```
+
+### 特殊字符
+
+```html
+&nbsp; 空格
+&lt; <
+&gt; >
+```
+
+### 列表
+
+```html
+<!--无序列表-->
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+<ul>
+
+<!--有序列表-->
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+</ol>
+
+<!--自定义列表-->
+<dl>
+  <dt>名词1</dt>
+  <dd>名词1解释1</dd>
+  <dd>名词1解释2</dd>
+</dl>
+
+```
 
 ### table
 
@@ -64,8 +118,6 @@ fieldset
     用户名 <input type="text"><br> 密码 <input type="password">
   </fieldset>
 ```
-
-
 
 ## emmet
 
@@ -281,6 +333,3 @@ Emmet默认单位为px，如果你想使用其他单位就继续看下面吧
 ```
 
 引用于 <https://juejin.im/post/592bdebfac502e006c831d32>
-
-## h5
-
