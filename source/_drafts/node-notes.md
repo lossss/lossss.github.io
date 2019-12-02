@@ -33,3 +33,17 @@ sudo n stable
 //安装官方最新LTS版本
 sudo n lts
 ```
+
+## 问题
+
+1. npm install 的时候会报以下的错误
+`'Error: EACCES: permission denied, access \'/usr/local/lib/node_modules/npm/node_modules/agentkeepalive\''`
+
+这是因为默认usr/local 的所有用户是系统管理员 而不是你现在登录的用户,解决方法如下
+
+```bash
+# $USER 为自己登陆的用户名
+sudo chown -R $USER /usr/local
+```
+
+进行完这个操作之后就可以进行 npm install -g npm 之类的操作了

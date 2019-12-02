@@ -11,6 +11,7 @@ css 备忘
 ! ps 有钱买个mac
 
 ## ps插件
+
 [cutterman](http://www.cutterman.cn/zh/cutterman_usage)
 
 ## 常用语法
@@ -51,8 +52,12 @@ p:after{
 
 ```
 
-#### 属性选择器
+#### not
 
 ```css
-
+ul li:not[last-child]{
+  color:red;
+}
 ```
+
+#### radius
