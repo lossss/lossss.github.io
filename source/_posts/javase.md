@@ -46,3 +46,7 @@ System.out.println(a1.equals(b1));
 ```
 
 ### 字符型
+
+
+
+## 垃圾回收机制
