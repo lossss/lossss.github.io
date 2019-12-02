@@ -52,12 +52,42 @@ p:after{
 
 ```
 
-#### not
+## 常见技巧
+### not
 
 ```css
-ul li:not[last-child]{
+ul li:not(li:last-child){
   color:red;
 }
 ```
 
-#### radius
+### img
+
+```css
+/* 将一个方形图片 显示成圆形 */
+border-radius:50%
+```
+
+```html
+<!-- 如果圆形图片显示有偏移则需要将图片放入div中给div加overflow -->
+<div class="circular--landscape">
+  <img src="xxx.jpg"/>
+</div>
+```
+
+```css
+.circular--landscape{
+    display:inline-block;
+    position:relative;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    border-radius:50%;
+}
+
+.circular--landscape img{
+    width:auto;
+    height:100%;
+    margin-left:-50px;
+}
+```

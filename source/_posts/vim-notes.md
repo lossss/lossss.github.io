@@ -215,7 +215,7 @@ w w e e 的区别
 | shift+v                 | 选择当前行                                                   |
 | shift+d                 | 删除至行尾                                                   |
 | g,                      | 回到上一次insert的位置                                       |
-| ctrl+]                  | 跳转到函数定义                                               |
+| ctrl+]                  | 跳转到函数定义                                               |~
 
 ## text-object
 

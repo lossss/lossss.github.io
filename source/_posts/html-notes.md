@@ -1,5 +1,5 @@
 ---
-title: html-note
+title: html-notes
 date: 2017-10-15T16:21:48.000Z
 categories: web
 tags: html
