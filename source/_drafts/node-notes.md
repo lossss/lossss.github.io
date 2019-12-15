@@ -47,3 +47,5 @@ sudo chown -R $USER /usr/local
 ```
 
 进行完这个操作之后就可以进行 npm install -g npm 之类的操作了
+
+## node 入门
