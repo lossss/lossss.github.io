@@ -215,7 +215,7 @@ w w e e 的区别
 | shift+v                 | 选择当前行                                                   |
 | shift+d                 | 删除至行尾                                                   |
 | g,                      | 回到上一次insert的位置                                       |
-| ctrl+]                  | 跳转到函数定义                                               |~
+| gd                      | 跳转到函数定义                                               |~
 
 ## text-object
 
@@ -313,6 +313,10 @@ guu 整行小写
 gUU 整行大写
 如果只想对个别单词大写小写则先选中即可
 如果光标在当前单词 guiw gUiw
+
+
+12. 选中单词
+如果想要选中类似 $("#selector").show() 时  按键操作 F space v E(f space)
 ```
 
 # 常用command
