@@ -41,7 +41,7 @@ module的删除
 
 图1
 
-![图1](https://losssblog.oss-cn-hangzhou.aliyuncs.com/intellij-setting/1.png)
+![图1](https://losssblog.oss-cn-hangzhou.aliyuncs.com/intellij-setting/1.png?x-oss-process=style/blogimage)
 
 ## snippet
 
