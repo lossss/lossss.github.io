@@ -18,7 +18,7 @@ module \<==\> project(eclipse)
 
 module的删除
 
->open module settings -> 减号 -> 右键module delete
+> open module settings -> 右键module delete
 
 ## 设置
 
@@ -41,7 +41,7 @@ module的删除
 
 图1
 
-![图1](https://losssblog.oss-cn-hangzhou.aliyuncs.com/intellij-setting/1.png?x-oss-process=style/blogimage&Expires=1550851317&OSSAccessKeyId=TMP.AQFJA-OxdhPt6WGoHwhiMk35bQ1T1XphQ3YfLK2AaB3oxd5b4JTH3LrlbHLRADAtAhUA1NCndpySy8hU-lVUQ2hFMnQZpGYCFHiILWnDZrBNMSrIiwQ6-tWpx-vq&Signature=ZZU3YVcFvNDEGFZNf8je9MfbfXg%3D)
+![图1](https://losssblog.oss-cn-hangzhou.aliyuncs.com/intellij-setting/1.png)
 
 ## snippet
 
