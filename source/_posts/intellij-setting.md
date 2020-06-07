@@ -74,6 +74,11 @@ module的删除
 4. "+"sign choose 1JARs or directories
 5. 选择搞定
 
+### Tips
+
+1. 配置tomcat热部署
+Run/Debug configuations -> On frame deactivation: Updateclasses and resources
+
 ## 参考
 
 官方文档   https://www.jetbrains.com/help/idea/meet-intellij-idea.html
