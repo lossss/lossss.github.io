@@ -81,7 +81,11 @@ git check-ignore -v App.class
 回退到上一个版本 如果是上上个版本就是HEAD^^
 
 ```bash
+# 回到上次的commit
 git reset --hard HEAD^
+
+# 回到上一次操作
+git reset^
 ```
 
 回到固定的版本
@@ -93,11 +97,15 @@ git reset --hard <commit-hash>
 
 what is --hard
 > Resets the index and working tree. Any changes to tracked files in the working tree since <commit> are discarded.
+与hard 对应的还有--soft
 
 查看命令历史
 
 ```bash
 git reflog
+
+# 这个命令可以配合 git reset 使用
+git reset (git reflog 里前面的id)
 ```
 
 ## 分支的操作

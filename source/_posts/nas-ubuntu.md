@@ -6,7 +6,7 @@ tags: [nas,ubuntu]
 ---
 在群晖nas上安装ubuntu
 <!--more-->
-最终效果 使用群晖自带的dnns实现外网ssh访问
+最终效果 使用群晖自带的dnns实现外网ssh访问(tomcat最终没有实现外网访问具体原因还在调查中)
 
 ## 安装ubuntu
 
@@ -38,3 +38,6 @@ tags: [nas,ubuntu]
 1. 设置群晖的DNNS
 
 1. 配置好后可以使用 ssh -p 22 用户名@主机域名 就可以直接连到我们在nas上的ubuntu主机了
+
+## 部署tomcat
+参考 [这篇文章](https://cloud.tencent.com/developer/article/1162159)

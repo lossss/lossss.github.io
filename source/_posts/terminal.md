@@ -69,6 +69,15 @@ source ~/.zshrc
 | ctrl+r | 搜索历史命令     |
 | ctrl+l | 清屏             |
 
+**iterm2下opt+b无效解决方法**
+
+```
+iTerm2 > Preferences > Profiles > Keys
+keyboard shortcut ⌥+b
+action send escape sequence
+esc+ b
+```
+
 iterm2 的常用快捷键
 
 ```bash

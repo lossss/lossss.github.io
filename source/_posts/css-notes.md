@@ -11,11 +11,15 @@ css 备忘
 ! ps 有钱买个mac
 
 ## ps插件
+
 [cutterman](http://www.cutterman.cn/zh/cutterman_usage)
 
 ## 常用语法
 
-### 伪类选择器
+### 选择器
+
+#### 伪类选择器
+
 ```css
 a:link
 a:visited
@@ -30,7 +34,8 @@ p::selection
 
 ```
 
-### 伪元素
+#### 伪元素
+
 ```css
 p:first-letter
 p:first-line
@@ -47,8 +52,42 @@ p:after{
 
 ```
 
-### 属性选择器
+## 常见技巧
+### not
 
 ```css
+ul li:not(li:last-child){
+  color:red;
+}
+```
 
+### img
+
+```css
+/* 将一个方形图片 显示成圆形 */
+border-radius:50%
+```
+
+```html
+<!-- 如果圆形图片显示有偏移则需要将图片放入div中给div加overflow -->
+<div class="circular--landscape">
+  <img src="xxx.jpg"/>
+</div>
+```
+
+```css
+.circular--landscape{
+    display:inline-block;
+    position:relative;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    border-radius:50%;
+}
+
+.circular--landscape img{
+    width:auto;
+    height:100%;
+    margin-left:-50px;
+}
 ```
