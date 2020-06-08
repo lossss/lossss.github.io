@@ -14,7 +14,7 @@ timezone:
 keywords: stdiolosss
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://stdiolosss.top
+url: http://stdiolosss.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -80,8 +80,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:stdiolosss/lossss.github.io.git
-  branch: github-pages
+  repo: https://github.com/stdiolosss/stdiolosss.github.io
+  branch: master
 
 #微搜索
 search:
